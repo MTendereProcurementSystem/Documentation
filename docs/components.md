@@ -2,4 +2,4 @@ layout: page
 title: "Components"
 permalink: /components/
 
-<h1>Componetns</h1>
+<h1>Components</h1>
