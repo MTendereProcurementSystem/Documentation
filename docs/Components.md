@@ -54,46 +54,44 @@ permalink: /components/
   .sidenav a {font-size: 15px;}
 }
 </style>
-<body class="c426 c948"><div><p class="c56 c8"><span class="c0"></span></p></div><p class="c147 c8 c148 c340 title" id="h.hk02nexgkc09">
-    <!-- Menu content -->
-    <div class="sidenav">
 
-            <h1 id="h.aqvdwxcpbumt"><span>Table of contents</span></h1>
-            <p><span><a href="/MTender-Documentation/#h.xmtjzc2uscba">Overview</a><span></p>
-            <p class="navLevel2"><span><a href="/MTender-Documentation#h.1we2rht90xgd">Design and development principles</a></p>
-            <p class="navLevel2"><span><a href="/MTender-Documentation#h.8yrkoq6e89vg">Hi-level solution</a><span></p>
-            <p><span><a href="/MTender-Documentation/dataStandard/">Data Standard</a><span></p>
-            <p class="navLevel2"><span><a href="#h.70sc5tvsrs7a">Open Contracting Data Standard 1.1+</a></p>
-            <p><span><a href="#h.mros8bcdi1aq">Procurement Process Stages</a></p>
-            <p><span><a href="#h.xh1m2m60op96">Business Process Engine</a></p>
-            <p><span><a href="#h.auvam5fj54si">Architecture</a></p>
-            <p class="navLevel2"><span><a href="/MTender-Documentation/componets#h.evs70l40dnzj">Components</a></p>
-            <p class="navLevel2"><span><a href="#h.4z7lk3jqbsij">Environment</a><span></p>
-            <p class="navLevel2"><span><a href="#h.hzouno7qehrx">Chronograph</a><span></p>
-            <p class="navLevel2"><span><a href="#h.z93041rmbk6s">Feed Point</a><span></p>
-            <p class="navLevel2"><span><a href="#h.67qp7gxnkm85">Master data Service</a></p>
-            <p class="navLevel2"><span><a href="#h.d5a80y8nl9xb">Document Service</a></p>
-            <p class="navLevel2"><span><a href="#h.tyxa14oi3z1d">Public API</a></p>
-            <p class="navLevel2"><span><a href="#h.ynqqwjq6wu3j">CQRS approach</a></p>
-            <p class="navLevel2"><span><a href="#h.uapl5m3bg5zl">Command API</a></p>
-            <p class="navLevel2"><span><a href="#h.aex4hvogdeia">Functionality</a></p>
-            <p class="navLevel3"><span><a href="#h.ivju48aol26g">Budgeting</a></p>
-            <p class="navLevel3"><span><a href="#h.h5byl5deo4yy">Planning</a></p>
-            <p class="navLevel3"><span><a href="#h.g8bma9x2ewjr">Announcement</a></p>
-            <p class="navLevel3"><span><a href="#h.qqrq5no34olb">Clarification</a></p>
-            <p class="navLevel3"><span><a href="#h.745xkxte5sml">Submission</a><span></p>
-            <p class="navLevel3"><span><a href="#h.27p62oc47hdo">Awarding</a><span></p>
-            <p class="navLevel3"><span><a href="#h.y74tq641o7re">Contracting</a></p>
-            <p class="navLevel2"><span><a href="#h.l7ytzw67eeko">Query API</a></p>
-            <p class="navLevel2"><span><a href="#h.v2zc2nf43ahl">Retrieving data</a></p>
-            <p><span><a href="#h.3udbusw23hqt">Coverage</a></p>
-            <p><span><a href="#h.y2sbxis35a3u">Single-stage competitive procedure</a></p>
-            <p><span><a href="#h.ctgtbnlmzgfk">Single-stage non-competitive procedure</a></p>
-            <p><span><a href="#h.sxilyxpuokyg">Multi-stage competitive procedures</a></p>
-            <p><span><a href="#h.b54hxvf4sx3m">Multi-stage repetitive procedures</a></span></p>
-        </div>
-    <!-- Page content -->
-    <div class="main">
+<body class="c426 c948"><div><p class="c56 c8"><span class="c0"></span></p></div><p class="c147 c8 c148 c340 title" id="h.hk02nexgkc09">
+    <div class="sidenav">
+<h1 id="h.aqvdwxcpbumt"><span>Table of contents</span></h1>
+<p><span><a href="/MTender-Documentation/#h.xmtjzc2uscba">Overview</a><span></p>
+<p class="navLevel2"><span><a href="/MTender-Documentation#h.1we2rht90xgd">Design and development principles</a></p>
+<p class="navLevel2"><span><a href="/MTender-Documentation#h.8yrkoq6e89vg">Hi-level solution</a><span></p>
+<p><span><a href="/MTender-Documentation/dataStandard/">Data Standard</a><span></p>
+<p class="navLevel2"><span><a href="#h.70sc5tvsrs7a">Open Contracting Data Standard 1.1+</a></p>
+<p><span><a href="#h.mros8bcdi1aq">Procurement Process Stages</a></p>
+<p><span><a href="#h.xh1m2m60op96">Business Process Engine</a></p>
+<p><span><a href="#h.auvam5fj54si">Architecture</a></p>
+<p class="navLevel2"><span><a href="/MTender-Documentation/componets#h.evs70l40dnzj">Components</a></p>
+<p class="navLevel2"><span><a href="#h.4z7lk3jqbsij">Environment</a><span></p>
+<p class="navLevel2"><span><a href="#h.hzouno7qehrx">Chronograph</a><span></p>
+<p class="navLevel2"><span><a href="#h.z93041rmbk6s">Feed Point</a><span></p>
+<p class="navLevel2"><span><a href="#h.67qp7gxnkm85">Master data Service</a></p>
+<p class="navLevel2"><span><a href="#h.d5a80y8nl9xb">Document Service</a></p>
+<p class="navLevel2"><span><a href="#h.tyxa14oi3z1d">Public API</a></p>
+<p class="navLevel2"><span><a href="#h.ynqqwjq6wu3j">CQRS approach</a></p>
+<p class="navLevel2"><span><a href="#h.uapl5m3bg5zl">Command API</a></p>
+<p class="navLevel2"><span><a href="#h.aex4hvogdeia">Functionality</a></p>
+<p class="navLevel3"><span><a href="#h.ivju48aol26g">Budgeting</a></p>
+<p class="navLevel3"><span><a href="#h.h5byl5deo4yy">Planning</a></p>
+<p class="navLevel3"><span><a href="#h.g8bma9x2ewjr">Announcement</a></p>
+<p class="navLevel3"><span><a href="#h.qqrq5no34olb">Clarification</a></p>
+<p class="navLevel3"><span><a href="#h.745xkxte5sml">Submission</a><span></p>
+<p class="navLevel3"><span><a href="#h.27p62oc47hdo">Awarding</a><span></p>
+<p class="navLevel3"><span><a href="#h.y74tq641o7re">Contracting</a></p>
+<p class="navLevel2"><span><a href="#h.l7ytzw67eeko">Query API</a></p>
+<p class="navLevel2"><span><a href="#h.v2zc2nf43ahl">Retrieving data</a></p>
+<p><span><a href="#h.3udbusw23hqt">Coverage</a></p>
+<p><span><a href="#h.y2sbxis35a3u">Single-stage competitive procedure</a></p>
+<p><span><a href="#h.ctgtbnlmzgfk">Single-stage non-competitive procedure</a></p>
+<p><span><a href="#h.sxilyxpuokyg">Multi-stage competitive procedures</a></p>
+<p><span><a href="#h.b54hxvf4sx3m">Multi-stage repetitive procedures</a></span></p>
+</div>
+<div class="main">
 <h2 class="c525 c147 c148" id="h.evs70l40dnzj"><span>Components</span></h2><p class="c56"><span class="c14">The general set of BPE components is as follows: </span></p><ul class="c116 lst-kix_95gsz96sxp3n-0 start"><li class="c56 c66"><span class="c144 c219">eBudget </span><span class="c14">- component allows the online definition and preparation of expenditure items, funding sources, periods of budgeting and budgets in structured form.</span></li><li class="c56 c66"><span class="c144 c219">ePlanning </span><span class="c14">- component allows CAs to construct their procurement plan by scheduling of procedures during defined period as well as identification of potential individual procurement plans to be aggregated in order to launch a repetitive procedure.</span></li><li class="c56 c66"><span class="c144 c219">eAccess</span><span class="c14">&nbsp;- component is responsible for receiving, validation and saving of core information about the procurement according to selected procurement method, geography, etc and it amendments. Apart from the initiation of a new Contracting Process, the eAccess includes the links to all related processes (such as definition of used budget or conducted prior notices). </span></li><li class="c56 c66"><span class="c144 c219">eClarification</span><span class="c14">&nbsp;- component provides the option to ask questions and receive answers regarding the conditions of particular procurement as well as allow CAs to answering questions from EOs.</span></li><li class="c56 c66"><span class="c144 c219">eSubmission </span><span class="c14">- component allows EOs to respond to Contract Notice by submitting their &nbsp;quotations electronically to a CA, including using templates created by the CA. On the CAs side, this component generates a standardized schema for a bid or proposal in the relevant procurement method, stores received bids or proposal until expiry of tender deadlines and allows secure opening of the received tenders upon expiry of the tender deadlines.</span></li><li class="c56 c66"><span class="c144 c219">eQualification </span><span class="c14">- component handles legal, economic and quality qualification of the tenderers and its proposals. It is responsible for accessing EOs master data. It is also used for shortlist management of procedures that allow shortlisting prior to submission of tenders.</span></li><li class="c56 c66"><span class="c144 c219">eAuction</span><span class="c14">&nbsp;- component facilitates the configuration and management of reverse auction held electronically.</span></li><li class="c56 c66"><span class="c144 c219">eAwarding </span><span class="c14">- component allows preparation of the Contract Award Notice in a structured way. It also ensures exchange of documents with the tenderer during the awarding phase. eAwarding is responsible for all actions once evaluation is completed until the contract is created. </span></li><li class="c56 c66"><span class="c144 c219">eContracting</span><span class="c14">&nbsp;- component allows rearation and creation of the Awarded Contracts in a structured way. It also ensures the interaction with the eGov infrastructure (Treasury, state registers, etc) during Contract preparation phase. eContracting is responsible for all actions once contract is created as a result of evaluation under specific procurement procedure until this contract is implemented. </span></li><li class="c56 c66"><span class="c144 c219">eNotice</span><span class="c14">&nbsp;- component is in charge of generating Notices using the data available in the eAccess and other components. The notices will be generated in a structured way available to download or to send to third parties. The module will also allow the creation of all other needed types of notices for all types of procedures based on the tender specifications introduced in the eProcurement system.</span></li></ul>
 <hr style="page-break-before:always;display:none;"><h2 class="c525 c147 c148 c534" id="h.9nldcewfz1id"><span class="c135 c32"></span></h2><h2 class="c147 c148 c525" id="h.8ranwat5ortg"><span class="c135 c32">Components&rsquo; management</span></h2><p class="c56"><span class="c14">These Components shall automate entire procurement lifecycle (from planning to payment) for different procurement methods described below (see &ldquo;Coverage&rdquo; chapter). The following figure contains a generic distinction for management of the public procurement process and the interaction between the CAs, EOs and the system itself:</span></p><p class="c56"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 597.81px; height: 235.50px;"><img alt="" src="images/image48.png" style="width: 597.81px; height: 235.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c99"><span class="c130">Figure 16. BPE Component diagram as a generic distinction for management of the public procurement process</span><span class="c14">&nbsp;</span></p><p class="c56"><span>&nbsp;</span>
 <hr style="page-break-before:always;display:none;"></p><h3 class="c18 c147 c148" id="h.sl43qm3a6e0h"><span class="c32 c349 c295">eBudget</span></h3><p class="c56"><span class="c14">eBudget allows the online definition and preparation of expenditure items, funding sources, periods of budgeting and budgets in structured form. </span></p><h4 class="c453 c147 c148" id="h.imn4dlskjmfb"><span class="c85 c32">Methods</span></h4><p class="c56"><span class="c14">eBudget component includes following methods:</span></p><a id="t.e632def62f2d461f9d7ae73b2794228f78f23988"></a><a id="t.203"></a>
