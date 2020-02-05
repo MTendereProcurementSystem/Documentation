@@ -3,8 +3,8 @@ title: "Components"
 permalink: /Components/
 
 <div class="sidenav">
-<h1 id="h.aqvdwxcpbumt"><span>Table of contents</span></h1>
-<p><span><a href="/MTender-Documentation/#h.xmtjzc2uscba">Overview</a><span></p>
+<h1 id="h.aqvdwxcpbumt"><span>Table of contents</span> </h1>
+<p><span><a href="/MTender-Documentation/#h.xmtjzc2uscba">Overview </a><span> </p>
 <p class="navLevel2"><span><a href="/MTender-Documentation#h.1we2rht90xgd">Design and development principles</a></p>
 <p class="navLevel2"><span><a href="/MTender-Documentation#h.8yrkoq6e89vg">Hi-level solution</a><span></p>
 <p><span><a href="/MTender-Documentation/dataStandard/">Data Standard</a><span></p>
