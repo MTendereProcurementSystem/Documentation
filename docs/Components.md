@@ -2,61 +2,7 @@ layout: page
 title: "Components"
 permalink: /components/
 
-<style>
-.sidenav {
-  height: 100%;
-  width: 20%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 2%;
-  padding-left: 3%;
-}
-
-/* The navigation menu links */
-.sidenav a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav h1{
-    color: #f1f1f1;
-}
-
-/* Style page content */
-.main {
-  width: 75%;
-  float: right;
-}
-
-.navLevel2{
-   margin-left: 5%;
-   padding-left: 1%;
-}
-
-.navLevel3{
-   margin-left: 10%;
-   padding-left: 1%;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 15px;}
-}
-</style>
-
-<body class="c426 c948"><div><p class="c56 c8"><span class="c0"></span></p></div><p class="c147 c8 c148 c340 title" id="h.hk02nexgkc09">
-    <div class="sidenav">
+<div class="sidenav">
 <h1 id="h.aqvdwxcpbumt"><span>Table of contents</span></h1>
 <p><span><a href="/MTender-Documentation/#h.xmtjzc2uscba">Overview</a><span></p>
 <p class="navLevel2"><span><a href="/MTender-Documentation#h.1we2rht90xgd">Design and development principles</a></p>
@@ -476,4 +422,3 @@ permalink: /components/
 <table class="c52"><tbody><tr class="c17"><td class="c76" colspan="1" rowspan="1"><p class="c3"><span class="c2">Name</span></p></td><td class="c314 c230" colspan="1" rowspan="1"><p class="c3"><span class="c2">Type</span></p></td><td class="c159" colspan="1" rowspan="1"><p class="c3"><span class="c2">Description</span></p></td><td class="c158 c230" colspan="1" rowspan="1"><p class="c3"><span class="c2">Obligation</span></p></td></tr><tr class="c17"><td class="c61 c24" colspan="1" rowspan="1"><p class="c3"><span class="c4">cpid</span></p></td><td class="c166 c24" colspan="1" rowspan="1"><p class="c3 c8"><span class="c14"></span></p></td><td class="c195 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Contracting process ID</span></p></td><td class="c158 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">mandatory</span></p></td></tr><tr class="c17"><td class="c61" colspan="1" rowspan="1"><p class="c3"><span class="c4">operation</span></p></td><td class="c166" colspan="1" rowspan="1"><p class="c3 c8"><span class="c14"></span></p></td><td class="c195" colspan="1" rowspan="1"><p class="c3"><span class="c152 c426 c144">standStillEnd</span></p></td><td class="c158" colspan="1" rowspan="1"><p class="c3"><span class="c14">mandatory</span></p></td></tr><tr class="c17"><td class="c61 c24" colspan="1" rowspan="1"><p class="c3"><span class="c4">releaseDate</span></p></td><td class="c166 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">date-time</span></p></td><td class="c195 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Date of release</span></p></td><td class="c24 c158" colspan="1" rowspan="1"><p class="c3"><span class="c14">mandatory</span></p></td></tr><tr class="c17"><td class="c61" colspan="1" rowspan="1"><p class="c3"><span class="c4">stage</span></p></td><td class="c166" colspan="1" rowspan="1"><p class="c3"><span class="c14">string</span></p></td><td class="c195" colspan="1" rowspan="1"><p class="c3"><span class="c14">PS | PQ | EV</span></p></td><td class="c158" colspan="1" rowspan="1"><p class="c3"><span class="c14">mandatory</span></p></td></tr><tr class="c17"><td class="c61 c24" colspan="1" rowspan="1"><p class="c3"><span class="c4">data</span></p></td><td class="c166 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">object</span></p></td><td class="c195 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">bpe-payloads/eNotice/endStandStillPeriodPayload.json</span></p></td><td class="c158 c24" colspan="1" rowspan="1"><p class="c3 c8"><span class="c4"></span></p></td></tr></tbody></table><h6 class="c15" id="h.6pa3oztyfhq"><span class="c6">Outcomes</span></h6><a id="t.1f2573777123b901a0e9509582cef5a00795d0b8"></a><a id="t.513"></a>
 <table class="c52"><tbody><tr class="c192"><td class="c112" colspan="1" rowspan="1"><p class="c3"><span class="c2">Name</span></p></td><td class="c181" colspan="1" rowspan="1"><p class="c3"><span class="c2">Type</span></p></td><td class="c885 c230" colspan="1" rowspan="1"><p class="c3"><span class="c2">Description</span></p></td><td class="c30 c230" colspan="1" rowspan="1"><p class="c3"><span class="c2">Obligation</span></p></td></tr><tr class="c192"><td class="c45 c24" colspan="1" rowspan="1"><p class="c3"><span class="c4">ocdsRelease</span></p></td><td class="c255 c24" colspan="3" rowspan="1"><p class="c3"><span class="c14">bpe-payloads/eNotice/createStagePayloadResponseRelease.json</span></p></td></tr><tr class="c192"><td class="c45" colspan="1" rowspan="1"><p class="c3"><span class="c4">ocdsRelease</span></p></td><td class="c255" colspan="3" rowspan="1"><p class="c3"><span class="c14">bpe-payloads/eNotice/createMSpayloadResponseRelease.json</span></p></td></tr></tbody></table><p class="c209 c147 c8"><span class="c42 c305 c219"></span></p><h6 class="c23 c200" id="h.2263x7k6m4sz"><span class="c6"></span></h6>
 </div>
-</body>
