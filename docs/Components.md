@@ -1,5 +1,4 @@
 layout: page
-title: "Components"
-permalink: /components/
-
+title: "Component"
+permalink: /component/
 <h1>Components</h1>
