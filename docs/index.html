@@ -1,46 +1,58 @@
----
-layout: default
----
 
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="documentationStyles.css">
 </head>
 <body>
-        <div class="sidenav">
-                <h1 id="h.aqvdwxcpbumt">Table of contents</span></h1>
-                <p><a href="/MTender-Documentation/#h.xmtjzc2uscba">Overview</a></p>
+
+    <div class="sidenav">
+        <h1 id="h.aqvdwxcpbumt">Table of contents</span></h1>
+
+        <button class="accordion">Introduction</button>
+        <div class="panel">
+                <p class="navLevel2"><a href="/MTender-Documentation/#h.xmtjzc2uscba">Overview</a></p>
                 <p class="navLevel2"><a href="/MTender-Documentation#h.1we2rht90xgd">Design and development principles</a></p>
                 <p class="navLevel2"><a href="/MTender-Documentation#h.8yrkoq6e89vg">Hi-level solution</a></p>
-                <p><a href="/MTender-Documentation/dataStandard/">Data Standard</a></p>
-                <p class="navLevel2"><a href="#h.70sc5tvsrs7a">Open Contracting Data Standard 1.1+</a></p>
-                <p><a href="#h.mros8bcdi1aq">Procurement Process Stages</a></p>
-                <p><a href="#h.xh1m2m60op96">Business Process Engine</a></p>
-                <p><a href="#h.auvam5fj54si">Architecture</a></p>
-                <p class="navLevel2"><a href="/MTender-Documentation/componets#h.evs70l40dnzj">Components</a></p>
-                <p class="navLevel2"><a href="#h.4z7lk3jqbsij">Environment</a></p>
-                <p class="navLevel2"><a href="#h.hzouno7qehrx">Chronograph</a></p>
-                <p class="navLevel2"><a href="#h.z93041rmbk6s">Feed Point</a></p>
-                <p class="navLevel2"><a href="#h.67qp7gxnkm85">Master data Service</a></p>
-                <p class="navLevel2"><a href="#h.d5a80y8nl9xb">Document Service</a></p>
-                <p class="navLevel2"><a href="#h.tyxa14oi3z1d">Public API</a></p>
-                <p class="navLevel2"><a href="#h.ynqqwjq6wu3j">CQRS approach</a></p>
-                <p class="navLevel2"><a href="#h.uapl5m3bg5zl">Command API</a></p>
-                <p class="navLevel2"><a href="#h.aex4hvogdeia">Functionality</a></p>
-                <p class="navLevel3"><a href="#h.ivju48aol26g">Budgeting</a></p>
-                <p class="navLevel3"><a href="#h.h5byl5deo4yy">Planning</a></p>
-                <p class="navLevel3"><a href="#h.g8bma9x2ewjr">Announcement</a></p>
-                <p class="navLevel3"><a href="#h.qqrq5no34olb">Clarification</a></p>
-                <p class="navLevel3"><a href="#h.745xkxte5sml">Submission</a></p>
-                <p class="navLevel3"><a href="#h.27p62oc47hdo">Awarding</a></p>
-                <p class="navLevel3"><a href="#h.y74tq641o7re">Contracting</a></p>
-                <p class="navLevel2"><a href="#h.l7ytzw67eeko">Query API</a></p>
-                <p class="navLevel2"><a href="#h.v2zc2nf43ahl">Retrieving data</a></p>
-                <p><a href="#h.3udbusw23hqt">Coverage</a></p>
-                <p><a href="#h.y2sbxis35a3u">Single-stage competitive procedure</a></p>
-                <p><a href="#h.ctgtbnlmzgfk">Single-stage non-competitive procedure</a></p>
-                <p><a href="#h.sxilyxpuokyg">Multi-stage competitive procedures</a></p>
-                <p><a href="#h.b54hxvf4sx3m">Multi-stage repetitive procedures</a></span></p>
+        </div>
+
+        <button class="accordion">Data Structure</button>
+        <div class="panel">
+            <p class="navLevel2"><a href="/MTender-Documentation/dataStandard/">Data Standard</a></p>
+            <p class="navLevel2"><a href="/MTender-Documentation/dataStandard#h.70sc5tvsrs7a">Open Contracting Data Standard 1.1+</a></p>
+        </div>
+
+        <button><a href="/MTender-Documentation/ProcurementProcess/#h.mros8bcdi1aq">Procurement Process Stages</a></button>
+        <button><a href="/MTender-Documentation/BPE/#h.xh1m2m60op96">Business Process Engine</a></button>
+
+        <button class="accordion">Architecture</button>
+            <div class="panel">
+                <p class="navLevel2"><a href="/MTender-Documentation/Components#h.evs70l40dnzj">Components</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.4z7lk3jqbsij">Environment</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.hzouno7qehrx">Chronograph</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.z93041rmbk6s">Feed Point</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.67qp7gxnkm85">Master data Service</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.d5a80y8nl9xb">Document Service</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.tyxa14oi3z1d">Public API</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.ynqqwjq6wu3j">CQRS approach</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.uapl5m3bg5zl">Command API</a></p>
+                <button class="accordion">Functionality</button>
+                <div class="panel">
+                    <p class="navLevel3"><a href="/MTender-Documentation/Architecture#h.ivju48aol26g">Budgeting</a></p>
+                    <p class="navLevel3"><a href="/MTender-Documentation/Architecture#h.h5byl5deo4yy">Planning</a></p>
+                    <p class="navLevel3"><a href="/MTender-Documentation/Architecture#h.g8bma9x2ewjr">Announcement</a></p>
+                    <p class="navLevel3"><a href="/MTender-Documentation/Architecture#h.qqrq5no34olb">Clarification</a></p>
+                    <p class="navLevel3"><a href="/MTender-Documentation/Architecture#h.745xkxte5sml">Submission</a></p>
+                    <p class="navLevel3"><a href="/MTender-Documentation/Architecture#h.27p62oc47hdo">Awarding</a></p>
+                    <p class="navLevel3"><a href="/MTender-Documentation/Architecture#h.y74tq641o7re">Contracting</a></p>
+                </div>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.l7ytzw67eeko">Query API</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/Architecture#h.v2zc2nf43ahl">Retrieving data</a></p>
+            </div>
+            <button><a href="/MTender-Documentation/CoverageAndCompTypes#h.3udbusw23hqt">Coverage</a></p>
+            <button><a href="/MTender-Documentation/CoverageAndCompTypes#h.y2sbxis35a3u">Single-stage competitive procedure</a></button>
+            <button><a href="/MTender-Documentation/CoverageAndCompTypes#h.ctgtbnlmzgfk">Single-stage non-competitive procedure</a></button>
+            <button><a href="/MTender-Documentation/CoverageAndCompTypes#h.sxilyxpuokyg">Multi-stage competitive procedures</a></button>
+            <button><a href="/MTender-Documentation/CoverageAndCompTypes#h.b54hxvf4sx3m">Multi-stage repetitive procedures</a></span></button>
         </div>
     <div class="main">
         <p class="c3 c8"><span class="c14"></span></p><p class="c206 c147 c8"><span class="c0"></span></p><p class="c56 c8"><span class="c0"></span></p>
@@ -471,5 +483,21 @@ layout: default
         <h1 class="c404 c147 c148 c911" id="h.gj5vqoa3miw0"><span class="c274 c32"></span></h1><h1 class="c404 c147 c148" id="h.wdo6romyu2hl"><span>List of figures</span></h1><a id="t.954619d13137b8c4ef8685ebc36fc98b9db5b7ed"></a><a id="t.1"></a>
 <table class="c52"><tbody><tr class="c551"><td class="c421 c230" colspan="1" rowspan="1"><p class="c3"><span class="c2">#</span></p></td><td class="c486 c230" colspan="1" rowspan="1"><p class="c3"><span class="c2">Content </span></p></td></tr><tr class="c551"><td class="c421 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 1</span></p></td><td class="c486 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">General scheme for CQRS-approach</span></p></td></tr><tr class="c551"><td class="c421" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 2</span></p></td><td class="c486" colspan="1" rowspan="1"><p class="c3"><span class="c14">General scheme of &ldquo;Materialized View&rdquo; pattern</span></p></td></tr><tr class="c551"><td class="c421 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 3</span></p></td><td class="c486 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">General scheme of &ldquo;Event sourcing&rdquo; pattern</span></p></td></tr><tr class="c551"><td class="c421" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 4</span></p></td><td class="c486" colspan="1" rowspan="1"><p class="c3"><span class="c14">High-level scheme of the systems&rsquo; architecture</span></p></td></tr><tr class="c551"><td class="c421 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 5</span></p></td><td class="c486 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Statechart diagram for EI</span></p></td></tr><tr class="c551"><td class="c421" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 6</span></p></td><td class="c486" colspan="1" rowspan="1"><p class="c3"><span class="c14">Statechart diagram for FS</span></p></td></tr><tr class="c551"><td class="c421 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 7 </span></p></td><td class="c486 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Statechart diagram for PN</span></p></td></tr><tr class="c551"><td class="c421" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 8</span></p></td><td class="c486" colspan="1" rowspan="1"><p class="c3"><span class="c14">Statechart diagram for PIN</span></p></td></tr><tr class="c551"><td class="c421 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 9</span></p></td><td class="c486 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Statechart diagram for PS</span></p></td></tr><tr class="c551"><td class="c421" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 10</span></p></td><td class="c486" colspan="1" rowspan="1"><p class="c3"><span class="c14">Statechart diagram for EV</span></p></td></tr><tr class="c551"><td class="c421 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 11</span></p></td><td class="c486 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Statechart diagram for DA</span></p></td></tr><tr class="c551"><td class="c421" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 12</span></p></td><td class="c486" colspan="1" rowspan="1"><p class="c3"><span class="c14">Statechart diagram for CAN</span></p></td></tr><tr class="c551"><td class="c24 c421" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 13</span></p></td><td class="c486 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Statechart diagram for AC</span></p></td></tr><tr class="c551"><td class="c421" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 14</span></p></td><td class="c486" colspan="1" rowspan="1"><p class="c3"><span class="c14">General scheme of the contracting process described using data-models</span></p></td></tr><tr class="c551"><td class="c421 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 15</span></p></td><td class="c486 c24" colspan="1" rowspan="1"><p class="c3"><span class="c14">General scheme of the Business Process Engine flow</span></p></td></tr><tr class="c551"><td class="c421" colspan="1" rowspan="1"><p class="c3"><span class="c14">Figure 16</span></p></td><td class="c486" colspan="1" rowspan="1"><p class="c3"><span class="c14">BPE Component diagram: generic distinction for management of the public procurement process</span></p></td></tr></tbody></table>
 </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
