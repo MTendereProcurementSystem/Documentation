@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Components"
 permalink: /Components/
+---
 
 <div class="sidenav">
 <h1 id="h.aqvdwxcpbumt"><span>Table of contents</span></h1>
