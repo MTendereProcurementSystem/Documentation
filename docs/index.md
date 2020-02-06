@@ -3,7 +3,7 @@ layout: default
 ---
 
 <html>
-
+<head>
 <style>
 
 .sidenav {
@@ -53,12 +53,13 @@ layout: default
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 15px;}
 }
-</style>
+
+</style></head>
 
 <body class="c426 c948"><div><p class="c56 c8"><span class="c0"></span></p></div><p class="c147 c8 c148 c340 title" id="h.hk02nexgkc09">
     <div class="sidenav">
             <h1 id="h.aqvdwxcpbumt"><span>Table of contents</span></h1>
-            <p><span><a href="/MTender-Documentation/#h.xmtjzc2uscba">Overview</a><span></p>
+            <p><span><a href="/MTender-Documentation/#h.xmtjzc2uscba">Overview</a><span> </p>
             <p class="navLevel2"><span><a href="/MTender-Documentation#h.1we2rht90xgd">Design and development principles</a></p>
             <p class="navLevel2"><span><a href="/MTender-Documentation#h.8yrkoq6e89vg">Hi-level solution</a><span></p>
             <p><span><a href="/MTender-Documentation/dataStandard/">Data Standard</a><span></p>
