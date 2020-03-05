@@ -7,16 +7,14 @@
     <body>
         <div class="sidenav">
             <h1 id="h.aqvdwxcpbumt">Table of contents</span></h1>
-            <button class="accordion active">Background Information &#11206; </button>
+            <button class="accordion active">Introduction &#11206; </button>
             <div class="panel" style="display: block;">
-                <p class="navLevel2"><a href="/MTender-Documentation/">General approach</a></p>
-                <p class="navLevel2"><a href="/MTender-Documentation/#h.moldovaeProc">The Moldovan eProcurement scheme</a></p>
-                <p class="navLevel2"><a href="/MTender-Documentation/#h.publicProcProcTech">Public procurement
-                        procedures and techniques coverage</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/#h.backInfo">Background information</a></p>
+                <p class="navLevel2"><a href="/MTender-Documentation/#h.genApproach">General approach</a></p>
                 <p class="navLevel2"><a href="/MTender-Documentation/#h.procMethodsCovered">Procurement methods covered</a></p>
             </div>
-            <button class="accordion active">Design and development principles &#11206; </button>
-            <div class="panel" style="display: block;">
+            <button class="accordion">Design and development principles &#11206; </button>
+            <div class="panel">
                 <p class="navLevel2"><a href="/MTender-Documentation/developmentPrinciples#architectApproach">Architectural
                         approach</a></p>
                 <p class="navLevel2"><a href="/MTender-Documentation/developmentPrinciples#h.patterns">Used patterns</a></p>
@@ -65,8 +63,6 @@
                 <p class="navLevel2"><a href="/MTender-Documentation/services#h.business">Business Services</a></p>
                 <p class="navLevel2"><a href="/MTender-Documentation/services#h.enterprise">Enterprise Services</a></p>
             </div>
-            <button class="accordion"><a href="/MTender-Documentation/folderStructure">Folder Structure
-                </a></button>
             <button class="accordion">Tutorial &#11206; </button>
             <div class="panel">
                 <p class="navLevel2"><a href="/MTender-Documentation/Tutorial/">Operating Entities: CAs and EOs</a></p>
@@ -99,7 +95,7 @@
             </div>
         </div>
         <div class="main">
-            <h1 class="c34" id="h.gjdgxs">
+            <h1 class="c34" id="h.backInfo">
                 <span class="c15">Background Information </span></h1>
             <p class="c0" id="h.30j0zll"><span>The implementation of digital processes in the field of public
                     procurement ensures improvement of the transparency and efficiency of procurement of goods, works
@@ -149,7 +145,7 @@
                 <hr style="page-break-before:always;display:none;">
             </p>
             <p class="c0 c1"><span class="c4"></span></p>
-            <h1 class="c34" id="h.wq0t8m4j9a78"><span class="c15">General approach</span></h1>
+            <h1 class="c34" id="h.genApproach"><span class="c15">General approach</span></h1>
             <p class="c0"><span class="c4">To ensure the attainment of the objectives set for the IT System, the
                     following principles shall be considered while designing, developing and implementing the
                     Architecture of the OCDS open source central unit of the electronic public procurement system.</span></p>
@@ -327,183 +323,6 @@
             <p class="c0"><span class="c4">The API accepts JSON or form-encoded content in requests. It returns JSON
                     content in all of its responses, including errors. Only the UTF-8 character encoding is supported
                     for both requests and responses.</span></p>
-            <h1 class="c34" id="h.moldovaeProc"><span class="c15">The
-                    Moldovan eProcurement scheme</span></h1>
-            <p class="c0"><span class="c4">The main pillars for the eProcurement reform in Moldova are the following:</span></p>
-            <p class="c67" id="h.3znysh7"><span class="c3">Figure 1. Main pillars of eProcurement reform for Moldova</span></p>
-            <p class="c0"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 378.07px; height: 308.73px;"><img
-                        alt="" src="images/introduction1.png" style="width: 378.07px; height: 308.73px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                        title=""></span></p>
-            <ul class="c6 lst-kix_list_1-0 ">
-                <li class="c20"><span class="c5">Multi-platform networking model.</span><span class="c4">&nbsp;The
-                        eProcurement scheme will consist of the CDU networking in real time with a) several NEPPs and
-                        b) different eGovernment services to provide a complete electronic procurement service. A
-                        contemporary and business-friendly networking approach ensures a short implementation period,
-                        low development and maintenance costs and free-of-charge access to eProcurement services for
-                        contracting authorities. </span></li>
-                <li class="c20"><span class="c5">End-to-end electronic public procurement. </span><span class="c4">The
-                        eProcurement scheme will cover the entire public procurement process, from procurement planning
-                        to invoicing and payments under public contracts. Online tools for ePlanning, eTendering and
-                        eContract Management will make the system easier for all end-users and will generate process
-                        improvements and significant benefits for public finance management. </span></li>
-                <li class="c20"><span class="c5">Interoperable with eGovernment services.</span><span class="c4">&nbsp;The
-                        eProcurement system will be designed to ensure interoperability with existing and future
-                        eGovernment services and national public registers. This approach guarantees a modern advanced
-                        eProcurement system with comprehensive functionalities, but without presenting huge risk or
-                        expense since eGovernment services have already been significantly developed in Moldova.</span></li>
-                <li class="c20"><span class="c5">Open source, open data, open contracting data standard. </span><span
-                        class="c4">The CDU will be based on open source applications and foster transparency and
-                        accountability of public procurement by incorporating open data and Advanced Open Contracting
-                        Data Standards</span><sup class="c56 c10 c68"><a href="#ftnt1" id="ftnt_ref1">[1]</a></sup><span
-                        class="c4">. Transparency and openness of data shall help building citizens&rsquo; and economic
-                        operators&rsquo; trust in the Government, in efficiency of public procurement management and
-                        discourage any corrupt practices. </span></li>
-                <li class="c20"><span class="c5">Cost-efficient in implementation.</span><span class="c4">&nbsp;The
-                        eProcurement scheme development is seeking cost-efficiency through a) employing Open Source
-                        applications, b) the reuse of existing eGovernment tools and services c) taking on a
-                        sustainable business model based on users&rsquo; fees. The flat transaction fee model is
-                        adopted to align interest of the local business community and the Government and to achieve
-                        full sustainability of the MTender System in the long-term without jeopardising competition on
-                        the market of electronic procurement service providers.</span></li>
-            </ul>
-            <p class="c0"><span class="c4">The networking multi-platform model is based on a structure where the
-                    Central Database Unit, object of this Technical Specification, consolidates and distributes all
-                    data entered and generated by Networking Electronic Procurement Platforms, and performs the most
-                    sensitive transactions of the eProcurement lifecycle, such as electronic auctions. Both the Central
-                    Database Unit and the Networking Electronic Procurement Platforms must be compliant with EUPD 2014
-                    and with the requirements set by the GPA. </span></p>
-            <p class="c0"><span class="c4">The compliance requirements for the Central Database Unit of the MTender
-                    System are set out in this Technical Specification, while Networking Electronic Procurement
-                    Platforms will be required to undergo an accreditation process to ensure that they provide the
-                    services specified by the Moldovan government and also meet EU and GPA requirements. This process
-                    will require the definition of Service Level Agreements, compliance clauses, and requirements that
-                    Networking Electronic Procurement Platform operators must fulfil in order to provide eProcurement
-                    services to contracting authorities and economic operators.</span></p>
-            <p class="c0"><span class="c4">The interaction between the Central Database Unit of the MTender System and
-                    Networking Electronic Procurement Platforms is depicted in the diagram below:</span></p>
-            <p class="c1 c51"><span class="c3"></span></p>
-            <p class="c51 c1"><span class="c3"></span></p>
-            <p class="c51"><span class="c3">Figure 2 Indicative procurement lifecycle and platforms interaction</span></p>
-            <p class="c0"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 959.25px; height: 289.59px;"><img
-                        alt="" src="images/introduction10.png" style="width: 959.25px; height: 289.59px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                        title=""></span></p>
-            <p class="c0 c1"><span class="c4"></span></p>
-            <p class="c0 c1"><span class="c4"></span></p>
-            <p class="c0"><span class="c4">The eProcurement scheme will also have additional modules to perform
-                    cross-functions such as registration of users, monitoring of data, etc.</span></p>
-            <p class="c1 c52"><span class="c4"></span></p>
-            <ol class="c6 lst-kix_list_2-1 ">
-                <li class="c11">
-                    <h2 id="h.2et92p0" style="display:inline"><span class="c45">MTender public procurement flow</span></h2>
-                </li>
-            </ol>
-            <p class="c33"><span class="c4">To implement the basic scenarios and system functions, the
-                    &lsquo;MTender&rsquo; system shall automate the entire procurement lifecycle (from planning to
-                    payment recording and contract completion) for all procurement methods defined in the national
-                    public procurement legislation.</span></p>
-            <p class="c33 c1"><span class="c4"></span></p>
-            <p class="c33"><span class="c4">Basic activities done under scenarios specific to public procurement are
-                    defined as follows: </span></p>
-            <p class="c1 c33"><span class="c4"></span></p>
-            <ol class="c6 lst-kix_list_6-0 ">
-                <li class="c0 c36"><span class="c4">Initiation of the procurement. At the initial stage, realized
-                        through the ePlanning module, which ensures the annual procurement planning activities, but
-                        also the individual planning (initiation) of the procurement procedure, the following
-                        activities will be carried out:</span></li>
-            </ol>
-            <ol class="c6 lst-kix_list_4-0 ">
-                <li class="c47 c53 c54"><span class="c4">Initiation of the procurement. The CA will draft, using the
-                        functionalities of ePlanning module and online workflows, a request for procurement based on
-                        their needs and indicating the available budget as well as the result of market consultations,
-                        when required. That request will be sent via the &lsquo;MTender&rsquo; system for validation
-                        with the Regional Treasury, if required by the law, to confirm budget availability for the
-                        specified procurement procedure;</span></li>
-                <li class="c47 c53 c54"><span class="c4">request for information/consultations. An offline process to
-                        request information from EOs and other stakeholders will be carried out by the CA in order to
-                        help in the drafting of the Tender Documents;</span></li>
-                <li class="c47 c53 c54"><span class="c4">drafting Tender Documents. An offline process to develop
-                        technical specifications and requirements for planned procurement which will then serve as the
-                        basis for preparing the contract notice;</span></li>
-                <li class="c47 c53 c54"><span class="c4">drafting Contract Notice. An online process by the CA for
-                        specifying detailed information on organized procurement, for potential economic operator
-                        participants using templates and forms in an online workflow in the &ldquo;MTender&rdquo;
-                        system. This step will be achieved through the eAccess module;</span></li>
-                <li class="c47 c53 c54"><span class="c4">publishing Contract Notice and Tender Documents. Using the
-                        eNotice module, finalised electronic documents covering Contract Notice and Tender Documents
-                        will be sent via the &lsquo;MTender&rsquo; system for publication on the Web Portal and
-                        Official Journal of the European Union (TED) as appropriate.</span></li>
-            </ol>
-            <ol class="c6 lst-kix_list_6-0">
-                <li class="c12 c36"><span class="c4">conduct of the procurement procedure, tender evaluation and
-                        conclusion of contract. This stage of the procurement procedure is carried out after the
-                        publication of the contract notice through the eSubmission module, which represents the flow of
-                        electronic processes for procurement procedures according to the public procurement method
-                        selected /purchasing technique, as prescribed in the PPL no. 131 of 03 July 2015. </span></li>
-            </ol>
-            <p class="c26"><span class="c4">In case of an individual contract, the eSubmission will start by enabling
-                    economic operators&rsquo; enquiries to the tender documents where the contracting authority will
-                    provide the necessary clarifications. After the tenderers&rsquo; registration to participate in the
-                    procurement procedure and online submission of tenders, the tenders will be evaluated by the
-                    contracting authority through the eEvaluation module and will be finalised by the publication of
-                    the award notice through eAwarding module, electronic signing of the contract and its registration
-                    at the Regional Treasury, if applicable.</span></p>
-            <ol class="c6 lst-kix_list_6-0">
-                <li class="c36 c69"><span class="c4">In case of an aggregated procurement under the framework
-                        agreement, the eSubmission will start by enabling enquiries to the tender documents and
-                        registration of tenderers to submit a request to participate in the framework agreement. Next,
-                        a submission of indicative tenders, their evaluation through eEvaluation module and awarding of
-                        framework agreement through eAwarding module will be enabled. This will be finalised by the
-                        publication of the award notice, electronic signing of the framework agreement and its
-                        registration at the Regional Treasury, if applicable. After this stage, the
-                        &lsquo;MTender&rsquo; system will provide the creation of an additional electronic workflow for
-                        the competition of the second stage under the multi-supplier framework agreement, which can be
-                        conducted as a request for quotation or electronic reverse auction (eAuction module).
-                        Specifically, the FA subsequent contract will be assigned in the second stage with repeated
-                        competition and the object of the subsequent contract will remain the same as prescribed in the
-                        FA concluded at the first stage. The subsequent contract resulting from the procedure will have
-                        a direct link to the FA from which it originated, thus recording all the contracts awarded
-                        under the framework agreement and the payments made; submission of complaints. The complaint
-                        mechanism from the eComplaint module ensures an online workflow for the submission of a
-                        complaint by the EO participating in the procurement, starting with the stage of publication of
-                        the contract notice for the public procurement procedure to the signing of the public
-                        procurement contract, including registration, examination and settlement of complaints by
-                        National Complaints Settlement Agency;</span></li>
-                <li class="c36 c64"><span class="c4">after the conclusion of the public procurement contract, at
-                        different times during the performance of the contract, operations for management of public
-                        procurement contracts occur through the eContract Management module and include the following
-                        processes:</span></li>
-            </ol>
-            <ol class="c6 lst-kix_list_5-0 ">
-                <li class="c47 c53 c54"><span class="c4">Modification of contract without impact on the total value of
-                        the contract &ndash; making amendments. Process for making modifications to the contract not
-                        affecting its value;</span></li>
-                <li class="c47 c53 c54"><span class="c4">modification with impact on the value of the contract &ndash;
-                        extensions. Process making modifications to the contract that affect the contract budget and
-                        will include the registration of these modifications with the Regional Treasury, if applicable;</span></li>
-                <li class="c47 c53 c54"><span class="c4">evaluation of contract progress &ndash; for goods and
-                        services. Process for reviewing the contract performance and the implementation status of
-                        procurement of goods and services;</span></li>
-                <li class="c47 c53 c54"><span class="c4">evaluation of contract progress &ndash; for works. Process for
-                        reviewing the contract performance and the implementation status of work procurement;</span></li>
-                <li class="c47 c53 c54"><span class="c4">creation and modification of contract payment schedule: The
-                        contracting authority will create and administer a payment schedule for each contract, and link
-                        it to milestones/deliverables for goods, services and works purchased. The workflow shall also
-                        allow modification of the payment schedule during the contract validity;</span></li>
-                <li class="c47 c53 c54"><span class="c4">issuing and acceptance of invoices: By integrating the
-                        electronic services (eFactura) and other information systems, the &ldquo;MTender&rdquo; system
-                        will allow the issuance and acceptance of invoices. The process must also be linked to the
-                        evaluation of project progress and the payment schedule;</span></li>
-                <li class="c47 c53 c54"><span class="c4">processing of payments: The Regional Treasury is responsible
-                        for executing payments requested by the Contracting Authority. In this context, by
-                        communicating with the Regional Treasury information systems, the &ldquo;MTender&ldquo; system
-                        must receive and register the data regarding payments made by the Regional Treasury under the
-                        contract;</span></li>
-                <li class="c47 c53 c54"><span class="c4">managing of eOrdering: The eContract Management module will
-                        provide the eOrdering functionalities, through which the contracting authorities will be able
-                        to issue purchase/ supply orders under signed contracts. </span></li>
-            </ol>
-            <p class="c0 c1"><span class="c4"></span></p>
-            <p class="c0 c1"><span class="c4"></span></p>
             <h1 class="c34" id="h.publicProcProcTech"><span class="c15">Public
                     procurement procedures and techniques coverage</span></h1>
             <p class="c0"><span class="c4">This section describes the public procurement procedures covered by the
