@@ -87,7 +87,7 @@
   }
 
   ol {
-    list-style-type: none !important;
+    list-style-type: circle !important;
   }
 
   @media screen and (max-height: 450px) {
