@@ -116,1444 +116,768 @@ permalink: /dataStandard/
                     </div>
                 </div>
         <div class="main">
-                <h1 class="c195 c79 c514" id="h.gjdgxs"><span class="c476 c232 c466 c184 c704">Data Standard</span></h1>
-                <hr>
-                <p class="c67 c178"><span class="c14 c54"></span></p>
-                <h2 class="c195 c79 c720" id="h.30j0zll"><span class="c476 c491 c232 c184">Open Contracting Data Standard 1.1+ </span></h2>
-                <p class="c42"><span>Data standard is modelled along the Open Contracting Standard</span><sup class="c344"><a href="#ftnt1" id="ftnt_ref1">[1]</a></sup><span
-                        class="c14 c54">&nbsp;with extensions in areas that were not covered by it. OCDS is an open data standard for
-                        publication of structured information on all stages of a contracting process. The Open Contracting Data
-                        Standard is maintained using JSON Schema. The main sections and common objects used in the schema are
-                        introduced in the getting started section. </span></p>
-                <h3 class="c68 c79" id="h.1fob9te"><span class="c167 c84">OCDS structure</span></h3>
-                <p class="c42"><span class="c14 c54">The OCDS provides a detailed specification of the fields and data structures to
-                        use when publishing open data about contracting processes. The OCDS concept of a release can be broadly equated
-                        to the concept of a &lsquo;notice&rsquo; UNCITRAL regulations. </span></p>
-                <p class="c42"><span class="c14 c54">The core OCDS schema is designed to support global interoperability, and to
-                        include a common core of data fields required by a wide range of use cases. The OCDS schema can be extended
-                        with definitions for new data structures to meet the needs of particular publishers. &nbsp;</span></p>
-                <p class="c42"><span class="c14 c54">A typical OCDS release consists of Package, Release and one or more Sections. This
-                        documentation includes Package and Release within this Structure subheading. Sections, such as Tender, Award
-                        and Contract are explained within the Sections sub-heading. Objects are explained within the Building Blocks
-                        and Extensions Building Blocks.</span></p>
-                <h3 class="c68 c79" id="h.3znysh7"><span class="c167 c84">Building blocks</span></h3>
-                <p class="c42"><span class="c14 c54">Building blocks are OCDS data structures that are smaller than most sections and
-                        are coherent blocks of data in their own right. It should be possible to read a building blocks data in
-                        isolation and for it to make sense. Where blocks have other building blocks nested within them the
-                        documentation shows how those are structured and then provides an example of the data that describes the
-                        building blocks together. </span></p>
-                <p class="c42"><span class="c14 c54">The majority of OCDS data is held within a release structure. One or more releases
-                        can be published within a release package. Releases are made up of a number of sections, including the
-                        following.</span></p>
-                <hr style="page-break-before:always;display:none;">
-                <h4 class="c85 c79 c178" id="h.2et92p0"><span class="c1"></span></h4>
-                <h4 class="c451 c195 c79" id="h.tyjcwt"><span class="c1">Parties</span></h4>
-                <p class="c42"><span class="c14 c54">Each of the parties (organizations or other participants) referenced in a release
-                        must be included in the parties section: information on the parties who are involved in the contracting process
-                        and their roles, e.g. buyer, procuring entity, supplier etc. Organization references elsewhere in the schema
-                        are used to refer back to this entries in this list.</span></p>
-                <h4 class="c451 c195 c79" id="h.3dy6vkm"><span class="c1">Planning</span></h4>
-                <p class="c42"><span class="c14 c54">The planning section is used to describe the financial background to a contracting
-                        process. This include details of the budget from which funds are drawn or related budget-projects for this
-                        contracting process.</span></p>
-                <h4 class="c451 c195 c79" id="h.g9bzaw1s4i0"><span class="c1">Budget</span></h4>
-                <p class="c42"><span class="c14 c54">This section contains information about the budget line and/or associated
-                        projects, through which this contracting process is funded. It used to cross-reference to more detailed
-                        information held using a Budget Data Package (Expenditure Item and/or Budget Project) or where no linked Budget
-                        Data Package is available, to provide enough information to allow cross-reference with another published source
-                        of budget and project information.</span></p>
-                <h4 class="c451 c195 c79" id="h.1t3h5sf"><span class="c1">Tender</span></h4>
-                <p class="c42"><span class="c14 c54">The tender section includes details of the announcement that an organization
-                        intends to source some particular goods, works or services, and to establish one or more contract(s) for these.</span></p>
-                <h4 class="c195 c79 c451" id="h.4d34og8"><span class="c1">Bids</span></h4>
-                <p class="c42"><span class="c14 c54">The bid section is used to publish summary statistics and individual bid
-                        information. Where information is provided on individual bids, these statistics should match those that can be
-                        calculated from the bid details array and an array of bids, providing information on the bidders, and where
-                        applicable, bid status, bid values and related documents. The extent to which this information can be disclosed
-                        varies from jurisdiction to jurisdiction.</span></p>
-                <h4 class="c451 c195 c79" id="h.2s8eyo1"><span class="c1">Prequalification</span></h4>
-                <p class="c42"><span class="c14 c54">Data regarding prequalification process - limiting the number of qualified bidders
-                        by reviewing each bidder&#39;s qualifications against a set of criteria.</span></p>
-                <h4 class="c451 c195 c79" id="h.17dp8vu"><span class="c1">Awards</span></h4>
-                <p class="c42"><span class="c14 c54">An award for the given procurement. There may be more than one award per
-                        contracting process e.g. because the contract is split amongst different providers, or because it is a standing
-                        offer.</span></p>
-                <h4 class="c451 c195 c79" id="h.3rdcrjn"><span class="c1">Contract</span></h4>
-                <p class="c42"><span class="c14 c54">The contract section is used to provide details of contracts that have been
-                        entered into. Every contract needs to have a related award, linked via the awardID property. This is because
-                        supplier information is contained within the &lsquo;award&rsquo;. The framework contract details below help
-                        illustrate the reasons for this.</span></p><a id="t.5be45bb0cfee4b77f583360bc5115cb958f9bd82"></a><a id="t.0"></a>
-                <table class="c261">
-                    <tbody>
-                        <tr class="c325">
-                            <td class="c241 c637" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c697">Extending the standard</span></p>
-                                <p class="c83"><span class="c14 c107">The OCDS release schema can be extended with definitions for new
-                                        fields and data structures to meet the needs of particular communities of data publishers. This
-                                        document also provides key information on using an extended release schema for the UNCITRAL.</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c67 c178"><span class="c14 c54"></span></p>
-                <h3 class="c68 c79"><span class="c167 c84">Procurement Process Stages</span></h3>
-                <p class="c67"><span class="c14 c54">Depending on the type of procedure (tender.procurementMethodDetails) different
-                        stages can be used. In general, there are 4 main stages of the procurement process, from which the competitive
-                        phase of the purchasing process can consist (in different combinations and / or sequences):</span></p>
-                <h4 class="c85 c79" id="h.5nw4qmsllk9a"><span class="c1">Pre-selection </span></h4>
-                <p class="c67"><span>This is a period during which interested parties can clarify any details of object of future
-                        procurement with CA and with respond to an initial contract notice are submits a short statement of information
-                        about the organization according to instructions or a questionnaire. These form the basis of a qualification
-                        submission that such parties must make to demonstrate their ability to implement the project. CA selects
-                        several candidates to be invited to the next stage. This stage relates specifically to the selection of
-                        competent tenderers, prior to the issue of invitations to tender with a main purpose to select those potential
-                        suppliers, whose qualifications and experience would minimise the risk of non-performance. </span></p>
-                <h4 class="c85 c79" id="h.chmqfs5kenzm"><span class="c1">Pre-selection Stage (PS) data-model</span></h4>
-                <p class="c67"><span>The </span><span class="c97">pre-selection</span><span>&nbsp;of participants of future stages
-                        usually the first active stage of multi-stage procedures (restricted tender or any other). Therefore, the core
-                        of data-model of the pre-selection stage is the </span><span class="c21"><a class="c6" href="#h.17nz8yj">contractNotice</a></span><span
-                        class="c14 c54">&nbsp;and described as Release Package.</span></p>
-                <p class="c67"><span class="c14 c54">Since the stage is active (meaning that there are user actions form CA and EOs
-                        expected) in its process there are data describing its course and result generated by Users Actions. Such data
-                        are described by objects complementing the initial data model of the stage (see description below).</span></p>
-                <h4 class="c85 c79" id="h.35nkun2"><span class="c1">Pre-Qualification</span></h4>
-                <p class="c67"><span class="c14 c54">During &lsquo;Pre-qualification&rsquo; stage all invited (pre-selected) parties
-                        can also clarify any additional details of object of future procurement with CA and with respond to an
-                        invitation are submits a technical offer according to instructions or a questionnaire. These form the basis of
-                        a pre-qualification submission that such parties must make to demonstrate benefits and superiorities of theirs
-                        offers. CA selects several candidates to be invited to the next stage. </span></p>
-                <p class="c67"><span class="c14 c54">The pre-qualification process itself consists of the examination and evaluation of
-                        the technical part of received offers according to specifications and requirements as defined in the tender
-                        documentation, analyse their benefit and determine their superiority. Pre-qualification is the basis for the
-                        subsequent selection of the offer that provides the best value for money for the CA. </span></p>
-                <h4 class="c85 c79" id="h.1ksv4uv"><span class="c1">Pre-qualification Stage (PQ) data-model</span></h4><a id="t.36e2e1952dfe2818008232785d2b452f1a8b99dc"></a><a
-                    id="t.1"></a>
-                <table class="c90">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c570" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c107">Note that pre-qualification of participants of future stages may
-                                        goes either the first (and even include functionality of PS) or one of the subsequent stages of
-                                        a multi-stage tender as stand-alone stage</span></p>
-                            </td>
-                            <td class="c473" colspan="1" rowspan="1">
-                                <p class="c8"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 25.50px; height: 30.08px;"><img
-                                            alt="" src="../images/dataStandard2.png" style="width: 25.50px; height: 30.08px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c67"><span>In case of PQ is a first active stage of multi-stage tender, the core of data-model of such
-                        &lsquo;PQ&rsquo; is equal to </span><span class="c21"><a class="c6" href="#h.4fbwdob">PS data-model</a></span><span
-                        class="c14 c54">&nbsp;described above. </span></p>
-                <p class="c67"><span class="c14 c54">If PQ used in a Procurement Process as subsequent stage, an extension to initial
-                        data-model is used to describe a list of invited (usually - pre-selected) participants. This model extension is
-                        equal to model of definition of disclosed bids described below. All included &lsquo;bids&rsquo; will be
-                        indicated with initial status &lsquo;invited&rsquo; that means that this is a &ldquo;drafts&rdquo; of future
-                        possible technical bids, based on the results of previous stage (in case of PQ usually it&rsquo;s a PS). Also
-                        all tenderers who passed previous stage and invited to participate in PQ will be included in a
-                        &lsquo;parties&rsquo; section of definition of such PQ as &lsquo;tenderers&rsquo;. Since the stage is active
-                        (meaning that there are user actions form CA and EOs expected) in its process there are data describing its
-                        course and result generated by Users Actions. Such data are described by objects complementing the initial data
-                        model of the stage (see description below).</span></p>
-                <p class="c67"><span class="c14 c54">Given that the process of selection of qualified suppliers at the PQ in repetitive
-                        procedures (FA, DPS) leads to the obligation to Contract Award Notices, the data-model of this stage is also
-                        could be expanded with one more section - &lsquo;contracts&rsquo; that includes auto-generated CANs. This model
-                        extension is equal to model of definition of Contract Award Notices described below.</span></p>
-                <h4 class="c85 c79" id="h.44sinio"><span class="c1">Evaluation</span></h4>
-                <p class="c67"><span class="c14 c54">During &lsquo;Evaluation&rsquo; stage all invited (pre-selected and/or
-                        pre-qualified) parties can also clarify any additional details of object of future procurement with CA and with
-                        respond to an invitation are submits a financial offer according to instructions or a questionnaire. CA selects
-                        several candidates to be invited to the next stage. Financial evaluation of the proposals involves
-                        consideration the offers with the financial and commercial requirements stipulated in the tender documentation.
-                        It is also important to identify whether they are within the available budget for the project.</span></p>
-                <h4 class="c85 c79" id="h.ggxisn4vuu3"><span class="c1">Evaluation Stage (EV) data-model</span></h4><a id="t.37b0e780c03a66efdec0628c79e552875db35c14"></a><a
-                    id="t.2"></a>
-                <table class="c90">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c570" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c107">Note that Evaluation stage may go either the first (and include
-                                        one or both previous steps: PS and PQ) or one of the subsequent stages of a multi-stage tender
-                                        as stand-alone stage.</span></p>
-                            </td>
-                            <td class="c473" colspan="1" rowspan="1">
-                                <p class="c8"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 25.50px; height: 30.08px;"><img
-                                            alt="" src="../images/dataStandard2.png" style="width: 25.50px; height: 30.08px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c67"><span>In case of EV is a first active stage of multi-stage tender, the core of data-model of such
-                        pre-qualification stage is equal to </span><span><a class="c6" href="#h.4fbwdob">cnPreselectionStage data-model</a></span><span
-                        class="c14 c54">&nbsp;described above. If EV used in a Procurement Process as subsequent stage, an extension to
-                        initial data-model is used to describe a list of invited (usually - pre-qualified) participants. This model
-                        extension is equal to model of definition of disclosed bids described below. All included &lsquo;bids&rsquo;
-                        will be indicated with initial status &lsquo;invited&rsquo; that means that this is a &ldquo;drafts&rdquo; of
-                        future possible financial bids, based on the results of previous stage (in case of EV usually it&rsquo;s a PQ).
-                        Also all tenderers who passed previous stage and invited to participate in EV will be included in a
-                        &lsquo;parties&rsquo; section of definition of such EV as &lsquo;tenderers&rsquo;.</span></p>
-                <p class="c67"><span class="c14 c54">Since the stage is active (meaning that there are user actions form CA and EOs
-                        expected) in its process there are data describing its course and result generated by Users Actions. Such data
-                        are described by objects complementing the initial data model of the stage (see description below).</span></p>
-                <p class="c67"><span class="c14 c54">Given that the process of selecting a winner at the EV leads to the obligation to
-                        Contract Award Notices, the data-model of this stage is also expanded with one more section -
-                        &lsquo;contracts&rsquo; that includes auto-generated CANs. This model extension is equal to model of definition
-                        of Contract Award Notices described below.</span></p>
-                <h3 class="c68 c79" id="h.2jxsxqh"><span class="c167 c84">Data formats</span></h3>
-                <p class="c67"><span class="c14 c54">This section describes the international standards used for formatting data used
-                        in the system. The aim of using this standards is facilitating the understanding of the data and guaranteeing
-                        data interoperability. </span></p>
-                <h4 class="c85 c79" id="h.z337ya"><span class="c102">&nbsp;</span><span class="c1">Date</span></h4><a id="t.a301ff6a1bce9767323634b410e2aac7cfe315af"></a><a
-                    id="t.3"></a>
-                <table class="c40">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c250" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c184">Date and time format - </span><span class="c278 c184"><a class="c6"
-                                            href="https://www.google.com/url?q=https://www.iso.org/iso-8601-date-and-time-format.html&amp;sa=D&amp;ust=1583356336433000">ISO
-                                            8601</a></span></p>
-                            </td>
-                            <td class="c497" colspan="1" rowspan="1">
-                                <p class="c256 c195"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 34.00px; height: 28.00px;"><img
-                                            alt="" src="../images/dataStandard12.png" style="width: 34.00px; height: 28.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c67 c178"><span class="c14 c54"></span></p>
-                <h4 class="c85 c79" id="h.3j2qqm3"><span class="c1">Time</span></h4><a id="t.a301ff6a1bce9767323634b410e2aac7cfe315af"></a><a
-                    id="t.4"></a>
-                <table class="c40">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c250" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c184">Date and time format - </span><span class="c278 c184"><a class="c6"
-                                            href="https://www.google.com/url?q=https://www.iso.org/iso-8601-date-and-time-format.html&amp;sa=D&amp;ust=1583356336435000">ISO
-                                            8601</a></span></p>
-                            </td>
-                            <td class="c497" colspan="1" rowspan="1">
-                                <p class="c256 c195"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 34.00px; height: 28.00px;"><img
-                                            alt="" src="../images/dataStandard12.png" style="width: 34.00px; height: 28.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c67 c178"><span class="c14 c54"></span></p>
-                <h4 class="c85 c79" id="h.1y810tw"><span class="c1">Media Types</span></h4>
-                <p class="c67"><span class="c14 c54">Per Section 3.1 of [RFC6838], Standards Tree requests made through IETF documents
-                        will be reviewed and approved by the IESG, while requests made by other recognized standards organizations will
-                        be reviewed by the Designated Expert in accordance with the Specification Required policy. IANA will verify
-                        that this organization is recognized as a standards organization by the IESG.</span></p><a id="t.e4087fbd21148972e4dcc4c8bddab5f63c181910"></a><a
-                    id="t.5"></a>
-                <table class="c40">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c547" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c184">IANA Media Types - </span><span class="c278 c184"><a class="c6" href="https://www.google.com/url?q=http://www.iana.org/assignments/media-types&amp;sa=D&amp;ust=1583356336437000">RFC6838</a></span></p>
-                            </td>
-                            <td class="c464" colspan="1" rowspan="1">
-                                <p class="c8"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 45.05px; height: 26.50px;"><img
-                                            alt="" src="../images/dataStandard13.png" style="width: 45.05px; height: 35.77px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c67 c178"><span class="c14 c54"></span></p>
-                <h4 class="c85 c79" id="h.4i7ojhp"><span class="c1">Languages</span></h4>
-                <p class="c67"><span class="c14 c54">ISO 639 is a standardized nomenclature used to classify languages. Each language
-                        is assigned a two-letter (639-1) and three-letter (639-2 and 639-3), lowercase abbreviation, amended in later
-                        versions of the nomenclature. The system is highly useful for linguists and ethnographers to categorize the
-                        languages spoken on a regional basis, and to compute analysis in the field of lexicostatistics.</span></p><a id="t.03f4c7af63ac91be7a5c6fba58594c8b4cb11a49"></a><a
-                    id="t.6"></a>
-                <table class="c40">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c250" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c184">Language codes - </span><span class="c184 c278"><a class="c6" href="https://www.google.com/url?q=https://www.iso.org/iso-639-language-codes.html&amp;sa=D&amp;ust=1583356336440000">ISO
-                                            639</a></span></p>
-                            </td>
-                            <td class="c497" colspan="1" rowspan="1">
-                                <p class="c195 c256"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 34.00px; height: 28.00px;"><img
-                                            alt="" src="../images/dataStandard12.png" style="width: 34.00px; height: 28.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c67 c178"><span class="c14 c54"></span></p>
-                <h4 class="c85 c79" id="h.2xcytpi"><span class="c1">Currencies</span></h4>
-                <p class="c67"><span class="c14 c54">The currency for each amount should always be specified using the uppercase
-                        3-letter currency code from ISO-4217.</span></p><a id="t.f64b28396bd53473bd80841b496045f5807739e0"></a><a id="t.7"></a>
-                <table class="c40">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c250" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c144 c184">Currency codes - </span><span class="c21 c184"><a class="c6" href="https://www.google.com/url?q=https://www.iso.org/iso-4217-currency-codes.html&amp;sa=D&amp;ust=1583356336442000">ISO
-                                            4217</a></span></p>
-                            </td>
-                            <td class="c497" colspan="1" rowspan="1">
-                                <p class="c256 c195"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 34.00px; height: 28.00px;"><img
-                                            alt="" src="../images/dataStandard12.png" style="width: 34.00px; height: 28.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c67 c178"><span class="c14 c54"></span></p>
-                <h3 class="c68 c79"><span class="c84 c167">Data Transfer Approach</span></h3>
-                <p class="c42"><span class="c14 c54">Data-releases must be published within a release package, which can contain one or
-                        more releases. The release package, modelled on the Data Package protocol, provides metadata about the
-                        release(s) it contains, the publisher, and data licensing information.</span></p>
-                <p class="c42"><span class="c14 c54">The following points describe some information about the releases and records:</span></p>
-                <ul class="c148 lst-kix_list_35-0 start">
-                    <li class="c131 c195 c111"><span class="c14 c54">Releases are immutable, records are updated over the life of the
-                            contracting processes.</span></li>
-                    <li class="c131 c195 c111"><span class="c14 c54">Releases are point in time updates, records show the most up to
-                            date information.</span></li>
-                    <li class="c131 c195 c111"><span class="c14 c54">A single contracting process can have many releases but must have
-                            only one record.</span></li>
-                    <li class="c131 c195 c111"><span class="c14 c54">Records either store a history of changes </span><span class="c16 c54">or</span><span
-                            class="c14 c54">&nbsp;links to individual releases.</span></li>
-                    <li class="c131 c195 c111"><span class="c14 c54">The OCID remains consistent across all releases and records whilst
-                            the release ID changes with each release.</span></li>
-                    <li class="c131 c195 c111"><span class="c14 c54">The value of persistent releases for spotting red flags.</span></li>
-                    <li class="c131 c195 c111"><span class="c14 c54">Releases can </span><span class="c16 c54">repeat or update </span><span
-                            class="c14 c54">information from previous releases.</span></li>
-                    <li class="c67 c111"><span class="c14 c54">Release tags help to identify what stage of the contracting process a
-                            release is about</span></li>
-                </ul>
-                <h4 class="c85 c79" id="h.1ci93xb"><span class="c1">Record Package </span></h4>
-                <p class="c42"><span>The Record Package contains a list of records along with publishing metadata. The records pull
-                        together all the releases under a single OCID and compile them into the latest version of the information along
-                        with the history of any data changes</span><span class="c9">.</span></p><a id="t.57b1bd4352ad0d3fa7e7130db0f9f9d5cc2e6da7"></a><a
-                    id="t.8"></a>
-                <table class="c261">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c250" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c144 c184">Record Package Schema on </span><span class="c21 c184"><a class="c6"
-                                            href="https://www.google.com/url?q=https://github.com/open-contracting/standard/blob/1.1-dev/standard/schema/record-package-schema.json%23L118&amp;sa=D&amp;ust=1583356336447000">GitHub/Open-Contracting</a></span><span
-                                        class="c16 c107">&nbsp;</span></p>
-                            </td>
-                            <td class="c497" colspan="1" rowspan="1">
-                                <p class="c195 c658"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 31.50px; height: 31.50px;"><img
-                                            alt="" src="../images/dataStandard14.png" style="width: 31.50px; height: 31.50px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c19" id="h.3whwml4"><span class="c151 c232 c54"></span></p>
-                <p class="c68"><span class="c151 c232 c54">Schema</span></p><a id="t.d6116606a563821fd80d8778a83cb834325710b7"></a><a
-                    id="t.9"></a>
-                <table class="c264">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c41 c531" colspan="1" rowspan="1">
-                                <p class="c8" id="h.2bn6wsx"><span class="c16 c37">uri</span></p>
-                            </td>
-                            <td class="c41 c498" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c41 c708" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string </span></p>
-                            </td>
-                            <td class="c41 c628" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c41 c339" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">The URI of this package that identifies it uniquely in the world</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c189 c455" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">version</span></p>
-                            </td>
-                            <td class="c206 c189" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c160 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string </span></p>
-                            </td>
-                            <td class="c86 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c182" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">The version of the OCDS schema used in this package</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c41 c746" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">extensions</span></p>
-                            </td>
-                            <td class="c328 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array </span></p>
-                            </td>
-                            <td class="c612 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string </span></p>
-                            </td>
-                            <td class="c41 c448" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c41 c684" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">An array of OCDS extensions used in this package</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c667">
-                            <td class="c427 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">publisher</span></p>
-                            </td>
-                            <td class="c367 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c291 c189" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c330 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c182" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">Information to uniquely identify the publisher of this package</span></p>
-                                <p class="c8"><span class="c37">See </span><span class="c21 c37"><a class="c6" href="#h.158ubh5">Publisher</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c41 c427" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">license</span></p>
-                            </td>
-                            <td class="c367 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c291 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string (uri),null</span></p>
-                            </td>
-                            <td class="c330 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c320 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">A link to the license that applies to the data in this data package.
-                                    </span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c427 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">publicationPolicy</span></p>
-                            </td>
-                            <td class="c367 c189" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c291 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string (uri),null</span></p>
-                            </td>
-                            <td class="c330 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c182" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">A link to a document describing the publishers publication policy.</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c427 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">publishedDate</span></p>
-                            </td>
-                            <td class="c367 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c291 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string (date-time)</span></p>
-                            </td>
-                            <td class="c330 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c320 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">The date that this package was published. </span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c427 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">packages</span></p>
-                            </td>
-                            <td class="c367 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c291 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string (uri) </span></p>
-                            </td>
-                            <td class="c330 c189" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c182" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">A list of URIs of all the release packages that were used to create this
-                                        record package</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c427 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">records</span></p>
-                            </td>
-                            <td class="c367 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c291 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c330 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c654 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c37">The </span><span class="c21 c37"><a class="c6" href="#h.qsh70q">records</a></span><span
-                                        class="c9">&nbsp;for this data package</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr style="page-break-before:always;display:none;">
-                <h3 class="c38 c25"><span class="c14 c54"></span></h3>
-                <h4 class="c85 c79" id="h.qsh70q"><span class="c1">Record</span></h4>
-                <p class="c42"><span class="c14 c54">The record (Release Package) schema describes the container document for
-                        publishing releases.</span></p>
-                <p class="c68" id="h.3as4poj"><span class="c151 c232 c54">Schema</span></p><a id="t.c76550532911207155dc4f44c86796309c10a233"></a><a
-                    id="t.10"></a>
-                <table class="c94">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c41 c493" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">ocid</span></p>
-                            </td>
-                            <td class="c579 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c421 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string</span></p>
-                            </td>
-                            <td class="c457 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c460 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">A unique identifier that identifies the unique part of multi-stage Open
-                                        Contracting Process. </span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c243" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">releases</span></p>
-                            </td>
-                            <td class="c367" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c291" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string (uri),null </span></p>
-                            </td>
-                            <td class="c330" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c460" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c37">A list of objects that identify the </span><span class="c21 c37"><a
-                                            class="c6" href="#h.1pxezwc">release</a></span><span class="c9">&nbsp;associated with this
-                                        OCID. The releases are sorted into date order in the array, from oldest to newest. </span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c243 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">compiledRelease</span></p>
-                            </td>
-                            <td class="c367 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c291 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object </span></p>
-                            </td>
-                            <td class="c330 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c460 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c37">This is the latest version of all the contracting data, provided as an
-                                        array of </span><span class="c21 c37"><a class="c6" href="#h.2p2csry">releases</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c243" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">versionedRelease</span></p>
-                            </td>
-                            <td class="c367" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c291" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string (uri),null </span></p>
-                            </td>
-                            <td class="c330" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c585" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">This contains the history of the data with all versions of the
-                                        information and the release they came from</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c19"><span class="c151 c232 c54"></span></p>
-                <h4 class="c79 c85" id="h.1pxezwc"><span class="c1">Linked releases</span></h4>
-                <p class="c42"><span class="c14 c54">Information to uniquely identify the release</span></p>
-                <p class="c68" id="h.49x2ik5"><span class="c466">Schema</span></p><a id="t.163cc5bfe049594ff90fdea716d85ba995ebd4f0"></a><a
-                    id="t.11"></a>
-                <table class="c264">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c41 c748" colspan="1" rowspan="1">
-                                <p class="c8" id="h.2p2csry"><span class="c16 c37">url</span></p>
-                            </td>
-                            <td class="c579 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c421 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string (uri),null </span></p>
-                            </td>
-                            <td class="c457 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c41 c320" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">The URL of the release which contains the URL of the package</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c427" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">date</span></p>
-                            </td>
-                            <td class="c367" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c291" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string (date-time),null </span></p>
-                            </td>
-                            <td class="c330" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c320" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c9">The date this information was first released, or published.</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c427 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">tag</span></p>
-                            </td>
-                            <td class="c367 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">enum</span></p>
-                            </td>
-                            <td class="c291 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string</span></p>
-                            </td>
-                            <td class="c330 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c41 c654" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c37">One value from the </span><span class="c21 c37"><a class="c6" href="#h.3p8hu4y">releaseTag
-                                            codelist</a></span><span class="c9">. Tags may be used to filter release and to understand
-                                        the kind of information that a release might contain. The tag should match the tag in the
-                                        release. This provides additional context when reviewing a record to see what types of releases
-                                        are included for this ocid. </span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c19"><span class="c151 c232 c54"></span></p>
-                <h4 class="c85 c79" id="h.147n2zr"><span class="c1">Release Package</span></h4>
-                <p class="c42"><span class="c14 c54">All information about a current stage of specific part of contracting process is
-                        described with release.</span></p><a id="t.d21ba2e5b97ac592db02e287d2c70e1e72071728"></a><a id="t.12"></a>
-                <table class="c261">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c572" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c144 c184">Release Package Schema on </span><span class="c21 c184"><a class="c6"
-                                            href="https://www.google.com/url?q=https://github.com/open-contracting/standard/blob/1.1-dev/standard/schema/release-package-schema.json&amp;sa=D&amp;ust=1583356336535000">GitHub/Open-Contracting</a></span><span
-                                        class="c16 c107">&nbsp;</span></p>
-                            </td>
-                            <td class="c534" colspan="1" rowspan="1">
-                                <p class="c256 c195"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 30.50px; height: 30.50px;"><img
-                                            alt="" src="../images/dataStandard14.png" style="width: 30.50px; height: 30.50px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c19" id="h.3o7alnk"><span class="c151 c54 c232"></span></p>
-                <p class="c68"><span class="c151 c232 c54">Schema</span></p><a id="t.41698b55c9f55923668d3c5fa0aba4d9b38caf1f"></a><a
-                    id="t.13"></a>
-                <table class="c235">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c41 c737" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">ocid</span></p>
-                            </td>
-                            <td class="c41 c431" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c41 c308" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string</span></p>
-                            </td>
-                            <td class="c41 c695" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">A unique identifier that identifies the unique part of multi-stage
-                                        Open Contracting Process. </span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">id</span></p>
-                            </td>
-                            <td class="c26" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c271" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string </span></p>
-                            </td>
-                            <td class="c159" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">An identifier for this particular released information</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">date</span></p>
-                            </td>
-                            <td class="c26 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c271 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string</span></p>
-                            </td>
-                            <td class="c159 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">The date this information was first released, or published.</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">tag</span></p>
-                            </td>
-                            <td class="c26" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c271" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string </span></p>
-                            </td>
-                            <td class="c159" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c0">One or more values from the </span><span class="c21 c0"><a class="c6"
-                                            href="#h.3p8hu4y">releaseTag codelist</a></span><span class="c14 c0">. Used to understand
-                                        the kind of that a release might contain.</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">initiationType</span></p>
-                            </td>
-                            <td class="c26 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c271 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string</span></p>
-                            </td>
-                            <td class="c159 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c41 c146" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c0">String specifying the type of initiation process used for this contract,
-                                        taken from the </span><span class="c21 c0"><a class="c6" href="#h.2koq656">initiationType</a></span><span
-                                        class="c14 c0">&nbsp;codelist. </span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">parties</span></p>
-                            </td>
-                            <td class="c26" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c271" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Information on the Organizations who are involved in the process and
-                                        their roles.</span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.24ds4cr">Organization</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">buyer</span></p>
-                            </td>
-                            <td class="c26 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c271 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">The buyer is the entity whose budget will be used to purchase the
-                                        goods. </span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.jj2ekk">Organization
-                                            reference</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">planning</span></p>
-                            </td>
-                            <td class="c26" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c271" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">optional</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Information from the planning phase of the contracting process.
-                                    </span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.3dy6vkm">Planning</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">tender</span></p>
-                            </td>
-                            <td class="c26 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c271 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">optional</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">The activities undertaken in order to enter into a contract.</span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c0 c21"><a class="c6" href="#h.33ipx8d">Tender</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">bids</span></p>
-                            </td>
-                            <td class="c26" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c271" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">The bid section is used to publish summary statistics, and where
-                                        applicable, individual bid information.</span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.4d34og8">Bids</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">awards</span></p>
-                            </td>
-                            <td class="c26 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c271 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Information from the award phase of the contracting process. </span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.1io07g6">Award</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">contracts</span></p>
-                            </td>
-                            <td class="c26" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c271" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Information from the contract creation phase of the procurement
-                                        process.</span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.3rdcrjn">Contracts</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c41 c384" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">relatedProcesses</span></p>
-                            </td>
-                            <td class="c26 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c271 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">A link to a related contracting process in OCDS and the type of
-                                        relationship</span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.upglbi">RelatedProcess</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">hasPreviousNotice</span></p>
-                            </td>
-                            <td class="c26" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c271" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">boolean</span></p>
-                            </td>
-                            <td class="c159" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">optional</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">True/False field whether this release represents a notice that is
-                                        connected to a previous notice</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">buyerInternalReferenceId</span></p>
-                            </td>
-                            <td class="c26 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c271 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c159 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">optional</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146 c41" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">The buyer&#39;s internal reference identifier is an EU specific
-                                        field. </span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">purposeOfNotice</span></p>
-                            </td>
-                            <td class="c26" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c271" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">optional</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c146" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Details about the purpose of this notice release</span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.42nnq3z">PurposeOfNotice</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c384 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">relatedNotice</span></p>
-                            </td>
-                            <td class="c26 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">array</span></p>
-                            </td>
-                            <td class="c271 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c159 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">optional</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c41 c639" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Information that connects a notice with a related notice for the
-                                        contracting process.</span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.2hsy0bs">RelatedNotice</a></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="c19"><span class="c14 c54"></span></p>
-                <h3 class="c68 c79" id="h.ddzvhexbip1m"><span class="c167 c84">Definitions</span></h3>
-                <p class="c131 c195" id="h.ihv636"><span>For more information about entitities definitions, you can find the extended
-                        version of this section in the </span><span class="c144">latest version of the document </span><span class="c144 c97">Definitions.xlsx</span><span
-                        class="c14 c54">.</span></p>
-                <p class="c131 c195"><span class="c14 c54">From eProcurementSystem.MD:</span></p>
-                <h4 class="c139 c79" id="h.448ai5a7pczf"><span class="c1">AcceleratedProcedure </span></h4><a id="t.1a7d41d06dfe07bfbb0e9493f102558cf751b3ca"></a><a
-                    id="t.14"></a>
-                <table class="c88">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c11 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">isAcceleratedProcedure</span></p>
-                            </td>
-                            <td class="c109 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">boolean</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">default:false</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">A True/False field to indicate whether an accelerated procedure has
-                                        been used for this procurement</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c11" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">acceleratedProcedureJustification</span></p>
-                            </td>
-                            <td class="c109" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c190">
-                            <td class="c258" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Justification for using an accelerated procedure</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h4 class="c139 c79" id="h.32hioqz"><span class="c1">Address</span></h4><a id="t.cfc798a0b490799af406c8190b338d4a9d39cb39"></a><a
-                    id="t.15"></a>
-                <table class="c88">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c11 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">streetAddress</span></p>
-                            </td>
-                            <td class="c109 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">The street address. For example, 1600 Amphitheatre Pkwy.</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c11" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">postalCode</span></p>
-                            </td>
-                            <td class="c109" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c258" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">The postal code. For example, 94043..</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c11 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">addressDetails</span></p>
-                            </td>
-                            <td class="c109 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.1hmsyys">AddressDetails</a></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h4 class="c139 c79" id="h.1hmsyys"><span class="c1">AddressDetails</span></h4><a id="t.4fe53cd7df9e948457a4fbc08fb9545d231ebbf6"></a><a
-                    id="t.16"></a>
-                <table class="c88">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c11 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">country</span></p>
-                            </td>
-                            <td class="c109 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c0">Classification of the country according to one of available </span><span
-                                        class="c21 c0"><a class="c6" href="#h.42ddq1a">schemes</a></span><span class="c14 c0">&nbsp;</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c11" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">locality</span></p>
-                            </td>
-                            <td class="c109" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c24" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c258" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c0">Classification of the locality according to one of available</span><span
-                                        class="c144 c0">&nbsp;</span><span class="c21 c0"><a class="c6" href="#h.wnyagw">schemes</a></span></p>
-                                <p class="c8"><span class="c0">See </span><span class="c21 c0"><a class="c6" href="#h.wy8ajl">Classification</a></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c11 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">region</span></p>
-                            </td>
-                            <td class="c109 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">object</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c0">Classification of the region according to one of available</span><span
-                                        class="c144 c0">&nbsp;</span><span class="c21 c0"><a class="c6" href="#h.2hio093">schemes</a></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h4 class="c139 c79" id="h.41mghml"><span class="c1">Amendment</span></h4><a id="t.e88afc18f349b8d0da8eff1d19969960b37cc601"></a><a
-                    id="t.17"></a>
-                <table class="c88">
-                    <tbody>
-                        <tr class="c28">
-                            <td class="c13 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">date</span></p>
-                            </td>
-                            <td class="c87 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, date-time</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c0">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">The date of this amendment.</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c13" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">rationale</span></p>
-                            </td>
-                            <td class="c87" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c14 c0"></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c258" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">An explanation for the amendment</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c13 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">id</span></p>
-                            </td>
-                            <td class="c87 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c0">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">An identifier for this amendment: often the amendment number</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c13" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">description</span></p>
-                            </td>
-                            <td class="c87" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c14 c0"></span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c258" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">A free text, or semi-structured, description of the changes made in
-                                        this amendment.</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c13 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">amendsReleaseID</span></p>
-                            </td>
-                            <td class="c87 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c0">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Provide the values for this contracting process before the amendment
-                                        was made.</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c13" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">releaseID</span></p>
-                            </td>
-                            <td class="c87" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c0">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c258" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Provide the values for this contracting process after the amendment
-                                        was made.</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c13 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">type</span></p>
-                            </td>
-                            <td class="c87 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c0">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c0">A type for this amendment taken from a </span><span class="c21 c0"><a
-                                            class="c6" href="#h.1h65qms">Amendment types</a></span><span class="c14 c0">&nbsp;codelist</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c13" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">status</span></p>
-                            </td>
-                            <td class="c87" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c0">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c258" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c0">A status for this amendment taken from a </span><span class="c21 c0"><a
-                                            class="c6" href="#h.320vgez">Amendment statuses</a></span><span class="c14 c0">&nbsp;codelist</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c13 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">relatesTo</span></p>
-                            </td>
-                            <td class="c87 c41" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24 c41" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c0">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c36" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">This &lsquo;amendment&rsquo; can be specifically related to one of
-                                        the lots. Where this is a case, this attribute to be filled as a &lsquo;lot&rsquo;</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c13" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c16 c37">relatedItem</span></p>
-                            </td>
-                            <td class="c87" colspan="1" rowspan="1">
-                                <p class="c7"><span class="c9"></span></p>
-                            </td>
-                            <td class="c58" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c9">string, null</span></p>
-                            </td>
-                            <td class="c24" colspan="1" rowspan="1">
-                                <p class="c8"><span class="c14 c0">auto-generated</span></p>
-                            </td>
-                        </tr>
-                        <tr class="c28">
-                            <td class="c258" colspan="4" rowspan="1">
-                                <p class="c8"><span class="c14 c0">Where &lsquo;relatesTo:lot&rsquo; for this &lsquo;amendment&rsquo; a
-                                        unique id of the related lot shall be reflected by this attribute</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h4 class="c2 c79" id="h.2grqrue"><span class="c1">Award</span></h4><a id="t.50fe8a3cdbffc1d9fe92eea092733e98934501e7"></a><a
-                    id="t.18"></a>
+                <h1>Data Standard</h1>
+<hr><p></p>
+<h2>Open Contracting Data Standard 1.1+</h2>
+<p>Data standard is modelled along the Open Contracting Standard<sup class="c344"><a href="#ftnt1">[1]</a></sup>with extensions in areas that were not covered by it. OCDS is an open data standard for publication of structured information on all stages of a contracting process. The Open Contracting Data Standard is maintained using JSON Schema. The main sections and common objects used in the schema are introduced in the getting started section.</p>
+<h3>OCDS structure</h3>
+<p>The OCDS provides a detailed specification of the fields and data structures to use when publishing open data about contracting processes. The OCDS concept of a release can be broadly equated to the concept of a ‘notice’ UNCITRAL regulations.</p>
+<p>The core OCDS schema is designed to support global interoperability, and to include a common core of data fields required by a wide range of use cases. The OCDS schema can be extended with definitions for new data structures to meet the needs of particular publishers.</p>
+<p>A typical OCDS release consists of Package, Release and one or more Sections. This documentation includes Package and Release within this Structure subheading. Sections, such as Tender, Award and Contract are explained within the Sections sub-heading. Objects are explained within the Building Blocks and Extensions Building Blocks.</p>
+<h3>Building blocks</h3>
+<p>Building blocks are OCDS data structures that are smaller than most sections and are coherent blocks of data in their own right. It should be possible to read a building blocks data in isolation and for it to make sense. Where blocks have other building blocks nested within them the documentation shows how those are structured and then provides an example of the data that describes the building blocks together.</p>
+<p>The majority of OCDS data is held within a release structure. One or more releases can be published within a release package. Releases are made up of a number of sections, including the following.</p>
+<hr style="page-break-before:always;display:none;"><h4 class="c85 c79 c178" id="h.2et92p0"></h4>
+<h4 class="c451 c195 c79" id="h.tyjcwt">Parties</h4>
+<p>Each of the parties (organizations or other participants) referenced in a release must be included in the parties section: information on the parties who are involved in the contracting process and their roles, e.g. buyer, procuring entity, supplier etc. Organization references elsewhere in the schema are used to refer back to this entries in this list.</p>
+<h4 class="c451 c195 c79" id="h.3dy6vkm">Planning</h4>
+<p>The planning section is used to describe the financial background to a contracting process. This include details of the budget from which funds are drawn or related budget-projects for this contracting process.</p>
+<h4 class="c451 c195 c79" id="h.g9bzaw1s4i0">Budget</h4>
+<p>This section contains information about the budget line and/or associated projects, through which this contracting process is funded. It used to cross-reference to more detailed information held using a Budget Data Package (Expenditure Item and/or Budget Project) or where no linked Budget Data Package is available, to provide enough information to allow cross-reference with another published source of budget and project information.</p>
+<h4 class="c451 c195 c79" id="h.1t3h5sf">Tender</h4>
+<p>The tender section includes details of the announcement that an organization intends to source some particular goods, works or services, and to establish one or more contract(s) for these.</p>
+<h4 class="c195 c79 c451" id="h.4d34og8">Bids</h4>
+<p>The bid section is used to publish summary statistics and individual bid information. Where information is provided on individual bids, these statistics should match those that can be calculated from the bid details array and an array of bids, providing information on the bidders, and where applicable, bid status, bid values and related documents. The extent to which this information can be disclosed varies from jurisdiction to jurisdiction.</p>
+<h4 class="c451 c195 c79" id="h.2s8eyo1">Prequalification</h4>
+<p>Data regarding prequalification process - limiting the number of qualified bidders by reviewing each bidder's qualifications against a set of criteria.</p>
+<h4 class="c451 c195 c79" id="h.17dp8vu">Awards</h4>
+<p>An award for the given procurement. There may be more than one award per contracting process e.g. because the contract is split amongst different providers, or because it is a standing offer.</p>
+<h4 class="c451 c195 c79" id="h.3rdcrjn">Contract</h4>
+<p>The contract section is used to provide details of contracts that have been entered into. Every contract needs to have a related award, linked via the awardID property. This is because supplier information is contained within the ‘award’. The framework contract details below help illustrate the reasons for this.</p>
+<a id="t.5be45bb0cfee4b77f583360bc5115cb958f9bd82"></a><a id="t.0"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>Extending the standard</p>
+<p>The OCDS release schema can be extended with definitions for new fields and data structures to meet the needs of particular communities of data publishers. This document also provides key information on using an extended release schema for the UNCITRAL.</p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<h3>Procurement Process Stages</h3>
+<p>Depending on the type of procedure (tender.procurementMethodDetails) different stages can be used. In general, there are 4 main stages of the procurement process, from which the competitive phase of the purchasing process can consist (in different combinations and / or sequences):</p>
+<h4 class="c85 c79" id="h.5nw4qmsllk9a">Pre-selection</h4>
+<p>This is a period during which interested parties can clarify any details of object of future procurement with CA and with respond to an initial contract notice are submits a short statement of information about the organization according to instructions or a questionnaire. These form the basis of a qualification submission that such parties must make to demonstrate their ability to implement the project. CA selects several candidates to be invited to the next stage. This stage relates specifically to the selection of competent tenderers, prior to the issue of invitations to tender with a main purpose to select those potential suppliers, whose qualifications and experience would minimise the risk of non-performance.</p>
+<h4 class="c85 c79" id="h.chmqfs5kenzm">Pre-selection Stage (PS) data-model</h4>
+<p>The pre-selection of participants of future stages usually the first active stage of multi-stage procedures (restricted tender or any other). Therefore, the core of data-model of the pre-selection stage is the <a class="c6" href="#h.17nz8yj">contractNotice</a>and described as Release Package.</p>
+<p>Since the stage is active (meaning that there are user actions form CA and EOs expected) in its process there are data describing its course and result generated by Users Actions. Such data are described by objects complementing the initial data model of the stage (see description below).</p>
+<h4 class="c85 c79" id="h.35nkun2">Pre-Qualification</h4>
+<p>During ‘Pre-qualification’ stage all invited (pre-selected) parties can also clarify any additional details of object of future procurement with CA and with respond to an invitation are submits a technical offer according to instructions or a questionnaire. These form the basis of a pre-qualification submission that such parties must make to demonstrate benefits and superiorities of theirs offers. CA selects several candidates to be invited to the next stage.</p>
+<p>The pre-qualification process itself consists of the examination and evaluation of the technical part of received offers according to specifications and requirements as defined in the tender documentation, analyse their benefit and determine their superiority. Pre-qualification is the basis for the subsequent selection of the offer that provides the best value for money for the CA.</p>
+<h4 class="c85 c79" id="h.1ksv4uv">Pre-qualification Stage (PQ) data-model</h4>
+<a id="t.36e2e1952dfe2818008232785d2b452f1a8b99dc"></a><a id="t.1"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>Note that pre-qualification of participants of future stages may goes either the first (and even include functionality of PS) or one of the subsequent stages of a multi-stage tender as stand-alone stage</p>
+</td><td colspan='1' rowspan='1' ><p><img alt="" src="../images/datastandard2.png" style="width: 25.50px; height: 30.08px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translatez(0px); -webkit-transform: rotate(0.00rad) translatez(0px);" title=""></p>
+</td>
+</tr>
+</tbody></table>
+<p>In case of PQ is a first active stage of multi-stage tender, the core of data-model of such ‘PQ’ is equal to <a class="c6" href="#h.4fbwdob">PS data-model</a>described above.</p>
+<p>If PQ used in a Procurement Process as subsequent stage, an extension to initial data-model is used to describe a list of invited (usually - pre-selected) participants. This model extension is equal to model of definition of disclosed bids described below. All included ‘bids’ will be indicated with initial status ‘invited’ that means that this is a “drafts” of future possible technical bids, based on the results of previous stage (in case of PQ usually it’s a PS). Also all tenderers who passed previous stage and invited to participate in PQ will be included in a ‘parties’ section of definition of such PQ as ‘tenderers’. Since the stage is active (meaning that there are user actions form CA and EOs expected) in its process there are data describing its course and result generated by Users Actions. Such data are described by objects complementing the initial data model of the stage (see description below).</p>
+<p>Given that the process of selection of qualified suppliers at the PQ in repetitive procedures (FA, DPS) leads to the obligation to Contract Award Notices, the data-model of this stage is also could be expanded with one more section - ‘contracts’ that includes auto-generated CANs. This model extension is equal to model of definition of Contract Award Notices described below.</p>
+<h4 class="c85 c79" id="h.44sinio">Evaluation</h4>
+<p>During ‘Evaluation’ stage all invited (pre-selected and/or pre-qualified) parties can also clarify any additional details of object of future procurement with CA and with respond to an invitation are submits a financial offer according to instructions or a questionnaire. CA selects several candidates to be invited to the next stage. Financial evaluation of the proposals involves consideration the offers with the financial and commercial requirements stipulated in the tender documentation. It is also important to identify whether they are within the available budget for the project.</p>
+<h4 class="c85 c79" id="h.ggxisn4vuu3">Evaluation Stage (EV) data-model</h4>
+<a id="t.37b0e780c03a66efdec0628c79e552875db35c14"></a><a id="t.2"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>Note that Evaluation stage may go either the first (and include one or both previous steps: PS and PQ) or one of the subsequent stages of a multi-stage tender as stand-alone stage.</p>
+</td><td colspan='1' rowspan='1' ><p><img alt="" src="../images/datastandard2.png" style="width: 25.50px; height: 30.08px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translatez(0px); -webkit-transform: rotate(0.00rad) translatez(0px);" title=""></p>
+</td>
+</tr>
+</tbody></table>
+<p>In case of EV is a first active stage of multi-stage tender, the core of data-model of such pre-qualification stage is equal to <a class="c6" href="#h.4fbwdob">cnPreselectionStage data-model</a>described above. If EV used in a Procurement Process as subsequent stage, an extension to initial data-model is used to describe a list of invited (usually - pre-qualified) participants. This model extension is equal to model of definition of disclosed bids described below. All included ‘bids’ will be indicated with initial status ‘invited’ that means that this is a “drafts” of future possible financial bids, based on the results of previous stage (in case of EV usually it’s a PQ). Also all tenderers who passed previous stage and invited to participate in EV will be included in a ‘parties’ section of definition of such EV as ‘tenderers’.</p>
+<p>Since the stage is active (meaning that there are user actions form CA and EOs expected) in its process there are data describing its course and result generated by Users Actions. Such data are described by objects complementing the initial data model of the stage (see description below).</p>
+<p>Given that the process of selecting a winner at the EV leads to the obligation to Contract Award Notices, the data-model of this stage is also expanded with one more section - ‘contracts’ that includes auto-generated CANs. This model extension is equal to model of definition of Contract Award Notices described below.</p>
+<h3>Data formats</h3>
+<p>This section describes the international standards used for formatting data used in the system. The aim of using this standards is facilitating the understanding of the data and guaranteeing data interoperability.</p>
+<h4 class="c85 c79" id="h.z337ya">Date</h4>
+<a id="t.a301ff6a1bce9767323634b410e2aac7cfe315af"></a><a id="t.3"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>Date and time format - <a class="c6" href="https://www.google.com/url?q=https://www.iso.org/iso-8601-date-and-time-format.html&sa=d&ust=1583356336433000">ISO 8601</a></p>
+</td><td colspan='1' rowspan='1' ><p><img alt="" src="../images/datastandard12.png" style="width: 34.00px; height: 28.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translatez(0px); -webkit-transform: rotate(0.00rad) translatez(0px);" title=""></p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<h4 class="c85 c79" id="h.3j2qqm3">Time</h4>
+<a id="t.a301ff6a1bce9767323634b410e2aac7cfe315af"></a><a id="t.4"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>Date and time format - <a class="c6" href="https://www.google.com/url?q=https://www.iso.org/iso-8601-date-and-time-format.html&sa=d&ust=1583356336435000">ISO 8601</a></p>
+</td><td colspan='1' rowspan='1' ><p><img alt="" src="../images/datastandard12.png" style="width: 34.00px; height: 28.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translatez(0px); -webkit-transform: rotate(0.00rad) translatez(0px);" title=""></p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<h4 class="c85 c79" id="h.1y810tw">Media Types</h4>
+<p>Per Section 3.1 of [RFC6838], Standards Tree requests made through IETF documents will be reviewed and approved by the IESG, while requests made by other recognized standards organizations will be reviewed by the Designated Expert in accordance with the Specification Required policy. IANA will verify that this organization is recognized as a standards organization by the IESG.</p>
+<a id="t.e4087fbd21148972e4dcc4c8bddab5f63c181910"></a><a id="t.5"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>IANA Media Types - <a class="c6" href="https://www.google.com/url?q=http://www.iana.org/assignments/media-types&sa=d&ust=1583356336437000">RFC6838</a></p>
+</td><td colspan='1' rowspan='1' ><p><img alt="" src="../images/datastandard13.png" style="width: 45.05px; height: 35.77px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translatez(0px); -webkit-transform: rotate(0.00rad) translatez(0px);" title=""></p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<h4 class="c85 c79" id="h.4i7ojhp">Languages</h4>
+<p>ISO 639 is a standardized nomenclature used to classify languages. Each language is assigned a two-letter (639-1) and three-letter (639-2 and 639-3), lowercase abbreviation, amended in later versions of the nomenclature. The system is highly useful for linguists and ethnographers to categorize the languages spoken on a regional basis, and to compute analysis in the field of lexicostatistics.</p>
+<a id="t.03f4c7af63ac91be7a5c6fba58594c8b4cb11a49"></a><a id="t.6"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>Language codes - <a class="c6" href="https://www.google.com/url?q=https://www.iso.org/iso-639-language-codes.html&sa=d&ust=1583356336440000">ISO 639</a></p>
+</td><td colspan='1' rowspan='1' ><p><img alt="" src="../images/datastandard12.png" style="width: 34.00px; height: 28.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translatez(0px); -webkit-transform: rotate(0.00rad) translatez(0px);" title=""></p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<h4 class="c85 c79" id="h.2xcytpi">Currencies</h4>
+<p>The currency for each amount should always be specified using the uppercase 3-letter currency code from ISO-4217.</p>
+<a id="t.f64b28396bd53473bd80841b496045f5807739e0"></a><a id="t.7"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>Currency codes - <a class="c6" href="https://www.google.com/url?q=https://www.iso.org/iso-4217-currency-codes.html&sa=d&ust=1583356336442000">ISO 4217</a></p>
+</td><td colspan='1' rowspan='1' ><p><img alt="" src="../images/datastandard12.png" style="width: 34.00px; height: 28.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translatez(0px); -webkit-transform: rotate(0.00rad) translatez(0px);" title=""></p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<h3>Data Transfer Approach</h3>
+<p>Data-releases must be published within a release package, which can contain one or more releases. The release package, modelled on the Data Package protocol, provides metadata about the release(s) it contains, the publisher, and data licensing information.</p>
+<p>The following points describe some information about the releases and records:</p>
+<ul><li>Releases are immutable, records are updated over the life of the contracting processes.</li>
+<li>Releases are point in time updates, records show the most up to date information.</li>
+<li>A single contracting process can have many releases but must have only one record.</li>
+<li>Records either store a history of changes or links to individual releases.</li>
+<li>The OCID remains consistent across all releases and records whilst the release ID changes with each release.</li>
+<li>The value of persistent releases for spotting red flags.</li>
+<li>Releases can repeat or update information from previous releases.</li>
+<li>Release tags help to identify what stage of the contracting process a release is about</li>
+</ul>
+<h4 class="c85 c79" id="h.1ci93xb">Record Package</h4>
+<p>The Record Package contains a list of records along with publishing metadata. The records pull together all the releases under a single OCID and compile them into the latest version of the information along with the history of any data changes.</p>
+<a id="t.57b1bd4352ad0d3fa7e7130db0f9f9d5cc2e6da7"></a><a id="t.8"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>Record Package Schema on <a class="c6" href="https://www.google.com/url?q=https://github.com/open-contracting/standard/blob/1.1-dev/standard/schema/record-package-schema.json%23l118&sa=d&ust=1583356336447000">GitHub/Open-Contracting</a></p>
+</td><td colspan='1' rowspan='1' ><p><img alt="" src="../images/datastandard14.png" style="width: 31.50px; height: 31.50px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translatez(0px); -webkit-transform: rotate(0.00rad) translatez(0px);" title=""></p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<p>Schema</p>
+<a id="t.d6116606a563821fd80d8778a83cb834325710b7"></a><a id="t.9"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>uri</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The URI of this package that identifies it uniquely in the world</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>version</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The version of the OCDS schema used in this package</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>extensions</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>An array of OCDS extensions used in this package</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>publisher</p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Information to uniquely identify the publisher of this package</p>
+<p>See <a class="c6" href="#h.158ubh5">Publisher</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>license</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string (uri),null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A link to the license that applies to the data in this data package.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>publicationPolicy</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string (uri),null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A link to a document describing the publishers publication policy.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>publishedDate</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string (date-time)</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The date that this package was published.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>packages</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>string (uri)</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A list of URIs of all the release packages that were used to create this record package</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>records</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The <a class="c6" href="#h.qsh70q">records</a>for this data package</p>
+</td>
+</tr>
+</tbody></table>
+<hr style="page-break-before:always;display:none;"><h3></h3>
+<h4 class="c85 c79" id="h.qsh70q">Record</h4>
+<p>The record (Release Package) schema describes the container document for publishing releases.</p>
+<p>Schema</p>
+<a id="t.c76550532911207155dc4f44c86796309c10a233"></a><a id="t.10"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>ocid</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A unique identifier that identifies the unique part of multi-stage Open Contracting Process.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>releases</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>string (uri),null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A list of objects that identify the <a class="c6" href="#h.1pxezwc">release</a>associated with this OCID. The releases are sorted into date order in the array, from oldest to newest.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>compiledRelease</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>This is the latest version of all the contracting data, provided as an array of <a class="c6" href="#h.2p2csry">releases</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>versionedRelease</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string (uri),null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>This contains the history of the data with all versions of the information and the release they came from</p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<h4 class="c79 c85" id="h.1pxezwc">Linked releases</h4>
+<p>Information to uniquely identify the release</p>
+<p>Schema</p>
+<a id="t.163cc5bfe049594ff90fdea716d85ba995ebd4f0"></a><a id="t.11"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>url</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string (uri),null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The URL of the release which contains the URL of the package</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>date</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string (date-time),null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The date this information was first released, or published.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>tag</p>
+</td><td colspan='1' rowspan='1' ><p>enum</p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>One value from the <a class="c6" href="#h.3p8hu4y">releaseTag codelist</a>. Tags may be used to filter release and to understand the kind of information that a release might contain. The tag should match the tag in the release. This provides additional context when reviewing a record to see what types of releases are included for this ocid.</p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<h4 class="c85 c79" id="h.147n2zr">Release Package</h4>
+<p>All information about a current stage of specific part of contracting process is described with release.</p>
+<a id="t.d21ba2e5b97ac592db02e287d2c70e1e72071728"></a><a id="t.12"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>Release Package Schema on <a class="c6" href="https://www.google.com/url?q=https://github.com/open-contracting/standard/blob/1.1-dev/standard/schema/release-package-schema.json&sa=d&ust=1583356336535000">GitHub/Open-Contracting</a></p>
+</td><td colspan='1' rowspan='1' ><p><img alt="" src="../images/datastandard14.png" style="width: 30.50px; height: 30.50px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translatez(0px); -webkit-transform: rotate(0.00rad) translatez(0px);" title=""></p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<p>Schema</p>
+<a id="t.41698b55c9f55923668d3c5fa0aba4d9b38caf1f"></a><a id="t.13"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>ocid</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A unique identifier that identifies the unique part of multi-stage Open Contracting Process.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>id</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>An identifier for this particular released information</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>date</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The date this information was first released, or published.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>tag</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>One or more values from the <a class="c6" href="#h.3p8hu4y">releaseTag codelist</a>. Used to understand the kind of that a release might contain.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>initiationType</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>String specifying the type of initiation process used for this contract, taken from the <a class="c6" href="#h.2koq656">initiationType</a>codelist.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>parties</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Information on the Organizations who are involved in the process and their roles.</p>
+<p>See <a class="c6" href="#h.24ds4cr">Organization</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>buyer</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The buyer is the entity whose budget will be used to purchase the goods.</p>
+<p>See <a class="c6" href="#h.jj2ekk">Organization reference</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>planning</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>optional</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Information from the planning phase of the contracting process.</p>
+<p>See <a class="c6" href="#h.3dy6vkm">Planning</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>tender</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>optional</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The activities undertaken in order to enter into a contract.</p>
+<p>See <a class="c6" href="#h.33ipx8d">Tender</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>bids</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The bid section is used to publish summary statistics, and where applicable, individual bid information.</p>
+<p>See <a class="c6" href="#h.4d34og8">Bids</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>awards</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Information from the award phase of the contracting process.</p>
+<p>See <a class="c6" href="#h.1io07g6">Award</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>contracts</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Information from the contract creation phase of the procurement process.</p>
+<p>See <a class="c6" href="#h.3rdcrjn">Contracts</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>relatedProcesses</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A link to a related contracting process in OCDS and the type of relationship</p>
+<p>See <a class="c6" href="#h.upglbi">RelatedProcess</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>hasPreviousNotice</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>boolean</p>
+</td><td colspan='1' rowspan='1' ><p>optional</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>True/False field whether this release represents a notice that is connected to a previous notice</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>buyerInternalReferenceId</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p>optional</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The buyer's internal reference identifier is an EU specific field.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>purposeOfNotice</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>optional</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Details about the purpose of this notice release</p>
+<p>See <a class="c6" href="#h.42nnq3z">PurposeOfNotice</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>relatedNotice</p>
+</td><td colspan='1' rowspan='1' ><p>array</p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p>optional</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Information that connects a notice with a related notice for the contracting process.</p>
+<p>See <a class="c6" href="#h.2hsy0bs">RelatedNotice</a></p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+<h3>Definitions</h3>
+<p>For more information about entitities definitions, you can find the extended version of this section in the latest version of the document Definitions.xlsx.</p>
+<p>From eProcurementSystem.MD:</p>
+<h4 class="c139 c79" id="h.448ai5a7pczf">AcceleratedProcedure</h4>
+<a id="t.1a7d41d06dfe07bfbb0e9493f102558cf751b3ca"></a><a id="t.14"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>isAcceleratedProcedure</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>boolean</p>
+</td><td colspan='1' rowspan='1' ><p>default:false</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A True/False field to indicate whether an accelerated procedure has been used for this procurement</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>acceleratedProcedureJustification</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Justification for using an accelerated procedure</p>
+</td>
+</tr>
+</tbody></table>
+<h4 class="c139 c79" id="h.32hioqz">Address</h4>
+<a id="t.cfc798a0b490799af406c8190b338d4a9d39cb39"></a><a id="t.15"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>streetAddress</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The street address. For example, 1600 Amphitheatre Pkwy.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>postalCode</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The postal code. For example, 94043..</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>addressDetails</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>See <a class="c6" href="#h.1hmsyys">AddressDetails</a></p>
+</td>
+</tr>
+</tbody></table>
+<h4 class="c139 c79" id="h.1hmsyys">AddressDetails</h4>
+<a id="t.4fe53cd7df9e948457a4fbc08fb9545d231ebbf6"></a><a id="t.16"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>country</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Classification of the country according to one of available <a class="c6" href="#h.42ddq1a">schemes</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>locality</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Classification of the locality according to one of available <a class="c6" href="#h.wnyagw">schemes</a></p>
+<p>See <a class="c6" href="#h.wy8ajl">Classification</a></p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>region</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>object</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Classification of the region according to one of available <a class="c6" href="#h.2hio093">schemes</a></p>
+</td>
+</tr>
+</tbody></table>
+<h4 class="c139 c79" id="h.41mghml">Amendment</h4>
+<a id="t.e88afc18f349b8d0da8eff1d19969960b37cc601"></a><a id="t.17"></a><table id=table1 >
+<tbody><tr>
+<td colspan='1' rowspan='1' ><p>date</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, date-time</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>The date of this amendment.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>rationale</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>An explanation for the amendment</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>id</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>An identifier for this amendment: often the amendment number</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>description</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A free text, or semi-structured, description of the changes made in this amendment.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>amendsReleaseID</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Provide the values for this contracting process before the amendment was made.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>releaseID</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Provide the values for this contracting process after the amendment was made.</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>type</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A type for this amendment taken from a <a class="c6" href="#h.1h65qms">Amendment types</a>codelist</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>status</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>A status for this amendment taken from a <a class="c6" href="#h.320vgez">Amendment statuses</a>codelist</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>relatesTo</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>This ‘amendment’ can be specifically related to one of the lots. Where this is a case, this attribute to be filled as a ‘lot’</p>
+</td>
+</tr>
+<tr>
+<td colspan='1' rowspan='1' ><p>relatedItem</p>
+</td><td colspan='1' rowspan='1' ><p></p>
+</td><td colspan='1' rowspan='1' ><p>string, null</p>
+</td><td colspan='1' rowspan='1' ><p>auto-generated</p>
+</td>
+</tr>
+<tr>
+<td colspan='4' rowspan='1' ><p>Where ‘relatesTo:lot’ for this ‘amendment’ a unique id of the related lot shall be reflected by this attribute</p>
+</td>
+</tr>
+</tbody></table>
+<h4 class="c2 c79" id="h.2grqrue">Award</h4>
+<a id="t.50fe8a3cdbffc1d9fe92eea092733e98934501e7"></a><a id="t.18"></a>
                 <table class="c88">
                     <tbody>
                         <tr class="c28">
