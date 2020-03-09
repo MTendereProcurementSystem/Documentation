@@ -32,6 +32,7 @@
 
   .sidenav h1{
       color: #fff;
+      padding-right: 3%;
   }
 
   .sidenav button{
@@ -88,6 +89,14 @@
 
   ol {
     list-style-type: circle !important;
+  }
+
+  .navigationLogo{
+      width: 100%;
+  }
+
+  .imageContent{
+      border: none;
   }
 
   @media screen and (max-height: 450px) {
