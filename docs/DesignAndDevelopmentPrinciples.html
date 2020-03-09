@@ -7,12 +7,6 @@ permalink: /developmentPrinciples/
 
     <head>
         <link rel="stylesheet" type="text/css" href="./../documentationStyles.css">
-        <style>
-            td {
-                border: none;
-            }
-
-        </style>
     </head>
 
     <body>
@@ -203,18 +197,12 @@ permalink: /developmentPrinciples/
                     separate query
                     and update models for the data in CQRS-based systems simplifies design and implementation.</span></p><a
                 id="t.196351170b0aaf55041f8db74eb167bbea238a3a"></a><a id="t.0"></a>
-            <table class="c52">
-                <tbody>
-                    <tr class="c41">
-                        <td class="c16" colspan="1" rowspan="1">
-                            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 441.50px; height: 204.67px;">
-                                    <img class="imageContent" alt="" src="../images/devprinciples1.png" style="width: 441.50px; height: 204.67px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                        title=""></span></p>
-                            <p class="c34"><span class="c44">Figure 1. General scheme for CQRS-approach</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 441.50px; height: 204.67px;">
+                    <img class="imageContent" alt="" src="../images/devprinciples1.png" style="width: 441.50px; height: 204.67px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title=""></span></p>
+            <p class="c34"><span class="c44">Figure 1. General scheme for CQRS-approach</span></p>
+
             <p class="c24 c17"><span class="c0"></span></p>
             <p class="c12"><span class="c0">For greater isolation, the read and the write data could be physically
                     separated. In
@@ -291,22 +279,16 @@ permalink: /developmentPrinciples/
                     because it can
                     be entirely rebuilt from the source data stores. </span></p>
             <p class="c11 c17"><span class="c3"></span></p><a id="t.179aa0689a0c25e02fe11e7294f21b9924bc4a75"></a><a id="t.1"></a>
-            <table class="c54">
-                <tbody>
-                    <tr class="c46">
-                        <td class="c9" colspan="1" rowspan="1">
-                            <p class="c34 c45"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.51px; height: 163.44px;">
-                                    <img class="imageContent" alt="" src="../images/devprinciples3.png" style="width: 384.51px; height: 163.44px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                        title=""></span></p>
-                            <p class="c34 c45 c17"><span class="c36"></span></p>
-                            <p class="c34 c45"><span class="c44">Figure 2a. General scheme of &ldquo;Materialized
-                                    View&rdquo;
-                                    pattern</span></p>
-                            <p class="c24 c17"><span class="c36"></span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <p class="c34 c45"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.51px; height: 163.44px;">
+                    <img class="imageContent" alt="" src="../images/devprinciples3.png" style="width: 384.51px; height: 163.44px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title=""></span></p>
+            <p class="c34 c45 c17"><span class="c36"></span></p>
+            <p class="c34 c45"><span class="c44">Figure 2a. General scheme of &ldquo;Materialized
+                    View&rdquo;
+                    pattern</span></p>
+            <p class="c24 c17"><span class="c36"></span></p>
+
             <p class="c11 c17"><span class="c0 c14"></span></p>
             <p class="c11"><span class="c0">A materialized view is never updated directly by an application, and so
                     it&#39;s a
@@ -451,19 +433,13 @@ permalink: /developmentPrinciples/
                         services and
                         systems that only listen for new events raised by the event store.</span></li>
             </ul><a id="t.8c4b4b0e9bf4d5b6bcad881c2271f0fc391f23a7"></a><a id="t.2"></a>
-            <table class="c1">
-                <tbody>
-                    <tr class="c25">
-                        <td class="c20" colspan="1" rowspan="1">
-                            <p class="c34 c45"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 419.70px; height: 267.50px;">
-                                    <img class="imageContent" alt="" src="../images/devprinciples5.png" style="width: 419.70px; height: 267.50px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                        title=""></span></p>
-                            <p class="c34"><span class="c55">Figure 3. General scheme of &ldquo;Event sourcing&rdquo;
-                                    pattern</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <p class="c34 c45"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 419.70px; height: 267.50px;">
+                    <img class="imageContent" alt="" src="../images/devprinciples5.png" style="width: 419.70px; height: 267.50px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title=""></span></p>
+            <p class="c34"><span class="c55">Figure 3. General scheme of &ldquo;Event sourcing&rdquo;
+                    pattern</span></p>
+
             <p class="c24 c17"><span class="c3"></span></p>
             <p class="c11 c17" id="h.35nkun2"><span class="c0"></span></p>
             <h2 class="c45 c48" id="h.techs"><span class="c31 c26">Technologies</span></h2>
@@ -477,142 +453,84 @@ permalink: /developmentPrinciples/
                     and accountability of public procurement by incorporating open data and Advanced Open Contracting
                     Data
                     Standards. </span></p><a id="t.57cded6d8a309d3a1ba8b0e0060e434051a8ec94"></a><a id="t.3"></a>
-            <table class="c21">
-                <tbody>
-                    <tr class="c8">
-                        <td class="c10 c30" colspan="1" rowspan="1">
-                            <h3 class="c24 c37" id="h.wxfzduc3c0yl"><span class="c19">Spring Framework</span></h3>
-                            <p class="c22"><span class="c0">The Spring Framework provides a comprehensive programming
-                                    and
-                                    configuration model for modern Java-based enterprise applications - on any kind of
-                                    deployment
-                                    platform. Spring focuses on the &quot;plumbing&quot; of enterprise applications so
-                                    that teams
-                                    can focus on application-level business logic, without unnecessary ties to specific
-                                    deployment
-                                    environments.</span></p>
-                        </td>
-                        <td class="c2" colspan="1" rowspan="2">
-                            <p class="c34 c17"><span class="c32"></span></p>
-                            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 114.50px; height: 36.87px;"><img
-                                        alt="" src="../images/devprinciples4.png" style="width: 114.50px; height: 36.87px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                        title=""></span></p>
-                        </td>
-                    </tr>
-                    <tr class="c35">
-                        <td class="c10 c30" colspan="1" rowspan="1">
 
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10" colspan="1" rowspan="1">
-                            <h3 class="c24 c37" id="h.2jxsxqh"><span class="c19">Kotlin</span></h3>
-                            <p class="c22"><span class="c0">Kotlin is a statically typed programming language that runs
-                                    on the Java
-                                    virtual machine and also can be compiled to JavaScript source code or use the LLVM
-                                    compiler
-                                    infrastructure. </span></p>
-                        </td>
-                        <td class="c13" colspan="1" rowspan="2">
-                            <p class="c23"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 147.82px; height: 41.00px;"><img
-                                        alt="" src="../images/devprinciples7.png" style="width: 147.82px; height: 74.15px; margin-left: -0.00px; margin-top: -16.57px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                        title=""></span></p>
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10" colspan="1" rowspan="1">
+            <h3 class="c24 c37" id="h.wxfzduc3c0yl"><span class="c19">Spring Framework</span></h3>
+            <p class="c22"><span class="c0">The Spring Framework provides a comprehensive programming
+                    and
+                    configuration model for modern Java-based enterprise applications - on any kind of
+                    deployment
+                    platform. Spring focuses on the &quot;plumbing&quot; of enterprise applications so
+                    that teams
+                    can focus on application-level business logic, without unnecessary ties to specific
+                    deployment
+                    environments.</span></p>
 
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10 c30" colspan="1" rowspan="1">
-                            <h3 class="c24 c37" id="h.lmgimcpkbm3w"><span class="c19">Camunda</span></h3>
-                            <p class="c22"><span class="c0">Camunda is an open source platform for workflow and
-                                    business process
-                                    management. You can model and execute BPMN 2.0, CMMN 1.1 and DMN 1.1.</span></p>
-                        </td>
-                        <td class="c2" colspan="1" rowspan="2">
-                            <p class="c17 c23"><span class="c32"></span></p>
-                            <p class="c34 c49"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 122.61px; height: 20.00px;"><img
-                                        alt="" src="../images/devprinciples6.png" style="width: 113.45px; height: 20.00px; margin-left: 9.16px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                        title=""></span></p>
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10 c30" colspan="1" rowspan="1">
+            <p class="c34 c17"><span class="c32"></span></p>
+            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 114.50px; height: 36.87px;"><img
+                        alt="" src="../images/devprinciples4.png" style="width: 114.50px; height: 36.87px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title=""></span></p>
+            <br>
+            <h3 class="c24 c37" id="h.2jxsxqh"><span class="c19">Kotlin</span></h3>
+            <p class="c22"><span class="c0">Kotlin is a statically typed programming language that runs
+                    on the Java
+                    virtual machine and also can be compiled to JavaScript source code or use the LLVM
+                    compiler
+                    infrastructure. </span></p>
 
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10" colspan="1" rowspan="1">
-                            <h3 class="c24 c37" id="h.z337ya"><span class="c19">Apache Kafka</span></h3>
-                            <p class="c22"><span class="c0">Apache Kafka is an open-source stream processing platform
-                                    developed by
-                                    the Apache Software Foundation. The project aims to provide a unified,
-                                    high-throughput,
-                                    low-latency platform for handling real-time data feeds.</span></p>
-                        </td>
-                        <td class="c13" colspan="1" rowspan="2">
-                            <p class="c33 c17"><span class="c32"></span></p>
-                            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 122.50px; height: 58.29px;"><img
-                                        alt="" src="../images/devprinciples9.png" style="width: 133.89px; height: 68.62px; margin-left: -4.66px; margin-top: -5.90px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                        title=""></span></p>
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10" colspan="1" rowspan="1">
+            <p class="c23"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 147.82px; height: 41.00px;"><img
+                        alt="" src="../images/devprinciples7.png" style="width: 147.82px; height: 74.15px; margin-left: -0.00px; margin-top: -16.57px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title=""></span></p>
+            <br>
+            <h3 class="c24 c37" id="h.lmgimcpkbm3w"><span class="c19">Camunda</span></h3>
+            <p class="c22"><span class="c0">Camunda is an open source platform for workflow and
+                    business process
+                    management. You can model and execute BPMN 2.0, CMMN 1.1 and DMN 1.1.</span></p>
 
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10 c30" colspan="1" rowspan="1">
-                            <h3 class="c24 c37" id="h.3j2qqm3"><span class="c19">Cassandra DB</span></h3>
-                            <p class="c22"><span class="c26">The Apache Cassandra is a database solution for
-                                    scalability and high
-                                    availability without compromising performance. Linear scalability and proven
-                                    fault-tolerance on
-                                    commodity hardware or cloud infrastructure make it the perfect platform for
-                                    mission-critical
-                                    data. </span></p>
-                        </td>
-                        <td class="c2" colspan="1" rowspan="2">
-                            <p class="c34 c17"><span class="c32"></span></p>
-                            <p class="c17 c33"><span class="c32"></span></p>
-                            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 110.50px; height: 62.70px;"><img
-                                        alt="" src="../images/devprinciples8.png" style="width: 110.50px; height: 111.06px; margin-left: -0.00px; margin-top: -24.62px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                        title=""></span></p>
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10 c30" colspan="1" rowspan="1">
+            <p class="c17 c23"><span class="c32"></span></p>
+            <p class="c34 c49"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 122.61px; height: 20.00px;"><img
+                        alt="" src="../images/devprinciples6.png" style="width: 113.45px; height: 20.00px; margin-left: 9.16px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title=""></span></p>
+            <br>
+            <h3 class="c24 c37" id="h.z337ya"><span class="c19">Apache Kafka</span></h3>
+            <p class="c22"><span class="c0">Apache Kafka is an open-source stream processing platform
+                    developed by
+                    the Apache Software Foundation. The project aims to provide a unified,
+                    high-throughput,
+                    low-latency platform for handling real-time data feeds.</span></p>
 
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10" colspan="1" rowspan="1">
-                            <h3 class="c24 c37" id="h.1y810tw"><span class="c19">JSON Web Tokens </span></h3>
-                            <p class="c22"><span>JSON Web Token (JWT) is an open standard (</span><span class="c18"><a
-                                        class="c57" href="https://www.google.com/url?q=https://tools.ietf.org/html/rfc7519&amp;sa=D&amp;ust=1583338234620000">RFC
-                                        7519</a></span><span class="c0">) that defines a compact and self-contained way
-                                    for
-                                    securely transmitting information between parties as a JSON object. This
-                                    information can be
-                                    verified and trusted because it is digitally signed. </span></p>
-                        </td>
-                        <td class="c13" colspan="1" rowspan="2">
-                            <p class="c17 c53"><span class="c32"></span></p>
-                            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 116.50px; height: 46.60px;"><img
-                                        alt="" src="../images/devprinciples10.png" style="width: 116.50px; height: 46.60px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                        title=""></span></p>
-                        </td>
-                    </tr>
-                    <tr class="c8">
-                        <td class="c10" colspan="1" rowspan="1">
+            <p class="c33 c17"><span class="c32"></span></p>
+            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 122.50px; height: 58.29px;"><img
+                        alt="" src="../images/devprinciples9.png" style="width: 133.89px; height: 68.62px; margin-left: -4.66px; margin-top: -5.90px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title=""></span></p>
+            <br>
+            <h3 class="c24 c37" id="h.3j2qqm3"><span class="c19">Cassandra DB</span></h3>
+            <p class="c22"><span class="c26">The Apache Cassandra is a database solution for
+                    scalability and high
+                    availability without compromising performance. Linear scalability and proven
+                    fault-tolerance on
+                    commodity hardware or cloud infrastructure make it the perfect platform for
+                    mission-critical
+                    data. </span></p>
 
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <p class="c34 c17"><span class="c32"></span></p>
+            <p class="c17 c33"><span class="c32"></span></p>
+            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 110.50px; height: 62.70px;"><img
+                        alt="" src="../images/devprinciples8.png" style="width: 110.50px; height: 111.06px; margin-left: -0.00px; margin-top: -24.62px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title=""></span></p>
+            <br>
+            <h3 class="c24 c37" id="h.1y810tw"><span class="c19">JSON Web Tokens </span></h3>
+            <p class="c22"><span>JSON Web Token (JWT) is an open standard (</span><span class="c18"><a class="c57" href="https://www.google.com/url?q=https://tools.ietf.org/html/rfc7519&amp;sa=D&amp;ust=1583338234620000">RFC
+                        7519</a></span><span class="c0">) that defines a compact and self-contained way
+                    for
+                    securely transmitting information between parties as a JSON object. This
+                    information can be
+                    verified and trusted because it is digitally signed. </span></p>
+
+            <p class="c17 c53"><span class="c32"></span></p>
+            <p class="c34"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 116.50px; height: 46.60px;"><img
+                        alt="" src="../images/devprinciples10.png" style="width: 116.50px; height: 46.60px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title=""></span></p>
+
             <p class="c11 c17"><span class="c0"></span></p>
             <div>
                 <p class="c11 c17"><span class="c0"></span></p>
