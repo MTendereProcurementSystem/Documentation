@@ -6,7 +6,7 @@ permalink: /services/
 <html>
 
     <head>
-        <link rel="stylesheet" type="text/css" href="./../documentationStyles.css">
+        <link rel="stylesheet" type="text/css" href="documentationStyles.css">
     </head>
 
     <body>
@@ -127,11 +127,11 @@ permalink: /services/
                     bids of the
                     bidders until the opening session (disclosure) of the bids. </span></p><a id="t.75e5068854b3806ba38d23f3e2d0068a66fdd9e7"></a><a
                 id="t.0"></a>
-            <table class="c15">
+            <table class="c15 withoutBorder additionalInfo">
                 <tbody>
                     <tr class="c14">
                         <td class="c247" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c110">Quick test and definitions of endpoints with </span><span
+                            <p class="c5"><span class="c110">&nbsp;&nbsp;&nbsp;Quick test and definitions of endpoints with </span><span
                                     class="c40"><a class="c4" href="https://www.google.com/url?q=http://public.eprocurement.systems/swagger-ui.html&amp;sa=D&amp;ust=1583357220960000">Swagger</a></span></p>
                         </td>
                         <td class="c229" colspan="1" rowspan="1">
@@ -144,15 +144,9 @@ permalink: /services/
             </table>
             <h5 class="c159" id="h.1fob9te"><span class="c93 c67">AccessPoint</span></h5><a id="t.8a9b850e0d85d7ee4730d5495de57975e122122c"></a><a
                 id="t.1"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c64" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c111 c110 c57">https://sandbox.public.mtender.gov.md</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c5"><span class="c111 c110 c57">https://sandbox.public.mtender.gov.md</span></p>
+            </div>
             <h6 class="c47"><span class="c38">Retrieving data</span></h6>
             <p class="c39"><span class="c17">To retrieve a list of data or individual entity data-set use GET-request
                     parameterized
@@ -173,33 +167,21 @@ permalink: /services/
                     with limit
                     parameter. If not specified, data is being returned in batches of 100 elements.</span></p><a id="t.c30cbbcc0a7060351620eaf5a14e7cee64755e37"></a><a
                 id="t.2"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c149 c240 c110 c248">GET</span><span class="c50">&nbsp;</span><span
-                                    class="c8">/get/tenders?offset=...&amp;limit=20&amp;order=asc&amp;mode=history</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c149 c240 c110 c248">GET</span><span class="c50">&nbsp;</span><span
+                        class="c8">/get/tenders?offset=...&amp;limit=20&amp;order=asc&amp;mode=history</span></p>
+            </div>
             <p class="c20"><span class="c110">Example of Response</span></p><a id="t.20cb9ab61fe89e3451b670d8b46f659eaee45e32"></a><a
                 id="t.3"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c0">{<br> &nbsp;&quot;data&quot;: [<br> &nbsp; &nbsp;{<br>
-                                    &nbsp; &nbsp;
-                                    &nbsp;&quot;ocid&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp; &nbsp; &nbsp;&quot;date&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0"><br>
-                                    &nbsp; &nbsp;}<br> &nbsp;],<br> &nbsp;&quot;offset&quot;:</span><span class="c8">&quot;&quot;</span><span
-                                    class="c0"><br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c0">{<br> &nbsp;&quot;data&quot;: [<br> &nbsp; &nbsp;{<br>
+                        &nbsp; &nbsp;
+                        &nbsp;&quot;ocid&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp; &nbsp; &nbsp;&quot;date&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0"><br>
+                        &nbsp; &nbsp;}<br> &nbsp;],<br> &nbsp;&quot;offset&quot;:</span><span class="c8">&quot;&quot;</span><span
+                        class="c0"><br>}</span></p>
+            </div>
             <p class="c20"><span class="c30">Batching</span></p>
             <p class="c39"><span class="c17">The response contains &lsquo;offset&rsquo; element. This is the parameter
                     that needs
@@ -217,11 +199,11 @@ permalink: /services/
                     returned. Then the synchronizer has to pause for a while to let Central Unit register some changes
                     and attempt
                     fetching subsequent page.</span></p><a id="t.b24f9f4d74935adf0c2357d91af05216b7abf5a8"></a><a id="t.4"></a>
-            <table class="c15">
+            <table class="c15 withoutBorder additionalInfo">
                 <tbody>
                     <tr class="c14">
                         <td class="c247" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c30">The safe frequency of synchronization requests is once per
+                            <p class="c5"><span class="c30">&nbsp;&nbsp;&nbsp;The safe frequency of synchronization requests is once per
                                     5 minutes</span></p>
                         </td>
                         <td class="c229" colspan="1" rowspan="1">
@@ -237,15 +219,9 @@ permalink: /services/
                     GET-request with
                     unique ID of specific entity as depicted below:</span></p><a id="t.9192e64dd32a6e93f086d7b418e4b1cb2c1351e5"></a><a
                 id="t.5"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c64" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c3">GET </span><span class="c60 c67">/tenders/ocds-000-00001?offset=...</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c5"><span class="c3">GET </span><span class="c60 c67">/tenders/ocds-000-00001?offset=...</span></p>
+            </div>
             <p class="c18 c35" id="h.tyjcwt"><span class="c76 c67">Getting details of stage (part) of individual entity
                     information</span></p>
             <p class="c39"><span class="c17">To get a detailed information about a stage of individual entity data set
@@ -254,15 +230,9 @@ permalink: /services/
                     stage of the
                     particular stage as depicted below:</span></p><a id="t.354ae90a9ec83c3b3b92e6386e20c11503b81edf"></a><a
                 id="t.6"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c64" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c3">GET </span><span class="c60 c67">/tenders/ocds-000-00001/ocds-000-00001-PIN?offset=...</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c5"><span class="c3">GET </span><span class="c60 c67">/tenders/ocds-000-00001/ocds-000-00001-PIN?offset=...</span></p>
+            </div>
             <p class="c18 c35" id="h.3dy6vkm"><span class="c76 c67">Getting list of documents</span></p>
             <p class="c39"><span class="c17">The document can be retrieved by requesting the URL returned in structures
                     from
@@ -270,33 +240,21 @@ permalink: /services/
                     download.Functionality </span></p>
             <p class="c18 c35" id="h.1t3h5sf"><span class="c76 c67">Retrieving budgets. EIs, FSs: lists and items
                 </span></p><a id="t.dc991aa5f7cb18b628a281e7f7ba6029c44dab1d"></a><a id="t.7"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c64" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c3">POST</span><span class="c92">&nbsp;</span><span class="c60 c67">/budgets</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c5"><span class="c3">POST</span><span class="c92">&nbsp;</span><span class="c60 c67">/budgets</span></p>
+            </div>
             <p class="c18 c35" id="h.4d34og8"><span class="c76 c67">Retrieving tenders. PNs, PINs, CNs, ACs, CIs: lists
                     and items
                 </span></p><a id="t.5a50b0e23d0aeb18225f3a2265d3909ed0f5d40f"></a><a id="t.8"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c64" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c3">POST</span><span class="c92">&nbsp;</span><span class="c60 c67">/tenders</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c5"><span class="c3">POST</span><span class="c92">&nbsp;</span><span class="c60 c67">/tenders</span></p>
+            </div>
             <p class="c39 c75"><span class="c17"></span></p>
             <p class="c39 c75"><span class="c17"></span></p>
             <p class="c39 c75"><span class="c17"></span></p>
             <p class="c39 c75"><span class="c17"></span></p><a id="t.28e744a4fb6ef3c229f4cfcf2e8231510ea4ee69"></a><a
                 id="t.9"></a>
-            <table class="c246">
+            <table class="c246 withoutBorder">
                 <tbody>
                     <tr class="c14">
                         <td class="c213" colspan="1" rowspan="1">
@@ -338,11 +296,11 @@ permalink: /services/
                     project
                     aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds.
                 </span></p><a id="t.398dc167c53c39fe151dfc12f79adb3cd876b8ef"></a><a id="t.10"></a>
-            <table class="c15">
+            <table class="c15 withoutBorder additionalInfo">
                 <tbody>
                     <tr class="c14">
                         <td class="c53" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c110">Learn more about </span><span class="c40"><a class="c4"
+                            <p class="c5"><span class="c110">&nbsp;&nbsp;&nbsp;Learn more about </span><span class="c40"><a class="c4"
                                         href="https://www.google.com/url?q=https://kafka.apache.org&amp;sa=D&amp;ust=1583357220970000">Apache
                                         Kafka</a></span><span class="c30">&nbsp;</span></p>
                         </td>
@@ -394,11 +352,11 @@ permalink: /services/
                 </tbody>
             </table>
             <p class="c1"><span class="c48"></span></p><a id="t.afdc76463f81991b47f689f3e898793b91663526"></a><a id="t.12"></a>
-            <table class="c15">
+            <table class="c15 withoutBorder additionalInfo">
                 <tbody>
                     <tr class="c14">
                         <td class="c157" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c110">See previously supported </span><span class="c40"><a class="c4"
+                            <p class="c5"><span class="c110">&nbsp;&nbsp;&nbsp;See previously supported </span><span class="c40"><a class="c4"
                                         href="https://www.google.com/url?q=https://cwiki.apache.org/confluence/display/KAFKA/Clients%23Clients-ClientLibrariesPreviouslySupported&amp;sa=D&amp;ust=1583357220978000">Client
                                         Libraries</a></span></p>
                         </td>
@@ -413,15 +371,9 @@ permalink: /services/
             <p class="c1"><span class="c17"></span></p>
             <h5 class="c159" id="h.17dp8vu"><span class="c93 c67">AccessPoint</span></h5><a id="t.242e2af3cf3fb344eadd9944bfc5484afe5acd88"></a><a
                 id="t.13"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c111 c149 c110 c57">https://sandbox.feed.mtender.gov.md</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c111 c149 c110 c57">https://sandbox.feed.mtender.gov.md</span></p>
+            </div>
             <p class="c39 c75"><span class="c17"></span></p>
             <h3 class="c24" id="h.matuvbfx7bee"><span class="c103 c67">Respond Service</span></h3>
             <p class="c39"><span>After processing BPE always provides response, reporting either success or failure and
@@ -599,11 +551,11 @@ permalink: /services/
                     requesting it
                     from citizens and the business environment in the form of certificates, reports, etc.</span></p><a
                 id="t.414e5523c86b37e5aa6c1b5a287002e4da7bf867"></a><a id="t.16"></a>
-            <table class="c15">
+            <table class="c15 withoutBorder additionalInfo">
                 <tbody>
                     <tr class="c14">
                         <td class="c53" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c110">Learn more about </span><span class="c40"><a class="c4"
+                            <p class="c5"><span class="c110">&nbsp;&nbsp;&nbsp;Learn more about </span><span class="c40"><a class="c4"
                                         href="https://www.google.com/url?q=http://egov.md/en/projects/mconnect&amp;sa=D&amp;ust=1583357220993000">M-Connect</a></span></p>
                         </td>
                         <td class="c108" colspan="1" rowspan="1">
@@ -616,15 +568,9 @@ permalink: /services/
             </table>
             <h5 class="c159" id="h.1ksv4uv"><span class="c93 c67">AccessPoint</span></h5><a id="t.96da8ab5d31f09143c47feab7ee2c7f942822fb1"></a><a
                 id="t.17"></a>
-            <table class="c166">
-                <tbody>
-                    <tr class="c105">
-                        <td class="c25" colspan="1" rowspan="1">
-                            <p class="c285"><span class="c98">https://sandbox.mconnect.mtender.gov.md</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c285"><span class="c98">https://sandbox.mconnect.mtender.gov.md</span></p>
+            </div>
             <h5 class="c159" id="h.44sinio"><span class="c93 c67">Functionality</span></h5>
             <h6 class="c47" id="h.2jxsxqh"><span class="c38">IBANs</span></h6>
             <p class="c7"><span class="c99">Request parameters</span></p><a id="t.709605d60242214f182feb59e267c1b96dac7763"></a><a
@@ -663,25 +609,19 @@ permalink: /services/
             </table>
             <p class="c20"><span class="c99">Example</span></p><a id="t.26f6925c9806d16305726b45a81494e7657aa4f1"></a><a
                 id="t.19"></a>
-            <table class="c166">
-                <tbody>
-                    <tr class="c105">
-                        <td class="c25" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/budget/iban?idno=...&amp;cpv=...&amp;year=...
-                                </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0">:
-                                    sandbox.mconnect.mtender.gov.md</span></p>
-                            <p class="c19 c75"><span class="c8 c67"></span></p>
-                            <p class="c19"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
-                                    application/json;
-                                    charset=UTF-8 </span></p>
-                            <p class="c19 c75"><span class="c0 c67"></span></p>
-                            <p class="c19"><span class="c0">{<br> &nbsp;&quot;getIbanList_response&quot;: {<br> &nbsp;
-                                    &nbsp;&quot;iban&quot;: [<br> &nbsp; &nbsp; <br> &nbsp; &nbsp;]<br> &nbsp;}<br>}</span><span
-                                    class="c8 c67">&nbsp;</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/budget/iban?idno=...&amp;cpv=...&amp;year=...
+                    </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0">:
+                        sandbox.mconnect.mtender.gov.md</span></p>
+                <p class="c19 c75"><span class="c8 c67"></span></p>
+                <p class="c19"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
+                        application/json;
+                        charset=UTF-8 </span></p>
+                <p class="c19 c75"><span class="c0 c67"></span></p>
+                <p class="c19"><span class="c0">{<br> &nbsp;&quot;getIbanList_response&quot;: {<br> &nbsp;
+                        &nbsp;&quot;iban&quot;: [<br> &nbsp; &nbsp; <br> &nbsp; &nbsp;]<br> &nbsp;}<br>}</span><span
+                        class="c8 c67">&nbsp;</span></p>
+            </div>
             <h6 class="c47" id="h.z337ya"><span class="c38">Amounts</span></h6>
             <p class="c7"><span class="c99">Request parameters</span></p><a id="t.fdfeb9e02ad214cafa5bdea4219279b9336821fc"></a><a
                 id="t.20"></a>
@@ -708,25 +648,19 @@ permalink: /services/
             </table>
             <p class="c20"><span class="c110">Example</span></p><a id="t.c559e54df7d4a1a2885827f9a602802748fde238"></a><a
                 id="t.21"></a>
-            <table class="c166">
-                <tbody>
-                    <tr class="c105">
-                        <td class="c25" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/budget/get?iban=...&amp;year=...
-                                </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0">:
-                                    sandbox.mconnect.mtender.gov.md</span></p>
-                            <p class="c19 c75"><span class="c8 c67"></span></p>
-                            <p class="c19"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
-                                    application/json;
-                                    charset=UTF-8 </span></p>
-                            <p class="c19 c75"><span class="c0 c67"></span></p>
-                            <p class="c19"><span class="c0 c67">{</span></p>
-                            <p class="c19"><span class="c0">&nbsp; &quot;sum&quot;:</span><span class="c8 c67">&quot;90000.00&quot;</span></p>
-                            <p class="c19"><span class="c0">}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/budget/get?iban=...&amp;year=...
+                    </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0">:
+                        sandbox.mconnect.mtender.gov.md</span></p>
+                <p class="c19 c75"><span class="c8 c67"></span></p>
+                <p class="c19"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
+                        application/json;
+                        charset=UTF-8 </span></p>
+                <p class="c19 c75"><span class="c0 c67"></span></p>
+                <p class="c19"><span class="c0 c67">{</span></p>
+                <p class="c19"><span class="c0">&nbsp; &quot;sum&quot;:</span><span class="c8 c67">&quot;90000.00&quot;</span></p>
+                <p class="c19"><span class="c0">}</span></p>
+            </div>
             <h6 class="c47" id="h.3j2qqm3"><span class="c38">Validity of amounts</span></h6>
             <p class="c7"><span class="c67 c99 c130">Request parameters</span></p><a id="t.280c5e36203770397145d7c2e7eee0e80a5454ab"></a><a
                 id="t.22"></a>
@@ -761,25 +695,19 @@ permalink: /services/
             </table>
             <p class="c20"><span class="c99">Example</span></p><a id="t.2bfaa877e866c2ac86b09e76ee33196a1c2519a0"></a><a
                 id="t.23"></a>
-            <table class="c166">
-                <tbody>
-                    <tr class="c105">
-                        <td class="c25" colspan="1" rowspan="1">
-                            <p class="c56"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/budget/check?iban=...&amp;year=...&amp;sum=...
-                                </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0 c67">:
-                                    sandbox.mconnect.mtender.gov.md</span></p>
-                            <p class="c56 c75"><span class="c0 c67"></span></p>
-                            <p class="c56"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
-                                    application/json;
-                                    charset=UTF-8 </span></p>
-                            <p class="c56 c75"><span class="c0 c67"></span></p>
-                            <p class="c56"><span class="c0 c67">{</span></p>
-                            <p class="c56"><span class="c0">&nbsp; &quot;result&quot;:</span><span class="c8 c67">&quot;1&quot;</span></p>
-                            <p class="c56"><span class="c0 c67">}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c56"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/budget/check?iban=...&amp;year=...&amp;sum=...
+                    </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0 c67">:
+                        sandbox.mconnect.mtender.gov.md</span></p>
+                <p class="c56 c75"><span class="c0 c67"></span></p>
+                <p class="c56"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
+                        application/json;
+                        charset=UTF-8 </span></p>
+                <p class="c56 c75"><span class="c0 c67"></span></p>
+                <p class="c56"><span class="c0 c67">{</span></p>
+                <p class="c56"><span class="c0">&nbsp; &quot;result&quot;:</span><span class="c8 c67">&quot;1&quot;</span></p>
+                <p class="c56"><span class="c0 c67">}</span></p>
+            </div>
             <h6 class="c47" id="h.1y810tw"><span class="c38">Contracting Authority Profile</span></h6>
             <p class="c7"><span class="c67 c99 c130">Request parameters</span></p><a id="t.228aae56eeaf0b3bb0b1ea2cbf0cb6dbed7054c0"></a><a
                 id="t.24"></a>
@@ -797,61 +725,55 @@ permalink: /services/
             </table>
             <p class="c20"><span class="c99">Example</span></p><a id="t.099891f595d85f5e0c92d14e45f455735414a371"></a><a
                 id="t.25"></a>
-            <table class="c166">
-                <tbody>
-                    <tr class="c105">
-                        <td class="c25" colspan="1" rowspan="1">
-                            <p class="c56"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/organization/public?idno=...
-                                </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0 c67">:
-                                    sandbox.mconnect.mtender.gov.md</span></p>
-                            <p class="c56 c75"><span class="c0 c67"></span></p>
-                            <p class="c56"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
-                                    application/json;
-                                    charset=UTF-8 </span></p>
-                            <p class="c56 c75"><span class="c0 c67"></span></p>
-                            <p class="c56"><span class="c0">{<br> &nbsp;&quot;IDNO&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp;&quot;FiscalCode&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp;&quot;Name&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp;&quot;ShortName&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp;&quot;LegalFormCode&quot;: </span><span class="c8">&quot;2&quot;</span><span
-                                    class="c0">&nbsp;,<br>
-                                    &nbsp;&quot;PropertyFormCode&quot;: </span><span class="c8">&quot;2&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp;&quot;RegistrationDate&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp;&quot;VATCode&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp;&quot;BudgetDebt&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp;&quot;Address&quot;: {<br> &nbsp; &nbsp;&quot;Country&quot;: </span><span
-                                    class="c8">&quot;&quot;</span><span class="c0">,<br> &nbsp;
-                                    &nbsp;&quot;Region&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp; &nbsp;&quot;Locality&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;LocalityCode&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;Street&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;House&quot;: </span><span class="c8">&quot;44&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;Block&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;Flat&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0"><br> &nbsp;},<br> &nbsp;&quot;Conductors&quot;: {<br> &nbsp;
-                                    &nbsp;&quot;Conductor&quot;: {<br> &nbsp; &nbsp; &nbsp;&quot;PersonalData&quot;: {<br>
-                                    &nbsp;
-                                    &nbsp; &nbsp; &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span
-                                    class="c8">&quot;&quot;</span><span class="c0"><br> &nbsp; &nbsp; &nbsp;},<br>
-                                    &nbsp; &nbsp; &nbsp;&quot;RoleCode&quot;: </span><span class="c8">&quot;18&quot;</span><span
-                                    class="c0"><br> &nbsp; &nbsp;}<br> &nbsp;},<br>
-                                    &nbsp;&quot;ChefAccount&quot;: {<br> &nbsp; &nbsp;&quot;PersonalData&quot;: {<br>
-                                    &nbsp; &nbsp;
-                                    &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp; &nbsp; &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0 c67"><br> &nbsp; &nbsp;}<br> &nbsp;}<br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c56"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/organization/public?idno=...
+                    </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0 c67">:
+                        sandbox.mconnect.mtender.gov.md</span></p>
+                <p class="c56 c75"><span class="c0 c67"></span></p>
+                <p class="c56"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
+                        application/json;
+                        charset=UTF-8 </span></p>
+                <p class="c56 c75"><span class="c0 c67"></span></p>
+                <p class="c56"><span class="c0">{<br> &nbsp;&quot;IDNO&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp;&quot;FiscalCode&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp;&quot;Name&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp;&quot;ShortName&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp;&quot;LegalFormCode&quot;: </span><span class="c8">&quot;2&quot;</span><span
+                        class="c0">&nbsp;,<br>
+                        &nbsp;&quot;PropertyFormCode&quot;: </span><span class="c8">&quot;2&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp;&quot;RegistrationDate&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp;&quot;VATCode&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp;&quot;BudgetDebt&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp;&quot;Address&quot;: {<br> &nbsp; &nbsp;&quot;Country&quot;: </span><span
+                        class="c8">&quot;&quot;</span><span class="c0">,<br> &nbsp;
+                        &nbsp;&quot;Region&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp; &nbsp;&quot;Locality&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;LocalityCode&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;Street&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;House&quot;: </span><span class="c8">&quot;44&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;Block&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;Flat&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0"><br> &nbsp;},<br> &nbsp;&quot;Conductors&quot;: {<br> &nbsp;
+                        &nbsp;&quot;Conductor&quot;: {<br> &nbsp; &nbsp; &nbsp;&quot;PersonalData&quot;: {<br>
+                        &nbsp;
+                        &nbsp; &nbsp; &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span
+                        class="c8">&quot;&quot;</span><span class="c0"><br> &nbsp; &nbsp; &nbsp;},<br>
+                        &nbsp; &nbsp; &nbsp;&quot;RoleCode&quot;: </span><span class="c8">&quot;18&quot;</span><span
+                        class="c0"><br> &nbsp; &nbsp;}<br> &nbsp;},<br>
+                        &nbsp;&quot;ChefAccount&quot;: {<br> &nbsp; &nbsp;&quot;PersonalData&quot;: {<br>
+                        &nbsp; &nbsp;
+                        &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp; &nbsp; &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0 c67"><br> &nbsp; &nbsp;}<br> &nbsp;}<br>}</span></p>
+            </div>
             <h6 class="c47" id="h.4i7ojhp"><span class="c38">Economic Operator Profile</span></h6>
             <p class="c7"><span class="c99">Request parameters</span></p><a id="t.d046fc31ed146c9dc885fbab4709083de5ccbc36"></a><a
                 id="t.26"></a>
@@ -869,79 +791,73 @@ permalink: /services/
             </table>
             <p class="c20"><span class="c99">Example</span></p><a id="t.525f42cc83d17a70a9738abef52e352873e4bf3e"></a><a
                 id="t.27"></a>
-            <table class="c166">
-                <tbody>
-                    <tr class="c105">
-                        <td class="c25" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/organization/private?idno=...
-                                </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0 c67">:
-                                    sandbox.mconnect.mtender.gov.md</span></p>
-                            <p class="c19 c75"><span class="c0 c67"></span></p>
-                            <p class="c19"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
-                                    application/json;
-                                    charset=UTF-8</span></p>
-                            <p class="c19 c75"><span class="c0 c67"></span></p>
-                            <p class="c56"><span class="c0">{<br> &nbsp;&quot;IDNO&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp;&quot;FiscalCode&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp;&quot;Name&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp;&quot;ShortName&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp;&quot;LegalFormCode&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp;&quot;PropertyFormCode&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp;&quot;RegistrationDate&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp;&quot;VATCode&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp;&quot;BudgetDebt&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp;&quot;Address&quot;: {<br> &nbsp; &nbsp;&quot;Country&quot;: </span><span
-                                    class="c8">&quot;&quot;</span><span class="c0">,<br> &nbsp;
-                                    &nbsp;&quot;Region&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp; &nbsp;&quot;Locality&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;LocalityCode&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;Street&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;StreetCode&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;House&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;Block&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;Flat&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0"><br> &nbsp;},<br> &nbsp;&quot;Activities&quot;: {<br> &nbsp;
-                                    &nbsp;&quot;Activity&quot;: [<br> &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp;
-                                    &nbsp;&quot;ActivityCode&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;&quot;ActivityType&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp; &nbsp; &nbsp;&quot;OrderNumber&quot;: </span><span
-                                    class="c8">&quot;&quot;</span><span class="c0"><br> &nbsp; &nbsp; &nbsp;}<br>
-                                    &nbsp; &nbsp;]<br> &nbsp;},<br>
-                                    &nbsp;&quot;Founders&quot;: {<br> &nbsp; &nbsp;&quot;Founder&quot;: {<br> &nbsp;
-                                    &nbsp;
-                                    &nbsp;&quot;PersonType&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp; &nbsp; &nbsp;&quot;PersonShortData&quot;: {<br> &nbsp; &nbsp; &nbsp;
-                                    &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span
-                                    class="c8">&quot;&quot;</span><span class="c0"><br> &nbsp; &nbsp; &nbsp;}<br>
-                                    &nbsp; &nbsp;}<br> &nbsp;},<br>
-                                    &nbsp;&quot;Conductors&quot;: {<br> &nbsp; &nbsp;&quot;Conductor&quot;: {<br>
-                                    &nbsp; &nbsp;
-                                    &nbsp;&quot;PersonalData&quot;: {<br> &nbsp; &nbsp; &nbsp; &nbsp;&quot;IDNP&quot;:
-                                </span><span class="c8">&quot;&quot;</span><span class="c0">,<br> &nbsp; &nbsp; &nbsp;
-                                    &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0"><br> &nbsp; &nbsp; &nbsp;},<br> &nbsp; &nbsp;
-                                    &nbsp;&quot;RoleCode&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0"><br>
-                                    &nbsp; &nbsp;}<br> &nbsp;},<br>
-                                    &nbsp;&quot;ChefAccount&quot;: {<br> &nbsp; &nbsp;&quot;PersonalData&quot;: {<br>
-                                    &nbsp; &nbsp;
-                                    &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
-                                    &nbsp; &nbsp; &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0 c67"><br> &nbsp; &nbsp;}<br> &nbsp;}<br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/organization/private?idno=...
+                    </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0 c67">:
+                        sandbox.mconnect.mtender.gov.md</span></p>
+                <p class="c19 c75"><span class="c0 c67"></span></p>
+                <p class="c19"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
+                        application/json;
+                        charset=UTF-8</span></p>
+                <p class="c19 c75"><span class="c0 c67"></span></p>
+                <p class="c56"><span class="c0">{<br> &nbsp;&quot;IDNO&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp;&quot;FiscalCode&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp;&quot;Name&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp;&quot;ShortName&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp;&quot;LegalFormCode&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp;&quot;PropertyFormCode&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp;&quot;RegistrationDate&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp;&quot;VATCode&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp;&quot;BudgetDebt&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp;&quot;Address&quot;: {<br> &nbsp; &nbsp;&quot;Country&quot;: </span><span
+                        class="c8">&quot;&quot;</span><span class="c0">,<br> &nbsp;
+                        &nbsp;&quot;Region&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp; &nbsp;&quot;Locality&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;LocalityCode&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;Street&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;StreetCode&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;House&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;Block&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;Flat&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0"><br> &nbsp;},<br> &nbsp;&quot;Activities&quot;: {<br> &nbsp;
+                        &nbsp;&quot;Activity&quot;: [<br> &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;&quot;ActivityCode&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&quot;ActivityType&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp; &nbsp; &nbsp;&quot;OrderNumber&quot;: </span><span
+                        class="c8">&quot;&quot;</span><span class="c0"><br> &nbsp; &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp;]<br> &nbsp;},<br>
+                        &nbsp;&quot;Founders&quot;: {<br> &nbsp; &nbsp;&quot;Founder&quot;: {<br> &nbsp;
+                        &nbsp;
+                        &nbsp;&quot;PersonType&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp; &nbsp; &nbsp;&quot;PersonShortData&quot;: {<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span
+                        class="c8">&quot;&quot;</span><span class="c0"><br> &nbsp; &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp;}<br> &nbsp;},<br>
+                        &nbsp;&quot;Conductors&quot;: {<br> &nbsp; &nbsp;&quot;Conductor&quot;: {<br>
+                        &nbsp; &nbsp;
+                        &nbsp;&quot;PersonalData&quot;: {<br> &nbsp; &nbsp; &nbsp; &nbsp;&quot;IDNP&quot;:
+                    </span><span class="c8">&quot;&quot;</span><span class="c0">,<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0"><br> &nbsp; &nbsp; &nbsp;},<br> &nbsp; &nbsp;
+                        &nbsp;&quot;RoleCode&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0"><br>
+                        &nbsp; &nbsp;}<br> &nbsp;},<br>
+                        &nbsp;&quot;ChefAccount&quot;: {<br> &nbsp; &nbsp;&quot;PersonalData&quot;: {<br>
+                        &nbsp; &nbsp;
+                        &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span class="c0">,<br>
+                        &nbsp; &nbsp; &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp; &nbsp;&quot;FirstName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0 c67"><br> &nbsp; &nbsp;}<br> &nbsp;}<br>}</span></p>
+            </div>
             <h6 class="c47" id="h.2xcytpi"><span class="c38">Responsible Person Profile</span></h6>
             <p class="c7"><span class="c99">Request parameters</span></p><a id="t.fd0cdd0dddd95b715d05196fd00e6016643b70fc"></a><a
                 id="t.28"></a>
@@ -959,29 +875,23 @@ permalink: /services/
             </table>
             <p class="c20"><span class="c99">Example</span></p><a id="t.396b700fa31080781c63bc96abbf3e578d1eb333"></a><a
                 id="t.29"></a>
-            <table class="c166">
-                <tbody>
-                    <tr class="c105">
-                        <td class="c25" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/citizen/get?idnp=...
-                                </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0 c67">:
-                                    sandbox.mconnect.mtender.gov.md</span></p>
-                            <p class="c19 c75"><span class="c0 c67"></span></p>
-                            <p class="c19"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
-                                    application/json;
-                                    charset=UTF-8</span></p>
-                            <p class="c19 c75"><span class="c0 c67"></span></p>
-                            <p class="c19"><span class="c0">{<br> &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp;&quot;FirstName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp;&quot;SecondName&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp;&quot;BirthDate&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0">,<br> &nbsp;&quot;BirthDateStatus&quot;: </span><span class="c8">&quot;&quot;</span><span
-                                    class="c0 c67"><br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/citizen/get?idnp=...
+                    </span><span class="c0">HTTP/1.1<br></span><span class="c50">Host</span><span class="c0 c67">:
+                        sandbox.mconnect.mtender.gov.md</span></p>
+                <p class="c19 c75"><span class="c0 c67"></span></p>
+                <p class="c19"><span class="c50">200 OK<br>Content-Type</span><span class="c0 c67">:
+                        application/json;
+                        charset=UTF-8</span></p>
+                <p class="c19 c75"><span class="c0 c67"></span></p>
+                <p class="c19"><span class="c0">{<br> &nbsp;&quot;IDNP&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp;&quot;FirstName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp;&quot;LastName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp;&quot;SecondName&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp;&quot;BirthDate&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0">,<br> &nbsp;&quot;BirthDateStatus&quot;: </span><span class="c8">&quot;&quot;</span><span
+                        class="c0 c67"><br>}</span></p>
+            </div>
             <p class="c20 c75"><span class="c30"></span></p>
             <p class="c39 c75"><span class="c17"></span></p>
             <h2 class="c24" id="h.business"><span class="c150 c67 c110">Business Services</span></h2>
@@ -1002,11 +912,11 @@ permalink: /services/
                     the HMAC
                     algorithm) or a public/private key pair using RSA.</span></p><a id="t.261d33f61bf1c9f968da6143ae4580937dc2dbbc"></a><a
                 id="t.30"></a>
-            <table class="c15">
+            <table class="c15 withoutBorder additionalInfo">
                 <tbody>
                     <tr class="c14">
                         <td class="c53" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c110">Learn more about </span><span class="c40"><a class="c4"
+                            <p class="c5"><span class="c110">&nbsp;&nbsp;&nbsp;Learn more about </span><span class="c40"><a class="c4"
                                         href="https://www.google.com/url?q=https://jwt.io&amp;sa=D&amp;ust=1583357221019000">JWT</a></span></p>
                         </td>
                         <td class="c108" colspan="1" rowspan="1">
@@ -1019,16 +929,10 @@ permalink: /services/
             </table>
             <h5 class="c159" id="h.3whwml4"><span class="c93 c67">AccessPoint</span></h5><a id="t.76cd618ec1b0e4ef5b5cbe9baedebbd6fcc4e03d"></a><a
                 id="t.31"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c42 c40"><a class="c4" href="https://www.google.com/url?q=https://sandbox.auth.mtender.gov.md&amp;sa=D&amp;ust=1583357221020000">https://sandbox.auth.mtender.gov.md</a></span></p>
-                            <p class="c19"><span class="c268 c149 c160 c57">auth.eprocurement.systems</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c42 c40"><a class="c4" href="https://www.google.com/url?q=https://sandbox.auth.mtender.gov.md&amp;sa=D&amp;ust=1583357221020000">https://sandbox.auth.mtender.gov.md</a></span></p>
+                <p class="c19"><span class="c268 c149 c160 c57">auth.eprocurement.systems</span></p>
+            </div>
             <h5 class="c159" id="h.2bn6wsx"><span class="c93 c67">Functionality</span></h5>
             <h5 class="c159" id="h.qsh70q"><span class="c93 c67">ID Token</span></h5>
             <p class="c39"><span class="c17">The ID token is a JWT that contains user profile information (like the
@@ -1047,11 +951,11 @@ permalink: /services/
                     perform specific
                     actions (as specified by the scope that has been granted). </span></p><a id="t.dd2bd8812bbbffed8e46595ae24eaee1644a26a3"></a><a
                 id="t.32"></a>
-            <table class="c15">
+            <table class="c15 withoutBorder additionalInfo">
                 <tbody>
                     <tr class="c14">
                         <td class="c157" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c30">The Access Token should be used as a Bearer credential and
+                            <p class="c5"><span class="c30">&nbsp;&nbsp;&nbsp;The Access Token should be used as a Bearer credential and
                                     transmitted
                                     in an HTTP Authorization header to the BPE</span></p>
                         </td>
@@ -1076,11 +980,11 @@ permalink: /services/
                     with the
                     same permissions, without further involvement from a user.</span></p><a id="t.72b6d55df097dbd0d8836071c87685b345b453e9"></a><a
                 id="t.33"></a>
-            <table class="c15">
+            <table class="c15 withoutBorder additionalInfo">
                 <tbody>
                     <tr class="c14">
                         <td class="c157" colspan="1" rowspan="1">
-                            <p class="c5"><span class="c110">Learn more in </span><span class="c40"><a class="c4" href="https://www.google.com/url?q=http://docs.eprocurement.systems/auth&amp;sa=D&amp;ust=1583357221023000">Auth
+                            <p class="c5"><span class="c110">&nbsp;&nbsp;&nbsp;Learn more in </span><span class="c40"><a class="c4" href="https://www.google.com/url?q=http://docs.eprocurement.systems/auth&amp;sa=D&amp;ust=1583357221023000">Auth
                                         Service api-guide</a></span></p>
                         </td>
                         <td class="c85" colspan="1" rowspan="1">
@@ -1137,16 +1041,10 @@ permalink: /services/
             <p class="c2"><span class="c17">All of the document uploading API endpoints follow the same set of rules
                     and uses
                     single access point.</span></p><a id="t.324e30acd3da8863ed227e4c1f10ae94407ec344"></a><a id="t.34"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c40 c42"><a class="c4" href="https://www.google.com/url?q=https://sandbox.storage.mtender.gov.md&amp;sa=D&amp;ust=1583357221028000">https://sandbox.storage.mtender.gov.md</a></span></p>
-                            <p class="c19"><span class="c0">storage.eprocurement.systems</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c40 c42"><a class="c4" href="https://www.google.com/url?q=https://sandbox.storage.mtender.gov.md&amp;sa=D&amp;ust=1583357221028000">https://sandbox.storage.mtender.gov.md</a></span></p>
+                <p class="c19"><span class="c0">storage.eprocurement.systems</span></p>
+            </div>
             <h5 class="c159"><span class="c123 c67">Functionality</span></h5>
             <h6 class="c47" id="h.2grqrue"><span class="c38">Registration of Document</span></h6>
             <p class="c39"><span>Registers a document that will be nested in an information entity and a backup
@@ -1162,15 +1060,9 @@ permalink: /services/
                     identical hash must be </span><span><a class="c4" href="#h.3gnlt4p">uploaded</a></span><span class="c17">.</span></p>
             <p class="c18 c35" id="h.vx1227"><span class="c76 c67">End-Point</span></p><a id="t.b90d452a88abd55fbb7aeca12c89e5aaa32a1964"></a><a
                 id="t.35"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c11">POST</span><span class="c0">&nbsp;</span><span class="c8">/registration</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c11">POST</span><span class="c0">&nbsp;</span><span class="c8">/registration</span></p>
+            </div>
             <p class="c18 c35" id="h.3fwokq0"><span class="c76 c67">Flow Description</span></p>
             <p class="c2"><span class="c17">When a document is received to be registered, the DS performs the following
                     actions:</span></p>
@@ -1192,54 +1084,42 @@ permalink: /services/
             </ol>
             <p class="c18 c35" id="h.1v1yuxt"><span class="c76 c67">Example</span></p><a id="t.5ecbf9809cb0c8ead839836d15024038700fcc6c"></a><a
                 id="t.36"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c11">POST</span><span class="c0">&nbsp;</span><span class="c8">/registration</span><span
-                                    class="c0">&nbsp;HTTP/1.1<br></span><span class="c50">Authorization</span><span
-                                    class="c0">:
-                                    <br></span><span class="c50">Content-Length</span><span class="c0">: 58<br></span><span
-                                    class="c50">Content-Type</span><span class="c0">: application/json<br></span><span
-                                    class="c50">Host</span><span class="c0 c67">:
-                                    sandbox.storage.mtender.gov.md</span></p>
-                            <p class="c19 c75"><span class="c0 c67"></span></p>
-                            <p class="c19"><span class="c0">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
-                                    &nbsp;&quot;hash&quot;:
-                                </span><span class="c8">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span class="c0">,<br>
-                                    &nbsp; &nbsp;&quot;weight&quot;: </span><span class="c8">&quot;1024&quot;</span><span
-                                    class="c0">,<br>
-                                    &nbsp; &nbsp;&quot;fileName&quot;: </span><span class="c8">&quot;file.txt&quot;</span><span
-                                    class="c0 c67"><br> &nbsp;}<br>}</span></p>
-                            <p class="c19 c75"><span class="c50 c67"></span></p>
-                            <p class="c19"><span class="c50">201 Created<br>Content-Type</span><span class="c0 c67">:
-                                    application/json; charset=UTF-8</span></p>
-                            <p class="c19 c75"><span class="c0 c67"></span></p>
-                            <p class="c19"><span class="c0">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
-                                    &nbsp;&quot;id&quot;: </span><span class="c8">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
-                                    class="c0">,<br> &nbsp;
-                                    &nbsp;&quot;url&quot;: </span><span class="c8">&quot;https://sandbox.storage.mtender.gov.md/get/389684cc28c242b79c97c56be5142e25&quot;</span><span
-                                    class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c8">&quot;2017-12-25T17:05:56.044677&quot;</span><span
-                                    class="c0 c67"><br> &nbsp;}<br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c11">POST</span><span class="c0">&nbsp;</span><span class="c8">/registration</span><span
+                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c50">Authorization</span><span
+                        class="c0">:
+                        <br></span><span class="c50">Content-Length</span><span class="c0">: 58<br></span><span
+                        class="c50">Content-Type</span><span class="c0">: application/json<br></span><span
+                        class="c50">Host</span><span class="c0 c67">:
+                        sandbox.storage.mtender.gov.md</span></p>
+                <p class="c19 c75"><span class="c0 c67"></span></p>
+                <p class="c19"><span class="c0">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
+                        &nbsp;&quot;hash&quot;:
+                    </span><span class="c8">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span class="c0">,<br>
+                        &nbsp; &nbsp;&quot;weight&quot;: </span><span class="c8">&quot;1024&quot;</span><span
+                        class="c0">,<br>
+                        &nbsp; &nbsp;&quot;fileName&quot;: </span><span class="c8">&quot;file.txt&quot;</span><span
+                        class="c0 c67"><br> &nbsp;}<br>}</span></p>
+                <p class="c19 c75"><span class="c50 c67"></span></p>
+                <p class="c19"><span class="c50">201 Created<br>Content-Type</span><span class="c0 c67">:
+                        application/json; charset=UTF-8</span></p>
+                <p class="c19 c75"><span class="c0 c67"></span></p>
+                <p class="c19"><span class="c0">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
+                        &nbsp;&quot;id&quot;: </span><span class="c8">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
+                        class="c0">,<br> &nbsp;
+                        &nbsp;&quot;url&quot;: </span><span class="c8">&quot;https://sandbox.storage.mtender.gov.md/get/389684cc28c242b79c97c56be5142e25&quot;</span><span
+                        class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c8">&quot;2017-12-25T17:05:56.044677&quot;</span><span
+                        class="c0 c67"><br> &nbsp;}<br>}</span></p>
+            </div>
             <h6 class="c47" id="h.4f1mdlm"><span class="c38">Upload of Registered Document</span></h6>
             <p class="c39"><span class="c17">A previously registered Document could be uploaded into the File
                     Repository (Storage).
                     &nbsp;</span></p>
             <p class="c18 c35" id="h.2u6wntf"><span class="c67 c76">End-Point</span></p><a id="t.7f3fb25b8e25ffccc72ba95725370f0e9e48c453"></a><a
                 id="t.37"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c11">POST</span><span class="c0">&nbsp;</span><span class="c8">/upload</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c11">POST</span><span class="c0">&nbsp;</span><span class="c8">/upload</span></p>
+            </div>
             <p class="c18 c35" id="h.19c6y18"><span class="c76 c67">Flow description</span></p>
             <p class="c39"><span class="c17">When document is received to be uploaded DS performs following actions:</span></p>
             <ol class="c91 lst-kix_list_14-0 start" start="1">
@@ -1255,27 +1135,21 @@ permalink: /services/
             <p class="c2 c75 c195"><span class="c17"></span></p>
             <p class="c18 c35" id="h.3tbugp1"><span class="c76 c67">Example</span></p><a id="t.472fa64a36c953db16ec0e7d15143a6b03f9ea04"></a><a
                 id="t.38"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c11">POST</span><span class="c0">&nbsp;</span><span class="c8">/upload/389684cc28c242b79c97c56be5142e25</span><span
-                                    class="c0">&nbsp;HTTP/1.0<br></span><span class="c50">Authorization</span><span
-                                    class="c0">:
-                                    <br></span><span class="c50">Content-Length</span><span class="c0">: 58<br></span><span
-                                    class="c50">Content-Type</span><span class="c0">: multipart/form-data;
-                                    boundary=----------a_BoUnDaRy572732436472$<br></span><span class="c50">Host</span><span
-                                    class="c0 c67">: sandbox.storage.mtender.gov.md<br><br>------------a_BoUnDaRy572732436472$<br>content<br>------------a_BoUnDaRy572732436472$--<br><br>201
-                                    Created<br>Content-Type: application/json; charset=UTF-8</span></p>
-                            <p class="c19 c75"><span class="c0 c67"></span></p>
-                            <p class="c19"><span class="c0">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
-                                    &nbsp;&quot;url&quot;:
-                                </span><span class="c8">&quot;https://sandbox.storage.mtender.gov.md/get/389684cc28c242b79c97c56be5142e25&quot;</span><span
-                                    class="c0 c67"><br> &nbsp;}<br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c11">POST</span><span class="c0">&nbsp;</span><span class="c8">/upload/389684cc28c242b79c97c56be5142e25</span><span
+                        class="c0">&nbsp;HTTP/1.0<br></span><span class="c50">Authorization</span><span
+                        class="c0">:
+                        <br></span><span class="c50">Content-Length</span><span class="c0">: 58<br></span><span
+                        class="c50">Content-Type</span><span class="c0">: multipart/form-data;
+                        boundary=----------a_BoUnDaRy572732436472$<br></span><span class="c50">Host</span><span
+                        class="c0 c67">: sandbox.storage.mtender.gov.md<br><br>------------a_BoUnDaRy572732436472$<br>content<br>------------a_BoUnDaRy572732436472$--<br><br>201
+                        Created<br>Content-Type: application/json; charset=UTF-8</span></p>
+                <p class="c19 c75"><span class="c0 c67"></span></p>
+                <p class="c19"><span class="c0">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
+                        &nbsp;&quot;url&quot;:
+                    </span><span class="c8">&quot;https://sandbox.storage.mtender.gov.md/get/389684cc28c242b79c97c56be5142e25&quot;</span><span
+                        class="c0 c67"><br> &nbsp;}<br>}</span></p>
+            </div>
             <h6 class="c47" id="h.28h4qwu"><span class="c38">Get Uploaded Document</span></h6>
             <p class="c39"><span class="c17">If a document is registered and stored in the Document Service, it can be
                     retrieved by
@@ -1285,30 +1159,18 @@ permalink: /services/
                     Service.</span></p>
             <p class="c18 c35" id="h.nmf14n"><span class="c76 c67">End-Point</span></p><a id="t.5c2faa577be6af13bb50f09a63bf54b6f1b8135a"></a><a
                 id="t.39"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/get/</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/get/</span></p>
+            </div>
             <p class="c18 c35" id="h.37m2jsg"><span class="c76 c67">Example</span></p><a id="t.8afc4edcf4c86cd7d0ea4bb406187f5709c983a8"></a><a
                 id="t.40"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
+            <div class="sourceCode">
                             <p class="c19"><span class="c11">GET</span><span class="c0">&nbsp;</span><span class="c8">/get/389684cc28c242b79c97c56be5142e25</span><span
                                     class="c0">&nbsp;HTTP/1.0<br></span><span class="c50">Host</span><span class="c0">:
                                     sandbox.storage.mtender.gov.md<br><br>200 OK<br>Content-Disposition: attachment;
                                 </span><span class="c50">filename</span><span class="c0">=file.txt<br>Content-Type:
                                     text/plain; </span><span class="c50">charset</span><span class="c0">=UTF-8</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            </div>
             <p class="c39 c75"><span class="c17"></span></p>
             <h2 class="c24" id="h.enterprise"><span class="c67 c110 c150">Enterprise Services</span></h2>
             <p class="c39 c75"><span class="c17"></span></p>
@@ -1327,16 +1189,10 @@ permalink: /services/
 
             <h5 class="c159" id="h.46r0co2"><span class="c93 c67">AccessPoint</span></h5><a id="t.8cbfccac63b8e4c65c39783c17625628c5e61ee3"></a><a
                 id="t.41"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c42 c40"><a class="c4" href="https://www.google.com/url?q=https://sandbox.operations.mtender.gov.md&amp;sa=D&amp;ust=1583357221040000">https://sandbox.operations.mtender.gov.md</a></span></p>
-                            <p class="c19"><span class="c149 c160 c57 c268">operation.eprocurement.systems</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c42 c40"><a class="c4" href="https://www.google.com/url?q=https://sandbox.operations.mtender.gov.md&amp;sa=D&amp;ust=1583357221040000">https://sandbox.operations.mtender.gov.md</a></span></p>
+                <p class="c19"><span class="c149 c160 c57 c268">operation.eprocurement.systems</span></p>
+            </div>
             <h5 class="c159" id="h.2lwamvv"><span class="c93 c67">Functionality</span></h5>
             <h6 class="c47"><span class="c38">X-OPERATION-ID</span></h6>
             <p class="c117"><span class="c13">BPE should always know what client is going to do before this action.
@@ -1346,40 +1202,28 @@ permalink: /services/
                     GET-request..</span></p>
             <p class="c18 c35" id="h.111kx3o"><span class="c76 c67">Get X-OPERATION-ID</span></p><a id="t.98326be8e34f3a2c5226fd7de7d0fc0b7dcf52f1"></a><a
                 id="t.42"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c0">HTTP/</span><span class="c74">1.1</span><span class="c0">&nbsp;</span><span
-                                    class="c74">200</span><span class="c0">&nbsp;OK<br>Content-Type:
-                                    application/json;charset=UTF</span><span class="c74">-8</span><span class="c0"><br>Content-Length:
-                                </span><span class="c74">99</span><span class="c0"><br><br>{<br> &nbsp;&quot;data&quot;
-                                    : {<br> &nbsp; &nbsp;&quot;operationId&quot; :
-                                </span><span class="c8">&quot;3a0a5d62-e460-4dc5-9b3e-ae06226c58b4&quot;</span><span
-                                    class="c0"><br>
-                                    &nbsp;}<br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c0">HTTP/</span><span class="c74">1.1</span><span class="c0">&nbsp;</span><span
+                        class="c74">200</span><span class="c0">&nbsp;OK<br>Content-Type:
+                        application/json;charset=UTF</span><span class="c74">-8</span><span class="c0"><br>Content-Length:
+                    </span><span class="c74">99</span><span class="c0"><br><br>{<br> &nbsp;&quot;data&quot;
+                        : {<br> &nbsp; &nbsp;&quot;operationId&quot; :
+                    </span><span class="c8">&quot;3a0a5d62-e460-4dc5-9b3e-ae06226c58b4&quot;</span><span
+                        class="c0"><br>
+                        &nbsp;}<br>}</span></p>
+            </div>
             <p class="c18 c35" id="h.3l18frh"><span class="c76 c67">Receive X-OPERATION-ID</span></p><a id="t.98326be8e34f3a2c5226fd7de7d0fc0b7dcf52f1"></a><a
                 id="t.43"></a>
-            <table class="c15">
-                <tbody>
-                    <tr class="c14">
-                        <td class="c27" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c0">HTTP/</span><span class="c74">1.1</span><span class="c0">&nbsp;</span><span
-                                    class="c74">200</span><span class="c0">&nbsp;OK<br>Content-Type:
-                                    application/json;charset=UTF</span><span class="c74">-8</span><span class="c0"><br>Content-Length:
-                                </span><span class="c74">99</span><span class="c0"><br><br>{<br> &nbsp;&quot;data&quot;
-                                    : {<br> &nbsp; &nbsp;&quot;operationId&quot; :
-                                </span><span class="c8">&quot;3a0a5d62-e460-4dc5-9b3e-ae06226c58b4&quot;</span><span
-                                    class="c0"><br>
-                                    &nbsp;}<br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c0">HTTP/</span><span class="c74">1.1</span><span class="c0">&nbsp;</span><span
+                        class="c74">200</span><span class="c0">&nbsp;OK<br>Content-Type:
+                        application/json;charset=UTF</span><span class="c74">-8</span><span class="c0"><br>Content-Length:
+                    </span><span class="c74">99</span><span class="c0"><br><br>{<br> &nbsp;&quot;data&quot;
+                        : {<br> &nbsp; &nbsp;&quot;operationId&quot; :
+                    </span><span class="c8">&quot;3a0a5d62-e460-4dc5-9b3e-ae06226c58b4&quot;</span><span
+                        class="c0"><br>
+                        &nbsp;}<br>}</span></p>
+            </div>
             <p class="c1"><span class="c17"></span></p>
             <p class="c18" id="h.206ipza"><span class="c17">Also &lsquo;X-OPERATION-ID&rsquo; provides a request
                     identification.
@@ -1387,11 +1231,6 @@ permalink: /services/
                     received from
                     the Feed-Point.</span></p>
             <hr style="page-break-before:always;display:none;">
-            <ol class="c91 lst-kix_list_3-4 start" start="1">
-                <li class="c75 c115">
-                    <h5 style="display:inline"><span class="c93 c67"></span></h5>
-                </li>
-            </ol>
             <h6 class="c47"><span class="c38">Form Service</span></h6>
             <p class="c39"><span class="c17">The Form Service is an additional service that allows Platforms to get
                     actual needed
