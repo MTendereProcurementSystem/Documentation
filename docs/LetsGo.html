@@ -8,25 +8,6 @@ permalink: /letsGo/
 
     <head>
         <link rel="stylesheet" type="text/css" href="./../documentationStyles.css">
-        <style>
-            .sourceCode {
-                background: #f4f4f4;
-                border: 1px solid #ddd;
-                border-left: 3px solid #f36d33;
-                color: #666;
-                page-break-inside: avoid;
-                font-family: monospace;
-                font-size: 15px;
-                line-height: 1.6;
-                margin-bottom: 1.6em;
-                max-width: 90%;
-                overflow: auto;
-                padding: 1em 1.5em;
-                display: block;
-                word-wrap: break-word;
-            }
-
-        </style>
     </head>
 
     <body>
@@ -3184,46 +3165,34 @@ permalink: /letsGo/
                 <p class="c43"><span class="c23">Learn more about </span><span class="c10"><a class="c17" href="#h.452snld">mechanism
                             and what is &lsquo;X-OPERATION-ID&rsquo; is</a></span></p><a id="t.ef4850b767a15d13be4e3bbafef167a47fdbb2de"></a><a
                     id="t.143"></a>
-                <table class="c63">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c56" colspan="1" rowspan="1">
-                                <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;HTTP/1.1<br></span><span
-                                        class="c2">Authorization</span><span class="c0">: Bearer
-                                        QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span class="c0">:
-                                        operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
-                                        class="c0 c11">: application/json; charset=UTF-8</span></p>
-                                <p class="c21 c29"><span class="c0 c11"></span></p>
-                                <p class="c21"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
-                                        class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,</span></p>
-                                <p class="c21"><span class="c0 c11">&nbsp; &quot;schema&quot;: {},<br>
-                                        &nbsp;&quot;data&quot;: {}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;HTTP/1.1<br></span><span
+                            class="c2">Authorization</span><span class="c0">: Bearer
+                            QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span class="c0">:
+                            operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
+                            class="c0 c11">: application/json; charset=UTF-8</span></p>
+                    <p class="c21 c29"><span class="c0 c11"></span></p>
+                    <p class="c21"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
+                            class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,</span></p>
+                    <p class="c21"><span class="c0 c11">&nbsp; &quot;schema&quot;: {},<br>
+                            &nbsp;&quot;data&quot;: {}<br>}</span></p>
+                </div>
                 <p class="c72"><span class="c11 c38 c34">Send Request</span></p><a id="t.7854bfb15f4d518fbd6e0cc3fcfd9902ae8d665d"></a><a
                     id="t.144"></a>
-                <table class="c63">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c56" colspan="1" rowspan="1">
-                                <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/confirmation/can/ocds-000-00001/ocds-000-00001-cn/ocds-000-00001-can-4/</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
-                                        class="c0">:
-                                        f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
-                                        class="c0">:
-                                        c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0">:
-                                        bpe.eprocurement.systems<br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
-                                        class="c0">: application/json; charset=UTF-8</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/confirmation/can/ocds-000-00001/ocds-000-00001-cn/ocds-000-00001-can-4/</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
+                            class="c0">:
+                            f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
+                            class="c0">:
+                            c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0">:
+                            bpe.eprocurement.systems<br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
+                            class="c0">: application/json; charset=UTF-8</span></p>
+                </div>
                 <p class="c41 c29"><span class="c15 c11"></span></p>
                 <p class="c31"><span class="c23">As a result of confirmation of negative CAN, this CAN will be switched
                         by
@@ -3231,21 +3200,15 @@ permalink: /letsGo/
                         automatically to the terminal state with an indication of details of negative outcome through
                     </span><span class="c7">statusDetails</span><span class="c15 c11">&nbsp;attribute:</span></p><a id="t.b4c893a0fb598806c7a8802d7f7fb33c708f76da"></a><a
                     id="t.145"></a>
-                <table class="c63">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c56" colspan="1" rowspan="1">
-                                <p class="c21"><span class="c0">{<br> &nbsp;&quot;contracts&quot;: [<br> &nbsp; &nbsp;{<br>
-                                        &nbsp;
-                                        &nbsp; &nbsp;&quot;id&quot;: </span><span class="c13">&quot;ocds-000-00001-can-4&quot;</span><span
-                                        class="c0">, &nbsp;<br> &nbsp; &nbsp; &nbsp;&quot;status&quot;: </span><span
-                                        class="c13">&quot;unsuccessful&quot;</span><span class="c0">,<br> &nbsp; &nbsp;
-                                        &nbsp;&quot;statusDetails&quot;: </span><span class="c13">&quot;allOffersRejected&quot;
-                                    </span><span class="c0 c11"><br> &nbsp; &nbsp;}<br> &nbsp;]<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c21"><span class="c0">{<br> &nbsp;&quot;contracts&quot;: [<br> &nbsp; &nbsp;{<br>
+                            &nbsp;
+                            &nbsp; &nbsp;&quot;id&quot;: </span><span class="c13">&quot;ocds-000-00001-can-4&quot;</span><span
+                            class="c0">, &nbsp;<br> &nbsp; &nbsp; &nbsp;&quot;status&quot;: </span><span
+                            class="c13">&quot;unsuccessful&quot;</span><span class="c0">,<br> &nbsp; &nbsp;
+                            &nbsp;&quot;statusDetails&quot;: </span><span class="c13">&quot;allOffersRejected&quot;
+                        </span><span class="c0 c11"><br> &nbsp; &nbsp;}<br> &nbsp;]<br>}</span></p>
+                </div>
                 <p class="c31 c29"><span class="c15 c11"></span></p>
                 <p class="c62 c29"><span class="c3"></span></p>
                 <h4 class="c1" id="h.3kkl7fh"><span class="c35 c34">06.8. CAN cancellation</span></h4>
@@ -3259,50 +3222,38 @@ permalink: /letsGo/
                 <p class="c43"><span class="c23">Learn more about </span><span class="c10"><a class="c17" href="#h.452snld">mechanism
                             and what is &lsquo;X-OPERATION-ID&rsquo; is</a></span></p><a id="t.6110dbe9635d41e98659e98c5c059a881ebe9ad4"></a><a
                     id="t.146"></a>
-                <table class="c63">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c56" colspan="1" rowspan="1">
-                                <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=cancel-can&amp;ocid=...&amp;lang=...</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
-                                        class="c0">:
-                                        operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
-                                        class="c0 c11">: application/json; charset=UTF-8</span></p>
-                                <p class="c21 c29"><span class="c0 c11"></span></p>
-                                <p class="c21"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
-                                        class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,</span></p>
-                                <p class="c21"><span class="c0 c11">&nbsp; &quot;schema&quot;: {},<br>
-                                        &nbsp;&quot;data&quot;: {}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=cancel-can&amp;ocid=...&amp;lang=...</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
+                            class="c0">:
+                            operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
+                            class="c0 c11">: application/json; charset=UTF-8</span></p>
+                    <p class="c21 c29"><span class="c0 c11"></span></p>
+                    <p class="c21"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
+                            class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,</span></p>
+                    <p class="c21"><span class="c0 c11">&nbsp; &quot;schema&quot;: {},<br>
+                            &nbsp;&quot;data&quot;: {}<br>}</span></p>
+                </div>
                 <p class="c72"><span class="c11 c38 c34">Send Request</span></p><a id="t.c4f7532dbf3172362b5acefef23eea5961acff78"></a><a
                     id="t.147"></a>
-                <table class="c63">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c56" colspan="1" rowspan="1">
-                                <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/cancel/can/ocds-000-00001/ocds-000-00001-cn/ocds-000-00001-can-3/</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
-                                        class="c0">:
-                                        f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
-                                        class="c0">:
-                                        c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
-                                        bpe.eprocurement.systems</span></p>
-                                <p class="c21 c29"><span class="c0 c11"></span></p>
-                                <p class="c21"><span class="c0">{}<br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
-                                        class="c0">: application/json; charset=UTF-8</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/cancel/can/ocds-000-00001/ocds-000-00001-cn/ocds-000-00001-can-3/</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
+                            class="c0">:
+                            f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
+                            class="c0">:
+                            c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
+                            bpe.eprocurement.systems</span></p>
+                    <p class="c21 c29"><span class="c0 c11"></span></p>
+                    <p class="c21"><span class="c0">{}<br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
+                            class="c0">: application/json; charset=UTF-8</span></p>
+                </div>
                 <p class="c41 c29"><span class="c15 c11"></span></p>
                 <p class="c31"><span class="c23">As a result of cancellation of CAN, this CAN will be switched by
                         system
@@ -3315,35 +3266,21 @@ permalink: /letsGo/
                             class="c17" href="#h.2h20rx3">awards</a></span><span class="c10"><a class="c17" href="#h.2h20rx3">&nbsp;of
                             this lot from very beginning</a></span></p><a id="t.5a547443496eae4b1e7e672937158555879181ed"></a><a
                     id="t.148"></a>
-                <table class="c63">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c56" colspan="1" rowspan="1">
-                                <p class="c21"><span class="c0">{<br> &nbsp;&quot;contracts&quot;: [<br> &nbsp; &nbsp;{<br>
-                                        &nbsp;
-                                        &nbsp; &nbsp;&quot;id&quot;: </span><span class="c13">&quot;ocds-000-00001-can-3&quot;</span><span
-                                        class="c0">, &nbsp;<br> &nbsp; &nbsp; &nbsp;&quot;status&quot;: </span><span
-                                        class="c13">&quot;cancelled&quot;</span><span class="c0 c11"><br> &nbsp;
-                                        &nbsp;}<br> &nbsp;]<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c21"><span class="c0">{<br> &nbsp;&quot;contracts&quot;: [<br> &nbsp; &nbsp;{<br>
+                            &nbsp;
+                            &nbsp; &nbsp;&quot;id&quot;: </span><span class="c13">&quot;ocds-000-00001-can-3&quot;</span><span
+                            class="c0">, &nbsp;<br> &nbsp; &nbsp; &nbsp;&quot;status&quot;: </span><span
+                            class="c13">&quot;cancelled&quot;</span><span class="c0 c11"><br> &nbsp;
+                            &nbsp;}<br> &nbsp;]<br>}</span></p>
+                </div>
                 <p class="c18 c76 c29"><span class="c15 c11"></span></p><a id="t.26f382bb4aa67ad0d6d6db473e595fbb77611826"></a><a
                     id="t.149"></a>
-                <table class="c54">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c60 c111" colspan="1" rowspan="1">
-                                <p class="c41"><span class="c11 c38 c34">Future steps</span></p>
-                                <p class="c31" id="h.1zpvhna"><span class="c11 c38 c34">Signing of the decision on
-                                        cancellation made by
-                                        TC</span></p>
-                                <p class="c18 c76"><span class="c9">To be provided</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p class="c41"><span class="c11 c38 c34">Future steps</span></p>
+                <p class="c31" id="h.1zpvhna"><span class="c11 c38 c34">Signing of the decision on
+                        cancellation made by
+                        TC</span></p>
+                <p class="c18 c76"><span class="c9">To be provided</span></p>
                 <p class="c31 c29" id="h.4jpj0b3"><span class="c3"></span></p>
                 <hr style="page-break-before:always;display:none;">
                 <p class="c31 c29" id="h.2yutaiw"><span class="c3"></span></p>
@@ -3368,49 +3305,37 @@ permalink: /letsGo/
                 <p class="c43"><span class="c23">Learn more about </span><span class="c10"><a class="c17" href="#h.452snld">mechanism
                             and what is &lsquo;X-OPERATION-ID&rsquo; is</a></span></p><a id="t.7e4ac6edd6459a49856df71f5a4708635de3fdb0"></a><a
                     id="t.150"></a>
-                <table class="c65">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c39" colspan="1" rowspan="1">
-                                <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=ac&amp;ocid=...&amp;lang=...</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
-                                        class="c0">:
-                                        operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
-                                        class="c0 c11">: application/json; charset=UTF-8</span></p>
-                                <p class="c21"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
-                                        class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,</span></p>
-                                <p class="c21"><span class="c0 c11">&nbsp; &quot;schema&quot;: {},<br>
-                                        &nbsp;&quot;data&quot;: {}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c21"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=ac&amp;ocid=...&amp;lang=...</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
+                            class="c0">:
+                            operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
+                            class="c0 c11">: application/json; charset=UTF-8</span></p>
+                    <p class="c21"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
+                            class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,</span></p>
+                    <p class="c21"><span class="c0 c11">&nbsp; &quot;schema&quot;: {},<br>
+                            &nbsp;&quot;data&quot;: {}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.sabnu4"><span class="c6">Send Request</span></h5><a id="t.1a48980b8bc777f66ad3861c8e61c2748b8efa9c"></a><a
                     id="t.151"></a>
-                <table class="c65">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c39" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/contract/ocds-000-00001/ocds-000-00001-cn</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
-                                        class="c0">:
-                                        f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
-                                        class="c0">:
-                                        c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
-                                        bpe.eprocurement.systems</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{} <br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
-                                        class="c0">: application/json; charset=UTF-8</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">    
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/contract/ocds-000-00001/ocds-000-00001-cn</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
+                            class="c0">:
+                            f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
+                            class="c0">:
+                            c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
+                            bpe.eprocurement.systems</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{} <br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
+                            class="c0">: application/json; charset=UTF-8</span></p>
+                </div>
                 <p class="c41 c29"><span class="c9"></span></p>
                 <h5 class="c1" id="h.3c9z6hx"><span class="c6">Feed Point notification about &lsquo;awarded
                         contracts&rsquo; generated</span></h5>
@@ -3420,32 +3345,26 @@ permalink: /letsGo/
                         received
                         master-data (tokens) with him to be able to operate and provide manual qualification and
                         evaluation. </span></p><a id="t.08d2a2a6da8a2ffef1d69b4f5901848efde07e6b"></a><a id="t.152"></a>
-                <table class="c65">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c39" colspan="1" rowspan="1">
-                                <p class="c21"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;bpe&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
-                                    </span><span class="c13">&quot;ocds-000-00001&quot;</span><span class="c0">,<br>
-                                        &nbsp;
-                                        &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;outcomes&quot;: {<br> &nbsp; &nbsp;
-                                        &nbsp;&quot;ac&quot;: [<br>
-                                        &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp;
-                                        &nbsp;&quot;id&quot;:
-                                    </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0">,<br>
-                                        &nbsp; &nbsp; &nbsp;
-                                        &nbsp; &nbsp;&quot;X-TOKEN&quot;: </span><span class="c13">&quot;c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4&quot;</span><span
-                                        class="c0 c11"><br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp;]<br>
-                                        &nbsp; &nbsp;}<br>
-                                        &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c21"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;bpe&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
+                        </span><span class="c13">&quot;ocds-000-00001&quot;</span><span class="c0">,<br>
+                            &nbsp;
+                            &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;outcomes&quot;: {<br> &nbsp; &nbsp;
+                            &nbsp;&quot;ac&quot;: [<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;&quot;id&quot;:
+                        </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0">,<br>
+                            &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp;&quot;X-TOKEN&quot;: </span><span class="c13">&quot;c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4&quot;</span><span
+                            class="c0 c11"><br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp;]<br>
+                            &nbsp; &nbsp;}<br>
+                            &nbsp;}<br>}</span></p>
+                </div>
                 <p class="c31 c29" id="h.1rf9gpq"><span class="c3"></span></p>
                 <p class="c31"><span class="c15 c11">Each generated &lsquo;awarded contract&rsquo; is now related to
                         each
@@ -3458,48 +3377,42 @@ permalink: /letsGo/
                         contracts&rsquo; are generated.</span></p>
                 <h5 class="c1" id="h.4bewzdj"><span class="c6">Updates of parent Contract Award Notices</span></h5><a
                     id="t.2305fbb8fe1f21b5d240595e47b5e512ab26ad04"></a><a id="t.153"></a>
-                <table class="c65">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c39" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;bpe&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
-                                    </span><span class="c13">&quot;ocds-000-00001-cn&quot;</span><span class="c0">,<br>
-                                        &nbsp;
-                                        &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-cn&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
-                                        class="c0 c11">,<br> &nbsp; &nbsp;&quot;outcomes&quot;: {<br> &nbsp; &nbsp;
-                                        &quot;cans&quot;:[</span></p>
-                                <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp;
-                                        &nbsp;
-                                        &quot;id&quot;: </span><span class="c13">&quot;ocds-000-00001-can-1&quot;</span><span
-                                        class="c0 c11">,</span></p>
-                                <p class="c18"><span class="c0 c11">&nbsp; &nbsp; &nbsp; &nbsp;
-                                        &nbsp;&quot;relatedProcesses&quot;: [</span></p>
-                                <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{</span></p>
-                                <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                        &nbsp;&quot;id&quot;: </span><span class="c13">&quot;1&quot;</span><span class="c0 c11">,</span></p>
-                                <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                        &nbsp;&quot;identifier&quot;:
-                                    </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0 c11">,</span></p>
-                                <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                        &nbsp;&quot;relationship&quot;: </span><span class="c13">&quot;x_contracting&quot;</span><span
-                                        class="c0 c11">,</span></p>
-                                <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                        &nbsp;&quot;scheme&quot;:
-                                    </span><span class="c13">&quot;ocds&quot;</span><span class="c0 c11">,</span></p>
-                                <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                        &nbsp;&quot;uri&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-ac-1&quot;</span><span
-                                        class="c0 c11"><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } </span></p>
-                                <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]<br> &nbsp; &nbsp;
-                                        &nbsp; &nbsp;}<br>
-                                        &nbsp; &nbsp; &nbsp;]<br> &nbsp; &nbsp;}<br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;bpe&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
+                        </span><span class="c13">&quot;ocds-000-00001-cn&quot;</span><span class="c0">,<br>
+                            &nbsp;
+                            &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-cn&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
+                            class="c0 c11">,<br> &nbsp; &nbsp;&quot;outcomes&quot;: {<br> &nbsp; &nbsp;
+                            &quot;cans&quot;:[</span></p>
+                    <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp;
+                            &nbsp;
+                            &quot;id&quot;: </span><span class="c13">&quot;ocds-000-00001-can-1&quot;</span><span
+                            class="c0 c11">,</span></p>
+                    <p class="c18"><span class="c0 c11">&nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;&quot;relatedProcesses&quot;: [</span></p>
+                    <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{</span></p>
+                    <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;&quot;id&quot;: </span><span class="c13">&quot;1&quot;</span><span class="c0 c11">,</span></p>
+                    <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;&quot;identifier&quot;:
+                        </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0 c11">,</span></p>
+                    <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;&quot;relationship&quot;: </span><span class="c13">&quot;x_contracting&quot;</span><span
+                            class="c0 c11">,</span></p>
+                    <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;&quot;scheme&quot;:
+                        </span><span class="c13">&quot;ocds&quot;</span><span class="c0 c11">,</span></p>
+                    <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;&quot;uri&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-ac-1&quot;</span><span
+                            class="c0 c11"><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } </span></p>
+                    <p class="c18"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]<br> &nbsp; &nbsp;
+                            &nbsp; &nbsp;}<br>
+                            &nbsp; &nbsp; &nbsp;]<br> &nbsp; &nbsp;}<br> &nbsp;}<br>}</span></p>
+                </div>
                 <p class="c98 c76"><span class="c15 c11">Thereafter, CA prepares each draft for signing with updates
                         with
                         actual needed
@@ -3517,25 +3430,19 @@ permalink: /letsGo/
                 <p class="c43"><span class="c23">Learn more about </span><span class="c10"><a class="c17" href="#h.452snld">mechanism
                             and what is &lsquo;X-OPERATION-ID&rsquo; is</a></span></p><a id="t.62762d819e9892eb14fc503e0637e98f22f92158"></a><a
                     id="t.154"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=update-ac&amp;ocid=...&amp;lang=...</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
-                                        class="c0">:
-                                        operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
-                                        class="c0 c11">: application/json; charset=UTF-8</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
-                                        class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,<br>
-                                        &nbsp;&quot;schema&quot;: {},<br> &nbsp;&quot;data&quot;: {}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=update-ac&amp;ocid=...&amp;lang=...</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
+                            class="c0">:
+                            operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
+                            class="c0 c11">: application/json; charset=UTF-8</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
+                            class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,<br>
+                            &nbsp;&quot;schema&quot;: {},<br> &nbsp;&quot;data&quot;: {}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.24ufcor"><span class="c6">Registration Documentation</span></h5>
                 <p class="c26"><span class="c23">Tenderer can </span><span class="c10"><a class="c17" href="#h.3ws6mnt">register
                             files</a></span><span class="c23">&nbsp;for the future updated </span><span class="c7">contract
@@ -3545,138 +3452,103 @@ permalink: /letsGo/
                         an
                         iterative process. Accordingly, a registration request must be made for each document added</span></p><a
                     id="t.087dcb6503bdfe9d091a65814edbf2320018f30b"></a><a id="t.155"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
-                                        storage.eprocurement.systems</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
-                                        class="c0 c11"><br>}</span></p>
-                                <p class="c18 c29"><span class="c49 c11"></span></p>
-                                <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
-                                        application/json; charset=UTF-8</span></p>
-                                <p class="c18 c29"><span class="c49 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
-                                    </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
-                                        class="c0">,<br>
-                                        &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
-                                        class="c0 c11"><br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
+                            storage.eprocurement.systems</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
+                            class="c0 c11"><br>}</span></p>
+                    <p class="c18 c29"><span class="c49 c11"></span></p>
+                    <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
+                            application/json; charset=UTF-8</span></p>
+                    <p class="c18 c29"><span class="c49 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
+                        </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
+                            class="c0">,<br>
+                            &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
+                            class="c0 c11"><br> &nbsp;}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.jzpmwk"><span class="c6">Send Request</span></h5><a id="t.9b3a71a78e9c5a8237bf453bd5dea2260dd74227"></a><a
                     id="t.156"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/contract/ocds-000-00001/ocds-000-00001-ac-1/ocds-000-00001-ac-1</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
-                                        class="c0">:
-                                        f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
-                                        class="c0">:
-                                        c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0">:
-                                        bpe.eprocurement.systems<br></span><span class="c49"><br></span><span class="c0">{}<br></span><span
-                                        class="c49"><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
-                                        class="c0">:
-                                        application/json; charset=UTF-8</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/contract/ocds-000-00001/ocds-000-00001-ac-1/ocds-000-00001-ac-1</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
+                            class="c0">:
+                            f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
+                            class="c0">:
+                            c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0">:
+                            bpe.eprocurement.systems<br></span><span class="c49"><br></span><span class="c0">{}<br></span><span
+                            class="c49"><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
+                            class="c0">:
+                            application/json; charset=UTF-8</span></p>
+                </div>
                 <h5 class="c1" id="h.33zd5kd"><span class="c6">Feed Point Response</span></h5><a id="t.9ac1950776d5eebf78dd4b64ff83a77ce5859de9"></a><a
                     id="t.157"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;platform&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
-                                    </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0">,<br>
-                                        &nbsp;
-                                        &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-ac-1&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
-                                        class="c0">,<br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;platform&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
+                        </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0">,<br>
+                            &nbsp;
+                            &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-ac-1&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
+                            class="c0">,<br> &nbsp;}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.1j4nfs6"><span class="c6">Uploading Documentation</span></h5>
                 <p class="c26"><span class="c23">Tenderer can </span><span class="c10"><a class="c17" href="#h.1q7ozz1">upload
                             files</a></span><span class="c23">&nbsp;for the newly updated </span><span class="c7">awarded
                         contract.</span><span class="c15 c11">&nbsp;Document
                         uploading is an iterative process. Accordingly, a registration request must be made for each
                         document added</span></p><a id="t.1cce77e258e0f722de3e8c739be621356faed2bf"></a><a id="t.158"></a>
-                <table class="c54">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c44" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
-                                        storage.eprocurement.systems</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
-                                        class="c0 c11"><br>}</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
-                                        application/json; charset=UTF-8</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
-                                    </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
-                                        class="c0">,<br>
-                                        &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;datePublished&quot;: </span><span class="c32">null</span><span
-                                        class="c0 c11"><br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
+                            storage.eprocurement.systems</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
+                            class="c0 c11"><br>}</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
+                            application/json; charset=UTF-8</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
+                        </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
+                            class="c0">,<br>
+                            &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;datePublished&quot;: </span><span class="c32">null</span><span
+                            class="c0 c11"><br> &nbsp;}<br>}</span></p>
+                </div>
                 <p class="c18 c76 c29"><span class="c11 c59"></span></p>
                 <p class="c41 c29"><span class="c59 c11"></span></p><a id="t.d84c093dd65ecae783a26ceb1e44a1dcabd6880c"></a><a
                     id="t.159"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c24">
-                            <td class="c45" colspan="1" rowspan="1">
-                                <p class="c18 c76"><span class="c34 c23">Before prepared contract is issued CA is able
-                                        to
-                                        update AC as
-                                        many time as needed</span><span class="c11 c38 c34">&nbsp;</span></p>
-                            </td>
-                            <td class="c19" colspan="1" rowspan="1">
-                                <p class="c40"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 20.00px; height: 23.08px;"><img
-                                            alt="" src="../images/letsgo4.png" style="width: 20.00px; height: 23.08px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                                            title=""></span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p class="c18 c76"><span class="c34 c23">Before prepared contract is issued CA is able
+                        to
+                        update AC as
+                        many time as needed.</span><span class="c11 c38 c34">&nbsp;</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 20.00px; height: 23.08px;"><img
+                            alt="" src="../images/letsgo4.png" style="width: 20.00px; height: 23.08px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                            title=""></span></p>
                 <hr style="page-break-before:always;display:none;">
                 <p class="c30 c29"><span class="c3"></span></p>
                 <h4 class="c1" id="h.2i9l8ns"><span class="c35 c34">08.3. Issuing of prepared contract</span></h4>
@@ -3687,68 +3559,50 @@ permalink: /letsGo/
                 <p class="c43"><span class="c23">Learn more about </span><span class="c10"><a class="c17" href="#h.452snld">mechanism
                             and what is &lsquo;X-OPERATION-ID&rsquo; is</a></span></p><a id="t.4f1981a746a856c16049988e0990c7e20ea56be1"></a><a
                     id="t.160"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=...</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
-                                        class="c0">:
-                                        operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
-                                        class="c0 c11">: application/json; charset=UTF-8</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
-                                        class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11"><br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=...</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
+                            class="c0">:
+                            operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
+                            class="c0 c11">: application/json; charset=UTF-8</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
+                            class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11"><br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.3hej1je"><span class="c6">Send Request</span></h5><a id="t.ac53f0a7f951601dfdd28392fa318b50d4c951ed"></a><a
                     id="t.161"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/issue/contract/ocds-000-00001/ocds-000-00001-ac-1</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
-                                        class="c0">:
-                                        f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
-                                        class="c0">:
-                                        c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0">:
-                                        bpe.eprocurement.systems<br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
-                                        class="c0">: application/json; charset=UTF-8</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/issue/contract/ocds-000-00001/ocds-000-00001-ac-1</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
+                            class="c0">:
+                            f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
+                            class="c0">:
+                            c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0">:
+                            bpe.eprocurement.systems<br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
+                            class="c0">: application/json; charset=UTF-8</span></p>
+                </div>
                 <h5 class="c1" id="h.1wjtbr7"><span class="c6">Feed Point Response</span></h5><a id="t.9ac1950776d5eebf78dd4b64ff83a77ce5859de9"></a><a
                     id="t.162"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;platform&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
-                                    </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0">,<br>
-                                        &nbsp;
-                                        &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-ac-1&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
-                                        class="c0">,<br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;platform&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
+                        </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0">,<br>
+                            &nbsp;
+                            &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-ac-1&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
+                            class="c0">,<br> &nbsp;}<br>}</span></p>
+                </div>
                 <p class="c18 c76 c29"><span class="c15 c11"></span></p><a id="t.ecbb90fef86b42ac07853015465c0b91768f83ff"></a><a
                     id="t.163"></a>
-                <table class="c16">
+                <table class="c16 withoutBorder additionalInfo">
                     <tbody>
                         <tr class="c24">
                             <td class="c45" colspan="1" rowspan="1">
@@ -3792,25 +3646,19 @@ permalink: /letsGo/
                 <p class="c43"><span class="c23">Learn more about </span><span class="c10"><a class="c17" href="#h.452snld">mechanism
                             and what is &lsquo;X-OPERATION-ID&rsquo; is</a></span></p><a id="t.fabc3c9d65f88d4e541a02e50b5a8cdee6cd6fca"></a><a
                     id="t.164"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=...</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
-                                        class="c0">:
-                                        operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
-                                        class="c0 c11">: application/json; charset=UTF-8</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
-                                        class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,<br>
-                                        &nbsp;&quot;schema&quot;: {},<br> &nbsp;&quot;data&quot;: {}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=...</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
+                            class="c0">:
+                            operation.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
+                            class="c0 c11">: application/json; charset=UTF-8</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
+                            class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,<br>
+                            &nbsp;&quot;schema&quot;: {},<br> &nbsp;&quot;data&quot;: {}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.3utoxif"><span class="c6">Registration Documentation</span></h5>
                 <p class="c26"><span class="c23">Tenderer can </span><span class="c10"><a class="c17" href="#h.3ws6mnt">register
                             files</a></span><span class="c23">&nbsp;for the future updated </span><span class="c7">contract
@@ -3820,123 +3668,99 @@ permalink: /letsGo/
                         an
                         iterative process. Accordingly, a registration request must be made for each document added</span></p><a
                     id="t.087dcb6503bdfe9d091a65814edbf2320018f30b"></a><a id="t.165"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
-                                        storage.eprocurement.systems</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
-                                        class="c0 c11"><br>}</span></p>
-                                <p class="c18 c29"><span class="c49 c11"></span></p>
-                                <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
-                                        application/json; charset=UTF-8</span></p>
-                                <p class="c18 c29"><span class="c49 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
-                                    </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
-                                        class="c0">,<br>
-                                        &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
-                                        class="c0 c11"><br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <div class="sourceCode">
+                        <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
+                                class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                                class="c0">:
+                                Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
+                                class="c0">:
+                                application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
+                                storage.eprocurement.systems</span></p>
+                        <p class="c18 c29"><span class="c0 c11"></span></p>
+                        <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
+                                class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
+                                class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
+                                class="c0 c11"><br>}</span></p>
+                        <p class="c18 c29"><span class="c49 c11"></span></p>
+                        <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
+                                application/json; charset=UTF-8</span></p>
+                        <p class="c18 c29"><span class="c49 c11"></span></p>
+                        <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
+                                class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
+                            </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
+                                class="c0">,<br>
+                                &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
+                                class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
+                                class="c0 c11"><br> &nbsp;}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.29yz7q8"><span class="c6">&nbsp;Send Request</span></h5><a id="t.1f8be343f2d95f2bbaca210d1529ab1303038ac7"></a><a
                     id="t.166"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/</span><span
-                                        class="c13">confirmation/</span><span class="c13">buyer/ocds-000-00001/ocds-000-00001-ac-1/confirmationRequestID</span><span
-                                        class="c0 c11">&nbsp;HTTP/1.1</span></p>
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/</span><span
-                                        class="c13">confirmation/</span><span class="c13">supplier/ocds-000-00001/ocds-000-00001-ac-1/confirmationRequestID</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
-                                        class="c0">:
-                                        f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
-                                        class="c0">:
-                                        c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0">:
-                                        bpe.eprocurement.systems<br><br>{}<br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
-                                        class="c0">: application/json; charset=UTF-8</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/</span><span
+                            class="c13">confirmation/</span><span class="c13">buyer/ocds-000-00001/ocds-000-00001-ac-1/confirmationRequestID</span><span
+                            class="c0 c11">&nbsp;HTTP/1.1</span></p>
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/do/</span><span
+                            class="c13">confirmation/</span><span class="c13">supplier/ocds-000-00001/ocds-000-00001-ac-1/confirmationRequestID</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
+                            class="c0">:
+                            f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
+                            class="c0">:
+                            c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0">:
+                            bpe.eprocurement.systems<br><br>{}<br><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
+                            class="c0">: application/json; charset=UTF-8</span></p>
+                </div>
                 <h5 class="c1" id="h.p49hy1"><span class="c6">Feed Point Response</span></h5><a id="t.9ac1950776d5eebf78dd4b64ff83a77ce5859de9"></a><a
                     id="t.167"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;platform&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
-                                    </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0">,<br>
-                                        &nbsp;
-                                        &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-ac-1&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
-                                        class="c0">,<br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;platform&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
+                        </span><span class="c13">&quot;ocds-000-00001-ac-1&quot;</span><span class="c0">,<br>
+                            &nbsp;
+                            &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-00001/ocds-000-00001-ac-1&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
+                            class="c0">,<br> &nbsp;}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.393x0lu"><span class="c6">Uploading Documentation</span></h5>
                 <p class="c26"><span class="c23">Tenderer can </span><span class="c10"><a class="c17" href="#h.1q7ozz1">upload
                             files</a></span><span class="c23">&nbsp;for the newly updated </span><span class="c7">awarded
                         contract.</span><span class="c15 c11">&nbsp;Document
                         uploading is an iterative process. Accordingly, a registration request must be made for each
                         document added</span></p><a id="t.1cce77e258e0f722de3e8c739be621356faed2bf"></a><a id="t.168"></a>
-                <table class="c54">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c44" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
-                                        storage.eprocurement.systems</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
-                                        class="c0 c11"><br>}</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
-                                        application/json; charset=UTF-8</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
-                                    </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
-                                        class="c0">,<br>
-                                        &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;datePublished&quot;: </span><span class="c32">null</span><span
-                                        class="c0 c11"><br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
+                            storage.eprocurement.systems</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
+                            class="c0 c11"><br>}</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
+                            application/json; charset=UTF-8</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
+                        </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
+                            class="c0">,<br>
+                            &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;datePublished&quot;: </span><span class="c32">null</span><span
+                            class="c0 c11"><br> &nbsp;}<br>}</span></p>
+                </div>
                 <p class="c18 c76 c29"><span class="c15 c11"></span></p><a id="t.c7f9f136a79b45bd0d40b805de47b367fb60cb72"></a><a
                     id="t.169"></a>
-                <table class="c16">
+                <table class="c16 withoutBorder additionalInfo">
                     <tbody>
                         <tr class="c24">
                             <td class="c45" colspan="1" rowspan="1">
@@ -3956,25 +3780,17 @@ permalink: /letsGo/
                 <p class="c31 c29" id="h.1o97atn"><span class="c3"></span></p>
                 <hr style="page-break-before:always;display:none;">
                 <h5 class="c1 c131" id="h.488uthg"><span class="c6"></span></h5>
-                <h4 class="c1" id="h.2ne53p9"><span>08.5. </span><span>Validation</span><sup><a href="#cmnt5" id="cmnt_ref5">[e]</a></sup></h4>
+                <h4 class="c1" id="h.2ne53p9"><span>08.5. </span><span>Validation</span></h4>
                 <h4 class="c1" id="h.12jfdx2"><span class="c35 c34">08.6. Activation </span></h4>
                 <p class="c18 c76 c29"><span class="c15 c11"></span></p><a id="t.40d15da78c8b87945f28853b7fe319e9aa9f20cb"></a><a
                     id="t.170"></a>
-                <table class="c126">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c60 c88" colspan="1" rowspan="1">
-                                <p class="c41"><span class="c11 c38 c34">Future steps</span></p>
-                                <h5 class="c1"><span class="c6">08.7. Execution</span></h5>
-                                <p class="c31"><span class="c23">To be provided during next phase</span></p>
-                                <h5 class="c1"><span class="c6">08.8. Amendments and extensions</span></h5>
-                                <p class="c31"><span class="c23">To be provided during next phase</span></p>
-                                <h5 class="c1" id="h.3mj2wkv"><span class="c6">08.9. Termination</span></h5>
-                                <p class="c31"><span class="c23">To be provided during next phase</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p class="c41"><span class="c11 c38 c34">Future steps</span></p>
+                <h5 class="c1"><span class="c6">08.7. Execution</span></h5>
+                <p class="c31"><span class="c23">To be provided during next phase</span></p>
+                <h5 class="c1"><span class="c6">08.8. Amendments and extensions</span></h5>
+                <p class="c31"><span class="c23">To be provided during next phase</span></p>
+                <h5 class="c1" id="h.3mj2wkv"><span class="c6">08.9. Termination</span></h5>
+                <p class="c31"><span class="c23">To be provided during next phase</span></p>
                 <p class="c31 c29" id="h.21od6so"><span class="c3"></span></p>
                 <p class="c31 c29"><span class="c15 c11"></span></p>
                 <p class="c74 c29"><span class="c3"></span></p>
@@ -4001,25 +3817,19 @@ permalink: /letsGo/
                 <p class="c43"><span class="c23">Learn more about </span><span class="c10"><a class="c17" href="#h.452snld">mechanism
                             and what is &lsquo;X-OPERATION-ID&rsquo; is</a></span></p><a id="t.e7cb2b52f53705d7a3927282b6fe5e714673cb7d"></a><a
                     id="t.171"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c46"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=cancellation-tender&amp;ocid=...&amp;lang=...</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
-                                        class="c0">:
-                                        operations.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
-                                        class="c0 c11">: application/json; charset=UTF-8</span></p>
-                                <p class="c46 c29"><span class="c0 c11"></span></p>
-                                <p class="c46"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
-                                        class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,<br>
-                                        &nbsp;&quot;schema&quot;: {},<br> &nbsp;&quot;data&quot;: {}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c46"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">?form=cancellation-tender&amp;ocid=...&amp;lang=...</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Host</span><span
+                            class="c0">:
+                            operations.eprocurement.systems<br><br></span><span class="c2">201 OK<br>Content-Type</span><span
+                            class="c0 c11">: application/json; charset=UTF-8</span></p>
+                    <p class="c46 c29"><span class="c0 c11"></span></p>
+                    <p class="c46"><span class="c0">{<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span
+                            class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span class="c0 c11">,<br>
+                            &nbsp;&quot;schema&quot;: {},<br> &nbsp;&quot;data&quot;: {}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.2f3j2rp"><span class="c6">Registration Documentation</span></h5>
                 <p class="c26"><span class="c23">Procuring entity can </span><span class="c10"><a class="c17" href="#h.3ws6mnt">register
                             files</a></span><span class="c15 c11">&nbsp;for the future amendment for contracting
@@ -4027,80 +3837,62 @@ permalink: /letsGo/
                         before such
                         amendment is updated. Document registration is an iterative process. </span></p><a id="t.087dcb6503bdfe9d091a65814edbf2320018f30b"></a><a
                     id="t.172"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c46"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
-                                        storage.eprocurement.systems</span></p>
-                                <p class="c46 c29"><span class="c0 c11"></span></p>
-                                <p class="c46"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
-                                        class="c0 c11"><br>}</span></p>
-                                <p class="c46 c29"><span class="c49 c11"></span></p>
-                                <p class="c46"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
-                                        application/json; charset=UTF-8</span></p>
-                                <p class="c46 c29"><span class="c49 c11"></span></p>
-                                <p class="c46"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
-                                    </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
-                                        class="c0">,<br>
-                                        &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
-                                        class="c0 c11"><br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c46"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
+                            storage.eprocurement.systems</span></p>
+                    <p class="c46 c29"><span class="c0 c11"></span></p>
+                    <p class="c46"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
+                            class="c0 c11"><br>}</span></p>
+                    <p class="c46 c29"><span class="c49 c11"></span></p>
+                    <p class="c46"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
+                            application/json; charset=UTF-8</span></p>
+                    <p class="c46 c29"><span class="c49 c11"></span></p>
+                    <p class="c46"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
+                        </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
+                            class="c0">,<br>
+                            &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
+                            class="c0 c11"><br> &nbsp;}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.u8tczi"><span class="c6">Send Request</span></h5><a id="t.fac418ccb7194bca8a29968add906ae58eade97c"></a><a
                     id="t.173"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c46"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/cancel/cn/ocds-000-00001/ocds-000-00001-cn</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
-                                        class="c0">:
-                                        f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
-                                        class="c0">:
-                                        c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0">:
-                                        bpe.eprocurement.systems<br></span><span class="c49"><br></span><span class="c0">{}<br></span><span
-                                        class="c49"><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
-                                        class="c0">:
-                                        application/json; charset=UTF-8</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c46"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/cancel/cn/ocds-000-00001/ocds-000-00001-cn</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">X-OPERATION-ID</span><span
+                            class="c0">:
+                            f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb<br></span><span class="c2">X-TOKEN</span><span
+                            class="c0">:
+                            c3bdd497-ac2d-4e25-bd7f-cd55111aa7b4<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0">:
+                            bpe.eprocurement.systems<br></span><span class="c49"><br></span><span class="c0">{}<br></span><span
+                            class="c49"><br></span><span class="c2">202 Accepted<br>Content-Type</span><span
+                            class="c0">:
+                            application/json; charset=UTF-8</span></p>
+                </div>
                 <h5 class="c1" id="h.3e8gvnb"><span class="c6">Feed Point Response</span></h5><a id="t.29ad1f8adac73619cbddc31cd7340a180650d134"></a><a
                     id="t.174"></a>
-                <table class="c16">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c20" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;platform&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
-                                    </span><span class="c13">&quot;ocds-000-00001-cn&quot;</span><span class="c0">,<br>
-                                        &nbsp;
-                                        &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-0000/ocds-000-00001-cn&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
-                                        class="c0">,<br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;initiator&quot;: </span><span class="c13">&quot;platform&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-OPERATION-ID&quot;: </span><span class="c13">&quot;f5c6a3c0-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;X-RESPONSE-ID&quot;: </span><span class="c13">&quot;f5c6a3c1-5ff8-463f-9c0c-d4c1f324b7fb&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;ocid&quot;:
+                        </span><span class="c13">&quot;ocds-000-00001-cn&quot;</span><span class="c0">,<br>
+                            &nbsp;
+                            &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://public.eprocurement.systems/tenders/ocds-000-0000/ocds-000-00001-cn&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;operationDate&quot;: </span><span class="c13">&quot;2018-08-14T13:51:06Z&quot;</span><span
+                            class="c0">,<br> &nbsp;}<br>}</span></p>
+                </div>
                 <h5 class="c1" id="h.1tdr5v4"><span class="c6">Uploading Documentation</span></h5>
                 <p class="c26"><span class="c23">Tenderer can </span><span class="c10"><a class="c17" href="#h.1q7ozz1">upload
                             files</a></span><span class="c15 c11">&nbsp;for the newly created amendment. Document
@@ -4108,38 +3900,32 @@ permalink: /letsGo/
                         is an iterative process. Accordingly,
                         a registration request must be made for each document added</span></p><a id="t.1cce77e258e0f722de3e8c739be621356faed2bf"></a><a
                     id="t.175"></a>
-                <table class="c54">
-                    <tbody>
-                        <tr class="c5">
-                            <td class="c44" colspan="1" rowspan="1">
-                                <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
-                                        class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
-                                        class="c0">:
-                                        Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
-                                        class="c0">:
-                                        application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
-                                        storage.eprocurement.systems</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
-                                        class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
-                                        class="c0 c11"><br>}</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
-                                        application/json; charset=UTF-8</span></p>
-                                <p class="c18 c29"><span class="c0 c11"></span></p>
-                                <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
-                                        class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
-                                    </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
-                                        class="c0">,<br>
-                                        &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
-                                        class="c0">,<br> &nbsp; &nbsp;&quot;datePublished&quot;: </span><span class="c32">null</span><span
-                                        class="c0 c11"><br> &nbsp;}<br>}</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="sourceCode">
+                    <p class="c18"><span class="c22">POST</span><span class="c0">&nbsp;</span><span class="c13">/registration</span><span
+                            class="c0">&nbsp;HTTP/1.1<br></span><span class="c2">Authorization</span><span
+                            class="c0">:
+                            Bearer QWxhZGRpbjpPcGVuU2VzYW1l<br></span><span class="c2">Content-Type</span><span
+                            class="c0">:
+                            application/json<br></span><span class="c2">Host</span><span class="c0 c11">:
+                            storage.eprocurement.systems</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;hash&quot;: </span><span class="c13">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;weight&quot;: </span><span class="c13">&quot;1024&quot;</span><span
+                            class="c0">,<br> &nbsp;&quot;filename&quot;: </span><span class="c13">&quot;file.txt&quot;</span><span
+                            class="c0 c11"><br>}</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c2">201 Created<br>Content-Type</span><span class="c0 c11">:
+                            application/json; charset=UTF-8</span></p>
+                    <p class="c18 c29"><span class="c0 c11"></span></p>
+                    <p class="c18"><span class="c0">{<br> &nbsp;&quot;success&quot;: </span><span class="c32">true</span><span
+                            class="c0">,<br> &nbsp;&quot;data&quot;: {<br> &nbsp; &nbsp;&quot;id&quot;:
+                        </span><span class="c13">&quot;4c4f5a50-89cd-11e8-b758-dd76462396b0&quot;</span><span
+                            class="c0">,<br>
+                            &nbsp; &nbsp;&quot;url&quot;: </span><span class="c13">&quot;http://storage.eprocurement.systems/get/4c4f5a50-89cd-11e8&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c13">&quot;2018-07-17T14:25:47Z&quot;</span><span
+                            class="c0">,<br> &nbsp; &nbsp;&quot;datePublished&quot;: </span><span class="c32">null</span><span
+                            class="c0 c11"><br> &nbsp;}<br>}</span></p>
+                </div>
                 <hr style="page-break-before:always;display:none;">
                 <p class="c30 c29"><span class="c3"></span></p>
                 <h4 class="c1" id="h.2sioyqq"><span class="c35 c34">09.2. Cancellation of single lot</span></h4>
@@ -4149,7 +3935,7 @@ permalink: /letsGo/
                         excluded needs to
                         be absent in update-payload based on cn command-model</span></p><a id="t.baa66ece34a5971fbd510b677dffad81fa037d45"></a><a
                     id="t.176"></a>
-                <table class="c16">
+                <table class="c16 withoutBorder additionalInfo">
                     <tbody>
                         <tr class="c5">
                             <td class="c45" colspan="1" rowspan="1">
