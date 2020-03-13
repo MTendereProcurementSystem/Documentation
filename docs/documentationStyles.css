@@ -162,6 +162,10 @@
     word-wrap: break-word;
 }
 
+.mainBullet{
+    color: red;
+}
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 15px;}
