@@ -13,6 +13,7 @@
     padding-top: 2%;
     padding-left: 3%;
     color:#fff;
+    padding-bottom: 50px;
   }
 
   .sidenav a {
@@ -110,7 +111,7 @@
   .withoutBorder{
     border: none;
   }
-  
+
   .withoutBorder tr{
     border: none;
   }
@@ -120,7 +121,7 @@
   }
 
   .listTitle{
-    
+
   }
 
   .listBullet{
