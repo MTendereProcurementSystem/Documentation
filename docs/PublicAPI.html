@@ -7,7 +7,7 @@ permalink: /API/
 <html>
 
     <head>
-        <link rel="stylesheet" type="text/css" href="./../documentationStyles.css">
+        <link rel="stylesheet" type="text/css" href="documentationStyles.css">
     </head>
 
     <body>
@@ -166,67 +166,43 @@ permalink: /API/
             <h2 class="c82" id="h.command"><span class="c67 c96">Command API </span></h2>
             <p class="c60"><span class="c11">This section explain how the interfaces to the provided services are
                     called. </span></p><a id="t.1a36e7836603b8981367a35a6f40a9c7055824e8"></a><a id="t.1"></a>
-            <table id="table1" class="c23">
-                <tbody>
-                    <tr class="c2">
-                        <td class="c50 c54" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c46 c67">https://bpe.HOST </span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c46 c67">https://bpe.HOST </span></p>
+            </div>
             <p class="c14" id="h.3znysh7"><span class="c11"></span></p>
             <h3 class="c53" id="h.2et92p0"><span class="c30">Request example</span></h3>
             <p class="c48 c92"><span class="c11">All requests for Form Service are use POST-method (same as for parent
                     Operation
                     Service)</span></p><a id="t.d3c7b9a9895a32fea5f92730e21a42f393c2b682"></a><a id="t.2"></a>
-            <table id="table1" class="c23">
-                <tbody>
-                    <tr class="c2">
-                        <td class="c28 c50" colspan="1" rowspan="1">
-                            <p class="c48"><span class="c5 c28">POST</span><span class="c25 c28">&nbsp;</span><span
-                                    class="c28 c62 c63">endPoint?specificParams[...]</span><span class="c25 c28">&nbsp;HTTP/1.1<br></span><span
-                                    class="c63 c28 c62">Authorization</span><span class="c25 c28">: Bearer ...<br></span><span
-                                    class="c63 c28 c62">X-OPERATION-ID</span><span class="c25 c28">: ...<br></span><span
-                                    class="c63 c28 c62">Content-Type</span><span class="c25 c28">:
-                                    application/json<br></span><span class="c63 c28 c62">Host</span><span class="c25 c28">:
-                                    bpe.HOST</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c48"><span class="c5 c28">POST</span><span class="c25 c28">&nbsp;</span><span
+                        class="c28 c62 c63">endPoint?specificParams[...]</span><span class="c25 c28">&nbsp;HTTP/1.1<br></span><span
+                        class="c63 c28 c62">Authorization</span><span class="c25 c28">: Bearer ...<br></span><span
+                        class="c63 c28 c62">X-OPERATION-ID</span><span class="c25 c28">: ...<br></span><span
+                        class="c63 c28 c62">Content-Type</span><span class="c25 c28">:
+                        application/json<br></span><span class="c63 c28 c62">Host</span><span class="c25 c28">:
+                        bpe.HOST</span></p>
+            </div>
             <p class="c14" id="h.tyjcwt"><span class="c11"></span></p>
             <p class="c60"><span class="c42">Specific Params</span></p>
             <p class="c38"><span class="c11">Set of specific parameters required in particular case. Described below.</span></p>
             <h3 class="c53" id="h.3dy6vkm"><span class="c30">Response examples</span></h3>
             <p class="c48 c92"><span class="c11">For all valid queries, the response will have a common structure:</span></p><a
                 id="t.98ba48984e22e6399122d7387a6de9dcdcab25d8"></a><a id="t.3"></a>
-            <table id="table1" class="c23">
-                <tbody>
-                    <tr class="c2">
-                        <td class="c50 c28" colspan="1" rowspan="1">
-                            <p class="c48"><span class="c63 c28 c62">202 Accepted<br>Content-Type</span><span class="c25 c28">:
-                                    application/json; charset=UTF-8</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c48"><span class="c63 c28 c62">202 Accepted<br>Content-Type</span><span class="c25 c28">:
+                        application/json; charset=UTF-8</span></p>
+            </div>
             <p class="c59"><span class="c11">For all invalid queries, the response will have a common structure:</span></p><a
                 id="t.2816f5d153c667e069dbeca9a1f2eb5337aeab8d"></a><a id="t.4"></a>
-            <table id="table1" class="c23">
-                <tbody>
-                    <tr class="c2">
-                        <td class="c50 c28" colspan="1" rowspan="1">
-                            <p class="c48"><span class="c71 c28 c62">4</span><span class="c25 c28">XX<br>Content-Type:
-                                    application/json; charset=UTF</span><span class="c28 c62 c71">-8</span><span class="c25 c28"><br>{<br>
-                                    &nbsp;&quot;errors&quot;:[<br> &nbsp; {<br> &nbsp; &nbsp; &quot;code&quot;: </span><span
-                                    class="c46 c28">&quot;&quot;</span><span class="c25 c28">,<br> &nbsp; &nbsp;
-                                    &quot;description&quot;: </span><span class="c46 c28">&quot;&quot;</span><span
-                                    class="c25 c28"><br> &nbsp; }<br> &nbsp;]<br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c48"><span class="c71 c28 c62">4</span><span class="c25 c28">XX<br>Content-Type:
+                        application/json; charset=UTF</span><span class="c28 c62 c71">-8</span><span class="c25 c28"><br>{<br>
+                        &nbsp;&quot;errors&quot;:[<br> &nbsp; {<br> &nbsp; &nbsp; &quot;code&quot;: </span><span
+                        class="c46 c28">&quot;&quot;</span><span class="c25 c28">,<br> &nbsp; &nbsp;
+                        &quot;description&quot;: </span><span class="c46 c28">&quot;&quot;</span><span
+                        class="c25 c28"><br> &nbsp; }<br> &nbsp;]<br>}</span></p>
+            </div>
             <h3 class="c53" id="h.1t3h5sf"><span class="c30">Activities</span></h3>
             <p class="c38"><span class="c11">This section describes the array of activities that can be performed
                     through the API
@@ -262,15 +238,9 @@ permalink: /API/
             <h5 class="c4" id="h.2s8eyo1"><span class="c13">Expenditure Item (EI)</span></h5>
             <h6 class="c32" id="h.17dp8vu"><span class="c15">Create ei</span></h6><a id="t.7de826ed3780132713a414fca5edf78e25eb46cf"></a><a
                 id="t.5"></a>
-            <table id="table1" class="c26">
-                <tbody>
-                    <tr class="c2">
-                        <td class="c28 c57" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/ei?country=...</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/ei?country=...</span></p>
+            </div>
             <p class="c19 c31"><span class="c29"></span></p><a id="t.628be13caeb0dbbf3d30133edbf2c6ced6692092"></a><a
                 id="t.6"></a>
             <table id="table1" class="c35">
@@ -288,15 +258,9 @@ permalink: /API/
             </table>
             <h6 class="c4" id="h.3rdcrjn"><span class="c15">Update ei</span></h6><a id="t.4c58fd99202e4a5d8fe59a7ad19d01275a84a4cb"></a><a
                 id="t.7"></a>
-            <table id="table1" class="c35">
-                <tbody>
-                    <tr class="c2">
-                        <td class="c28 c69" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/ei/ocid</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/ei/ocid</span></p>
+            </div>
             <p class="c19 c31"><span class="c29"></span></p><a id="t.f9a9b10bd99e84dad8ed0f52ea08b3b66cf7faa1"></a><a
                 id="t.8"></a>
             <table id="table1" class="c26">
@@ -314,15 +278,9 @@ permalink: /API/
             <h5 class="c4" id="h.26in1rg"><span class="c13">Funding Source (FS)</span></h5>
             <h6 class="c32" id="h.lnxbz9"><span class="c15">Create fs</span></h6><a id="t.5925ddaadac01dd414c3154f70bcd60d628d30e6"></a><a
                 id="t.9"></a>
-            <table id="table1" class="c23">
-                <tbody>
-                    <tr class="c2">
-                        <td class="c73 c28" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/fs/ocid</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/fs/ocid</span></p>
+            </div>
             <p class="c19 c31"><span class="c29"></span></p><a id="t.5fead6a246cf4055f8391c09a5e008ad21e91186"></a><a
                 id="t.10"></a>
             <table id="table1" class="c26">
@@ -339,15 +297,9 @@ permalink: /API/
             </table>
             <h6 class="c4" id="h.35nkun2"><span>Update fs</span></h6><a id="t.6bac5e7d28350411ee9cff280d9d74eb3d8e8b2e"></a><a
                 id="t.11"></a>
-            <table id="table1" class="c26">
-                <tbody>
-                    <tr class="c2">
-                        <td class="c57 c28" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/fs/ocid/fs-ocid</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/fs/ocid/fs-ocid</span></p>
+            </div>
             <p class="c19 c31"><span class="c29"></span></p><a id="t.81496b1f701149d197ae47b976f77002d8d7d79e"></a><a
                 id="t.12"></a>
             <table id="table1" class="c23">
@@ -389,15 +341,9 @@ permalink: /API/
             <h5 class="c4" id="h.44sinio"><span class="c13">Planning Notice (PN)</span></h5>
             <h6 class="c32" id="h.2jxsxqh"><span class="c15">Create pn</span></h6><a id="t.907a6e65f9fc0322d7772a44ee85ff604fa18649"></a><a
                 id="t.13"></a>
-            <table id="table1" class="c12">
-                <tbody>
-                    <tr class="c2">
-                        <td class="c28 c107" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/pn?country=...&amp;pmd=...</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/pn?country=...&amp;pmd=...</span></p>
+            </div>
             <p class="c19 c31"><span class="c29"></span></p><a id="t.8ab9ae9c7e5e45824112128da4e10918a8bae0f4"></a><a
                 id="t.14"></a>
             <table id="table1" class="c23">
@@ -424,15 +370,9 @@ permalink: /API/
             </table>
             <h6 class="c4" id="h.z337ya"><span>Update </span><span class="c108">pn</span></h6><a id="t.476b4a7e5ee3bb45a7286a710c283f085d026f37"></a><a
                 id="t.15"></a>
-            <table id="table1" class="c26">
-                <tbody>
-                    <tr class="c31">
-                        <td class="c57 c28" colspan="1" rowspan="1">
-                            <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/pn/ocid/pn-ocid</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c19"><span class="c5">POST</span><span class="c25">&nbsp;</span><span class="c46">/do/pn/ocid/pn-ocid</span></p>
+            </div>
             <p class="c19 c31"><span class="c29"></span></p><a id="t.06feac9bf761437f38d3c1a9cd7a5727b489e6db"></a><a
                 id="t.16"></a>
             <table id="table1" class="c12">
