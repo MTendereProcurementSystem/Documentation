@@ -227,23 +227,17 @@ permalink: /BPE/
             <h6 class="c15" id="h.1t3h5sf"><span class="c6">Schedule.Event()</span></h6>
             <p class="c31"><span class="c1">Methods responsible for scheduling an event to be tracked against general
                     systems&rsquo; time </span></p><a id="t.2b961cb75328b23e499b252bcca408df3a60a135"></a><a id="t.1"></a>
-            <table id="table1" class="c46">
-                <tbody>
-                    <tr class="c13">
-                        <td class="c97" colspan="1" rowspan="1">
-                            <p class="c67"><span class="c115 c107 c154">POST</span><span class="c107 c110">&nbsp;/</span><span
-                                    class="c128 c107">schedule?</span><span class="c107 c52 c128">ocid=...&amp;action=...&amp;launchTime=...&amp;phase=</span></p>
-                            <p class="c67 c108"><span class="c17 c115 c107"></span></p>
-                            <p class="c67"><span class="c147 c115 c107 c149">{} </span><span class="c76">// payload
-                                    according to
-                                    internal request model</span></p>
-                            <p class="c67 c108"><span class="c76 c54"></span></p>
-                            <p class="c67"><span class="c147 c115 c107 c179">201 OK<br>Content-Type</span><span class="c147 c115 c149 c107">:
-                                    application/json; charset=UTF-8</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c67"><span class="c115 c107 c154">POST</span><span class="c107 c110">&nbsp;/</span><span
+                        class="c128 c107">schedule?</span><span class="c107 c52 c128">ocid=...&amp;action=...&amp;launchTime=...&amp;phase=</span></p>
+                <p class="c67 c108"><span class="c17 c115 c107"></span></p>
+                <p class="c67"><span class="c147 c115 c107 c149">{} </span><span class="c76">// payload
+                        according to
+                        internal request model</span></p>
+                <p class="c67 c108"><span class="c76 c54"></span></p>
+                <p class="c67"><span class="c147 c115 c107 c179">201 OK<br>Content-Type</span><span class="c147 c115 c149 c107">:
+                        application/json; charset=UTF-8</span></p>
+            </div>
             <p class="c32" id="h.4d34og8"><span class="c33">Incomes</span></p><a id="t.84f31a90ad0e70d566128b796fb367939ee8f31c"></a><a
                 id="t.2"></a>
             <table id="table1" class="c46">
@@ -617,54 +611,44 @@ permalink: /BPE/
             <p class="c64" id="h.2bn6wsx"><span class="c112 c45">Flow description</span></p>
             <p class="c31"><span class="c1">When document is received to be registered DS performs following actions:</span></p>
             <ol class="c53 lst-kix_list_17-0 start" start="1">
-                <li class="c38"><span class="c1">The file size is checked - if the value is exceeded (50 Mb), the
+                <li class="c38 mainBullet"><span class="c1">The file size is checked - if the value is exceeded (50 Mb), the
                         process is thrown
                     </span></li>
-                <li class="c38"><span class="c1">The file format is checked for a valid format </span></li>
-            </ol>
-            <ol class="c53 lst-kix_list_18-0 start" start="3">
-                <li class="c38"><span class="c1">In case of a valid format, the file is saved:</span></li>
-            </ol>
-            <ol class="c53 lst-kix_list_18-1 start" start="1">
-                <li class="c67 c98 c159"><span class="c1">description is stored in the database according to the model</span></li>
-                <li class="c31 c98"><span class="c1">Returns file descriptions to the client according to the attribute
+                <li class="c38 mainBullet"><span class="c1">The file format is checked for a valid format </span></li>
+                <li class="c38 mainBullet"><span class="c1">In case of a valid format, the file is saved:</span></li>
+                <li class="c67 c98 c159 secondaryBullet"><span class="c1">description is stored in the database according to the model</span></li>
+                <li class="c31 c98 secondaryBullet"><span class="c1">Returns file descriptions to the client according to the attribute
                         composition</span></li>
             </ol>
             <p class="c64" id="h.qsh70q"><span class="c137 c45">Example</span></p><a id="t.c8fc297e79fb37011d216970895181edc6e1e6e2"></a><a
                 id="t.6"></a>
-            <table id="table1" class="c46">
-                <tbody>
-                    <tr class="c13">
-                        <td class="c97" colspan="1" rowspan="1">
-                            <p class="c67"><span class="c39">POST</span><span class="c48">&nbsp;</span><span class="c89">/registration</span><span
-                                    class="c48">&nbsp;HTTP/1.1<br></span><span class="c25">Authorization</span><span
-                                    class="c48">:
-                                    <br></span><span class="c25">Content-Length</span><span class="c48">: 58<br></span><span
-                                    class="c25">Content-Type</span><span class="c48">: application/json<br></span><span
-                                    class="c25">Host</span><span class="c48 c54">:
-                                    HOST</span></p>
-                            <p class="c67 c108"><span class="c48 c54"></span></p>
-                            <p class="c67"><span class="c48">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
-                                    &nbsp;&quot;hash&quot;:
-                                </span><span class="c89">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span class="c48">,<br>
-                                    &nbsp; &nbsp;&quot;weight&quot;: </span><span class="c89">&quot;1024&quot;</span><span
-                                    class="c48">,<br>
-                                    &nbsp; &nbsp;&quot;fileName&quot;: </span><span class="c89">&quot;file.txt&quot;</span><span
-                                    class="c48 c54"><br> &nbsp;}<br>}</span></p>
-                            <p class="c67 c108"><span class="c25 c54"></span></p>
-                            <p class="c67"><span class="c25">201 Created<br>Content-Type</span><span class="c48 c54">:
-                                    application/json; charset=UTF-8</span></p>
-                            <p class="c67 c108"><span class="c48 c54"></span></p>
-                            <p class="c67"><span class="c48">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
-                                    &nbsp;&quot;id&quot;:
-                                </span><span class="c89">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span class="c48">,<br>
-                                    &nbsp; &nbsp;&quot;url&quot;: </span><span class="c89">&quot;https://HOST/get/389684cc28c242b79c97c56be5142e25&quot;</span><span
-                                    class="c48">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c89">&quot;2017-12-25T17:05:56.044677&quot;</span><span
-                                    class="c48 c54"><br> &nbsp;}<br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c67"><span class="c39">POST</span><span class="c48">&nbsp;</span><span class="c89">/registration</span><span
+                        class="c48">&nbsp;HTTP/1.1<br></span><span class="c25">Authorization</span><span
+                        class="c48">:
+                        <br></span><span class="c25">Content-Length</span><span class="c48">: 58<br></span><span
+                        class="c25">Content-Type</span><span class="c48">: application/json<br></span><span
+                        class="c25">Host</span><span class="c48 c54">:
+                        HOST</span></p>
+                <p class="c67 c108"><span class="c48 c54"></span></p>
+                <p class="c67"><span class="c48">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
+                        &nbsp;&quot;hash&quot;:
+                    </span><span class="c89">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span class="c48">,<br>
+                        &nbsp; &nbsp;&quot;weight&quot;: </span><span class="c89">&quot;1024&quot;</span><span
+                        class="c48">,<br>
+                        &nbsp; &nbsp;&quot;fileName&quot;: </span><span class="c89">&quot;file.txt&quot;</span><span
+                        class="c48 c54"><br> &nbsp;}<br>}</span></p>
+                <p class="c67 c108"><span class="c25 c54"></span></p>
+                <p class="c67"><span class="c25">201 Created<br>Content-Type</span><span class="c48 c54">:
+                        application/json; charset=UTF-8</span></p>
+                <p class="c67 c108"><span class="c48 c54"></span></p>
+                <p class="c67"><span class="c48">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
+                        &nbsp;&quot;id&quot;:
+                    </span><span class="c89">&quot;9a0364b9e99bb480dd25e1f0284c8555&quot;</span><span class="c48">,<br>
+                        &nbsp; &nbsp;&quot;url&quot;: </span><span class="c89">&quot;https://HOST/get/389684cc28c242b79c97c56be5142e25&quot;</span><span
+                        class="c48">,<br> &nbsp; &nbsp;&quot;dateModified&quot;: </span><span class="c89">&quot;2017-12-25T17:05:56.044677&quot;</span><span
+                        class="c48 c54"><br> &nbsp;}<br>}</span></p>
+            </div>
             <hr style="page-break-before:always;display:none;">
             <p class="c0 c108"><span class="c1"></span></p>
             <h5 class="c15" id="h.3as4poj"><span class="c47">Upload.Document()</span></h5>
@@ -688,27 +672,21 @@ permalink: /BPE/
             </ol>
             <p class="c64" id="h.49x2ik5"><span class="c45 c112">Example</span></p><a id="t.9d548124f3f47cccc877d215e8832143ef7228bf"></a><a
                 id="t.7"></a>
-            <table id="table1" class="c46">
-                <tbody>
-                    <tr class="c13">
-                        <td class="c97" colspan="1" rowspan="1">
-                            <p class="c67"><span class="c39">POST</span><span class="c48">&nbsp;</span><span class="c89">/upload/389684cc28c242b79c97c56be5142e25</span><span
-                                    class="c48">&nbsp;HTTP/1.0<br></span><span class="c25">Authorization</span><span
-                                    class="c48">:
-                                    <br></span><span class="c25">Content-Length</span><span class="c48">: 58<br></span><span
-                                    class="c25">Content-Type</span><span class="c48">: multipart/form-data;
-                                    boundary=----------a_BoUnDaRy572732436472$<br></span><span class="c25">Host</span><span
-                                    class="c48 c54">: storage.eprocurement.systems<br><br>------------a_BoUnDaRy572732436472$<br>content<br>------------a_BoUnDaRy572732436472$--<br><br>201
-                                    Created<br>Content-Type: application/json; charset=UTF-8</span></p>
-                            <p class="c67 c108"><span class="c48 c54"></span></p>
-                            <p class="c67"><span class="c48">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
-                                    &nbsp;&quot;url&quot;:
-                                </span><span class="c89">&quot;https://HOST/get/389684cc28c242b79c97c56be5142e25&quot;</span><span
-                                    class="c48 c54"><br> &nbsp;}<br>}</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c67"><span class="c39">POST</span><span class="c48">&nbsp;</span><span class="c89">/upload/389684cc28c242b79c97c56be5142e25</span><span
+                        class="c48">&nbsp;HTTP/1.0<br></span><span class="c25">Authorization</span><span
+                        class="c48">:
+                        <br></span><span class="c25">Content-Length</span><span class="c48">: 58<br></span><span
+                        class="c25">Content-Type</span><span class="c48">: multipart/form-data;
+                        boundary=----------a_BoUnDaRy572732436472$<br></span><span class="c25">Host</span><span
+                        class="c48 c54">: storage.eprocurement.systems<br><br>------------a_BoUnDaRy572732436472$<br>content<br>------------a_BoUnDaRy572732436472$--<br><br>201
+                        Created<br>Content-Type: application/json; charset=UTF-8</span></p>
+                <p class="c67 c108"><span class="c48 c54"></span></p>
+                <p class="c67"><span class="c48">{<br> &nbsp;&quot;data&quot;: {<br> &nbsp;
+                        &nbsp;&quot;url&quot;:
+                    </span><span class="c89">&quot;https://HOST/get/389684cc28c242b79c97c56be5142e25&quot;</span><span
+                        class="c48 c54"><br> &nbsp;}<br>}</span></p>
+            </div>
             <h5 class="c15" id="h.2p2csry"><span class="c47">Get.Document()</span></h5>
             <p class="c31"><span class="c1">If document is registered and stored in the Document Service it can be
                     retrieved by any
@@ -718,19 +696,13 @@ permalink: /BPE/
                     Document Service.</span></p>
             <p class="c64" id="h.147n2zr"><span class="c45 c137">Example</span></p><a id="t.0d191ef5be203aaf412f2d7af0bd05f9a2bda1f5"></a><a
                 id="t.8"></a>
-            <table id="table1" class="c46">
-                <tbody>
-                    <tr class="c13">
-                        <td class="c97" colspan="1" rowspan="1">
-                            <p class="c67"><span class="c39">GET</span><span class="c48">&nbsp;</span><span class="c89">/get/389684cc28c242b79c97c56be5142e25</span><span
-                                    class="c48">&nbsp;HTTP/1.0<br></span><span class="c25">Host</span><span class="c48">:
-                                    storage.eprocurement.systems<br><br>200 OK<br>Content-Disposition: attachment;
-                                </span><span class="c25">filename</span><span class="c48">=file.txt<br>Content-Type:
-                                    text/plain; </span><span class="c25">charset</span><span class="c48">=UTF-8</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sourceCode">
+                <p class="c67"><span class="c39">GET</span><span class="c48">&nbsp;</span><span class="c89">/get/389684cc28c242b79c97c56be5142e25</span><span
+                        class="c48">&nbsp;HTTP/1.0<br></span><span class="c25">Host</span><span class="c48">:
+                        storage.eprocurement.systems<br><br>200 OK<br>Content-Disposition: attachment;
+                    </span><span class="c25">filename</span><span class="c48">=file.txt<br>Content-Type:
+                        text/plain; </span><span class="c25">charset</span><span class="c48">=UTF-8</span></p>
+            </div>
             <hr style="page-break-before:always;display:none;">
             <p class="c0 c108"><span class="c1"></span></p>
             <h2 class="c28" id="h.externalEnvironment"><span class="c172 c175">External Environment (integrations)</span></h2>
